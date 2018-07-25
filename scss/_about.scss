@@ -71,14 +71,13 @@
   font-size: 24px;
   line-height: 26px;
   padding-left: 30px;
+  
+  &.blue-dark {
+    color: $blue-dark;
+  }
 
   @media (max-width: $screen-sm-max) {
     padding-left: 0;
-  }
-
-  @media (max-width: $screen-xs-max) {
-    font-size: 18px;
-    line-height: 20px;
   }
 }
 
@@ -691,5 +690,52 @@
         font-weight: 300;
       }
     }
+  }
+}
+
+.vacancy-wrap {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: $bs-default;
+  margin-bottom: 30px;
+  @include transition(.2s);
+
+  &:hover {
+    box-shadow: $bs-hover;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    min-height: 78px;
+    margin: 0 0 5px 0;
+
+    @media (max-width: $screen-sm-max) {
+      min-height: initial;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+      line-height: 22px;
+      margin: 0 0 15px 0;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  .career-look {
+    min-width: 150px;
+    min-height: 36px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 0 7px 0;
   }
 }

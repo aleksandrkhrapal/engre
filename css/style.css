@@ -1929,13 +1929,11 @@
   font-size: 24px;
   line-height: 26px;
   padding-left: 30px; }
+  .about-title.blue-dark {
+    color: #0d47a1; }
   @media (max-width: 767px) {
     .about-title {
       padding-left: 0; } }
-  @media (max-width: 575px) {
-    .about-title {
-      font-size: 18px;
-      line-height: 20px; } }
 
 .about-description {
   margin: 0 0 30px 0;
@@ -2392,6 +2390,42 @@
       font-weight: 700; }
     .review-author .author-info span.position {
       font-weight: 300; }
+
+.vacancy-wrap {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in-out; }
+  .vacancy-wrap:hover {
+    box-shadow: 0 13px 33px 0 rgba(13, 71, 161, 0.33); }
+  .vacancy-wrap h3 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    min-height: 78px;
+    margin: 0 0 5px 0; }
+    @media (max-width: 767px) {
+      .vacancy-wrap h3 {
+        min-height: initial; } }
+    @media (max-width: 575px) {
+      .vacancy-wrap h3 {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0 0 15px 0; } }
+  .vacancy-wrap span {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .vacancy-wrap .career-look {
+    min-width: 150px;
+    min-height: 36px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 0 7px 0; }
 
 .is-heading {
   width: 100%;
@@ -3024,6 +3058,12 @@ input {
     line-height: 32px;
     font-weight: 300;
     color: #fff; }
+  .title-wrap p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin: 20px 0 0 0; }
 
 .categories-wrapper {
   border-bottom: 1px solid #ebebeb;
