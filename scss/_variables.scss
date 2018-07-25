@@ -1,0 +1,17 @@
+// media queries
+$screen-lg-max: 1199px;
+$screen-md-max: 991px;
+$screen-sm-max: 767px;
+$screen-xs-max: 575px;
+
+// colors
+$gradient: linear-gradient(to top, #5acff4, #007fac);
+$blue-light: #4fc5eb;
+$blue-dark: #0d47a1;
+$yellow: #fdd835;
+$grey: #99a9b8;
+$red: #f33;
+
+//box shadow
+$bs-default: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
+$bs-hover: 0 13px 33px 0 rgba(13, 71, 161, 0.33);

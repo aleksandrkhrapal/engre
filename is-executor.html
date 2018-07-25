@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/aos.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex flex-row justify-content-between align-items-center">
+				<div class="header-wrapper__left d-flex flex-row align-items-center">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="start-project">
+						<a href="#">
+							<i class="mdi mdi-plus">
+								<svg class="circle-plus" expanded="true" height="40px" width="40px">
+									<circle class="innerCircle" cx="50%" cy="50%" r="10px"></circle>
+								</svg>
+							</i>
+							<span>Start a project</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-wrapper__right d-flex flex-row justify-content-between align-items-center">
+					<nav class="main-nav">
+						<a href="about-us.html">About Engre</a>
+						<a href="#" class="active">Intellectual services</a>
+						<a href="news.html">What's new?</a>
+						<a href="blog.html">Blog</a>
+						<a href="#">EDU</a>
+						<a href="#">Partnership</a>
+						<a href="#">Careers</a>
+					</nav>
+					<div class="select-lang-wrapper">
+						<div class="dropdown dropdown-select-lang">
+							<button type="button" class="selected-lang" data-toggle="dropdown">
+								En <i class="mdi mdi-chevron-down"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item selected" href="#">En</a>
+								<a class="dropdown-item" href="#">Fr</a>
+								<a class="dropdown-item" href="#">De</a>
+							</div>
+						</div>
+					</div>
+					<div class="profile-wrapper">
+						<div class="dropdown dropdown-profile">
+							<span class="profile-icon notification" data-toggle="dropdown">
+								<i class="mdi mdi-account-circle"></i>
+							</span>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="dropdown-profile-top d-flex flex-row justify-content-between align-items-center">
+									<span>Opentech</span>
+									<a href="#" class="logout-button"><i class="mdi mdi-logout-variant"></i></a>
+								</div>
+								<div class="row">
+									<div class="col-md-7 profile-list">
+										<h2>My Stuff</h2>
+										<a href="#">Company</a>
+										<a href="#">Project</a>
+										<a href="#">Chat</a>
+										<a href="#">Partnership</a>
+										<a href="#">Contract and documents</a>
+										<a href="#">Followings</a>
+									</div>
+									<div class="col-md-5 profile-list">
+										<h2>Settings</h2>
+										<a href="#">My profile</a>
+										<a href="#">Notification</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu-button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="setting-wrapper">
+				<div class="settings-section">
+					<div class="is-heading">
+						<div class="wrapper">
+							<div class="row">
+								<div class="col-md-3 col-sm-6 is-heading-col">
+									<div class="is-col">
+										<span>March 12, 2018</span>
+										<mark>Bringing creative projects to life</mark>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 is-heading-col">
+									<div class="is-col">
+										<span class="text-uppercase">Total backers</span>
+										<mark>14.326.131</mark>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 is-heading-col">
+									<div class="is-col">
+										<span class="text-uppercase">Funded projects</span>
+										<mark>140.389</mark>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 is-heading-col">
+									<div class="is-col">
+										<span class="text-uppercase">Live projects</span>
+										<mark>3.789</mark>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="categories-wrapper d-flex justify-content-between align-items-center">
+							<div class="categories-list d-flex justify-content-between align-items-end">
+								<div class="category-active-mobile">
+									<a href="#">Design <span class="mdi mdi-menu-down"></span></a>
+								</div>
+								<div class="category-active">
+
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="categories-dropdown">
+									<a href="blog.html" class="active">Design</a>
+									<a href="blog-category.html">Infrastructure solutions</a>
+									<a href="#">Tooling</a>
+									<a href="#">Software development</a>
+									<a href="#">Hardware development</a>
+									<a href="#">Project management</a>
+									<div class="categories-more dropdown">
+										<a href="#" class="selected" data-toggle="dropdown">
+											More <span class="mdi mdi-menu-down"></span>
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">More 1</a>
+											<a class="dropdown-item" href="#">More 2</a>
+											<a class="dropdown-item" href="#">More 3</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search-wrap d-flex justify-content-between align-items-center">
+								<div class="search-input-wrap">
+									<input type="search" placeholder="Search...">
+								</div>
+								<span class="mdi mdi-magnify search-button"></span>
+							</div>
+						</div>
+						<div class="filters-wrapper">
+							<div class="filter-col">
+								<label>Projects in</label>
+								<div class="select-wrapper">
+									<span class="mdi mdi-menu-down"></span>
+									<select>
+										<option value="">Design</option>
+										<option value="">Design 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter-col">
+								<label>on</label>
+								<div class="select-wrapper">
+									<span class="mdi mdi-menu-down"></span>
+									<select>
+										<option value="">Earth</option>
+										<option value="">Earth 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter-col">
+								<label>Sorted by</label>
+								<div class="select-wrapper">
+									<span class="mdi mdi-menu-down"></span>
+									<select>
+										<option value="">Popularity</option>
+										<option value="">Popularity 2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="more-filters-wrapper">
+							<div class="dropdown more-filter-dropdown">
+								<a href="#" class="selected" data-toggle="dropdown">More filters</a>
+								<div class="dropdown-menu">
+									<div class="select-wrapper select-border">
+										<span class="mdi mdi-menu-down"></span>
+										<select>
+											<option value="">Filter 1</option>
+											<option value="">Filter 1.1</option>
+											<option value="">Filter 1.2</option>
+											<option value="">Filter 1.2</option>
+										</select>
+									</div>
+									<div class="select-wrapper select-border">
+										<span class="mdi mdi-menu-down"></span>
+										<select>
+											<option value="">Filter 2</option>
+											<option value="">Filter 2.1</option>
+											<option value="">Filter 2.2</option>
+											<option value="">Filter 2.2</option>
+										</select>
+									</div>
+									<div class="select-wrapper select-border">
+										<span class="mdi mdi-menu-down"></span>
+										<select>
+											<option value="">Filter 3</option>
+											<option value="">Filter 3.1</option>
+											<option value="">Filter 3.2</option>
+											<option value="">Filter 3.2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown more-filter-dropdown">
+								<a href="#" class="selected" data-toggle="dropdown">Save filter</a>
+								<div class="dropdown-menu">
+									<div class="save-filter-row name">
+										<input type="text" class="filter-name" value="My 1st filter" disabled>
+										<span class="mdi mdi-pencil edit"></span>
+									</div>
+									<div class="save-filter-row">
+										<div class="input-row">
+											<input type="text" id="id-text" disabled>
+											<label for="id-text">New interesting</label>
+										</div>
+										<span class="mdi mdi-delete delete"></span>
+									</div>
+									<div class="save-filter-row">
+										<div class="input-row">
+											<input type="text" id="id-text2">
+											<label for="id-text2">Name filter</label>
+										</div>
+										<span class="mdi mdi-plus-box add"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings-user-info d-flex flex-row justify-content-between align-items-center">
+							<span><i>Explore </i>6.636 projects</span>
+						</div>
+
+						<div class="is-row-block">
+							<div class="is-row-top row">
+								<div class="col-lg-4 col-md-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo5.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link">Opentech</a>
+											<span class="location">Madrid, Spain</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-6">
+									<div class="is-col">
+										<span>Date of creation</span>
+										<mark>05.03.2018</mark>
+									</div>
+									<div class="is-col">
+										<span>Deadline</span>
+										<mark>12.12.2018</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Type of ownership</span>
+										<mark>FLP</mark>
+									</div>
+									<div class="is-col">
+										<span>Language</span>
+										<mark>Ru, En, Sp</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Budget</span>
+										<mark class="fz-bigger">$200 000 000</mark>
+									</div>
+								</div>
+							</div>
+							<div class="is-row-description">
+								<h3 class="title-description">Lampix: Intelligent, interactive tabletop AR is here</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div>
+							<div class="is-row-button">
+								<div class="row justify-content-end">
+									<div class="col-xl-6 col-lg-7">
+										<div class="is-buttons-wrap d-flex">
+											<a href="#" class="button-styles share"><span class="mdi mdi-share-variant"></span></a>
+											<a href="#" class="button-styles more-info">More information</a>
+											<a href="#" class="button-styles send-message">Send messages <span class="mdi mdi-send"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="is-row-block">
+							<div class="is-row-top row">
+								<div class="col-lg-4 col-md-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo6.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link invisibly">Invisibly</a>
+											<span class="location">Tokyo, Japan</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-6">
+									<div class="is-col">
+										<span>Date of creation</span>
+										<mark>05.03.2018</mark>
+									</div>
+									<div class="is-col">
+										<span>Deadline</span>
+										<mark>12.12.2018</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Type of ownership</span>
+										<mark>FLP</mark>
+									</div>
+									<div class="is-col">
+										<span>Language</span>
+										<mark>Ru, En, Sp</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Budget</span>
+										<mark class="fz-bigger">$5 000 000</mark>
+									</div>
+								</div>
+							</div>
+							<div class="is-row-description">
+								<h3 class="title-description">Disintermediate clicks-and-mortar web-readiness</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div>
+							<div class="is-row-button">
+								<div class="row justify-content-end">
+									<div class="col-xl-6 col-lg-7">
+										<div class="is-buttons-wrap d-flex">
+											<a href="#" class="button-styles share"><span class="mdi mdi-share-variant"></span></a>
+											<a href="#" class="button-styles more-info">More information</a>
+											<a href="#" class="button-styles send-message">Send messages <span class="mdi mdi-send"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="is-row-block">
+							<div class="is-row-top row">
+								<div class="col-lg-4 col-md-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo7.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link invisibly">Invisibly</a>
+											<span class="location">Paris, France</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-6">
+									<div class="is-col">
+										<span>Date of creation</span>
+										<mark>05.03.2018</mark>
+									</div>
+									<div class="is-col">
+										<span>Deadline</span>
+										<mark>12.12.2018</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Type of ownership</span>
+										<mark>FLP</mark>
+									</div>
+									<div class="is-col">
+										<span>Language</span>
+										<mark>Ru, En, Sp</mark>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="is-col">
+										<span>Budget</span>
+										<mark class="fz-bigger">$320 000</mark>
+									</div>
+								</div>
+							</div>
+							<div class="is-row-description">
+								<h3 class="title-description">Disintermediate clicks-and-mortar web-readiness</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div>
+							<div class="is-row-button">
+								<div class="row justify-content-end">
+									<div class="col-xl-6 col-lg-7">
+										<div class="is-buttons-wrap d-flex">
+											<a href="#" class="button-styles share"><span class="mdi mdi-share-variant"></span></a>
+											<a href="#" class="button-styles more-info">More information</a>
+											<a href="#" class="button-styles send-message">Send messages <span class="mdi mdi-send"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="is-row-block">
+									<div class="is-row-top row">
+										<div class="col-lg-8">
+											<div class="is-row-info d-flex align-items-center">
+												<div class="is-row-img">
+													<img src="images/is-logo4.png" alt="">
+												</div>
+												<div class="is-row-details">
+													<a href="#" class="details-page-link invisibly">Invisibly</a>
+													<span class="location">Paris, France</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark class="fz-bigger">$20 000</mark>
+											</div>
+											<div class="is-col">
+												<span>Deadline</span>
+												<mark>12.12.2018</mark>
+											</div>
+										</div>
+									</div>
+									<div class="is-row-description">
+										<h3 class="title-description">Scale cross-platform architectures</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+									</div>
+									<div class="is-row-button">
+										<div class="row justify-content-end">
+											<div class="col-12">
+												<div class="is-buttons-wrap d-flex">
+													<a href="#" class="button-styles share"><span class="mdi mdi-share-variant"></span></a>
+													<a href="#" class="button-styles more-info">More information</a>
+													<a href="#" class="button-styles send-message">Send messages <span class="mdi mdi-send"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="is-row-block">
+									<div class="is-row-top row">
+										<div class="col-lg-8">
+											<div class="is-row-info d-flex align-items-center">
+												<div class="is-row-img">
+													<img src="images/is-logo4.png" alt="">
+												</div>
+												<div class="is-row-details">
+													<a href="#" class="details-page-link invisibly">Invisibly</a>
+													<span class="location">Paris, France</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark class="fz-bigger">$13 000</mark>
+											</div>
+											<div class="is-col">
+												<span>Deadline</span>
+												<mark>12.12.2018</mark>
+											</div>
+										</div>
+									</div>
+									<div class="is-row-description">
+										<h3 class="title-description">Envisioneer bricks-and-clicks infomediaries</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
+									</div>
+									<div class="is-row-button">
+										<div class="row justify-content-end">
+											<div class="col-12">
+												<div class="is-buttons-wrap d-flex">
+													<a href="#" class="button-styles share"><span class="mdi mdi-share-variant"></span></a>
+													<a href="#" class="button-styles more-info">More information</a>
+													<a href="#" class="button-styles send-message">Send messages <span class="mdi mdi-send"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="load-more-button text-center">
+							<a href="#" class="btn-site">Load more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
+				<div class="footer-wrapper__col">
+					<span>© 2018 Marketplace Inc. <a href="#">Terms</a></span>
+					<div class="social-links">
+						<a href="#">
+							<i class="mdi mdi-facebook-box"></i>
+						</a>
+						<a href="#">
+							<i class="mdi mdi-linkedin-box"></i>
+						</a>
+						<a href="#">
+							<i class="mdi mdi-twitter-box"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-phone"></i>
+						<mark>00 1 206-266-2992</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-phone-forward"></i>
+						<mark>Call back</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-email"></i>
+						<mark>Email us</mark>
+					</a>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-telegram"></i>
+						<mark>Telegram</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-facebook-messenger"></i>
+						<mark>Messenger</mark>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="mobile-menu-mask"></div>
+
+		<!-- Modal reviews -->
+		<div class="modal fade reviews-modal" id="reviews-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<span class="close-modal" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></span>
+					<div class="modal-heading">
+						<div class="modal-title">
+							<span class="mdi mdi-message-text"></span>
+							<i>Reviews of the company “Unity”</i>
+						</div>
+					</div>
+					<div class="modal-wrapper">
+						<div class="row reviews-top">
+							<div class="col-md-6 col-sm-7">
+								<div class="is-row-info d-flex align-items-center">
+									<div class="is-row-img">
+										<img src="images/is-logo1.png" alt="">
+									</div>
+									<div class="is-row-details">
+										<a href="#" class="details-page-link">Unity</a>
+										<span class="location">Madrid, Spain</span>
+										<span class="reviews"><a href="#">http://Inity.com</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-5">
+								<div class="rating-wrap rating-wrap-modal">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+								</div>
+								<div class="row">
+									<div class="col-3">
+										<div class="is-col">
+											<span>Rating</span>
+											<mark class="fz-bigger">5.0</mark>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="is-col">
+											<span>Reviews</span>
+											<mark class="fz-bigger">26</mark>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="svg-wrap">
+							<img src="images/wave.svg" alt="">
+						</div>
+						<div class="review-block">
+							<div class="row review-block-top align-items-center">
+								<div class="col-sm-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo5.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link">Opentech</a>
+											<span class="location">Madrid, Spain</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="rating-wrap">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Date of posting</span>
+												<mark>05.03.2018</mark>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark>$200 000 000</mark>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review-content-wrap">
+								<div class="review-content-top d-flex">
+									<span class="mdi mdi-format-quote-close"></span>
+									<div class="review-content-info">
+										<i>Feedback on the project</i>
+										<a href="#">Integrate clicks-and-mortar methodology</a>
+									</div>
+								</div>
+								<p class="review-text">Mauna Loa, the biggest volcano on Earth — and one of the most active — covers half the Island of Hawaii. Just 35 miles to the northeast, Mauna Kea, known to native Hawaiians as Mauna a Wakea, rises nearly 14,000 feet above sea level. To them it represents a spiritual connection between our planet and the heavens above. </p>
+							</div>
+						</div>
+						<div class="review-block">
+							<div class="row review-block-top align-items-center">
+								<div class="col-sm-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo8.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link">Monsterbeats</a>
+											<span class="location">Tokyo, Japan</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="rating-wrap">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Date of posting</span>
+												<mark>05.03.2018</mark>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark>$200 000 000</mark>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review-content-wrap">
+								<div class="review-content-top d-flex">
+									<span class="mdi mdi-format-quote-close"></span>
+									<div class="review-content-info">
+										<i>Feedback on the project</i>
+										<a href="#">Visualize impactful mindshare</a>
+									</div>
+								</div>
+								<p class="review-text">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup. However, Windows has changed, and the threat landscape has changed. I am no longer sure that a third-party AV program is essential, and some of them may be detrimental. Vivaldi and Apple’s Safari, while Windows 10 has its own built-in SafeScreen filter.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

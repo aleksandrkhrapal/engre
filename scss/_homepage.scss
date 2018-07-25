@@ -1,0 +1,91 @@
+.video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.homepage-main-wrapper {
+  @media (max-width: $screen-xs-max) {
+    height: calc(100vh - 105px);
+  }
+}
+
+.hp-main-text {
+  @include center(both);
+  text-align: center;
+  padding: 100px 15px;
+  width: 1010px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    //@include reset-position;
+  }
+
+  @media (max-height: 500px) {
+    @include reset-position;
+    margin: 0 auto;
+  }
+
+  span {
+    display: block;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 2.4px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fefefe;
+    margin-bottom: 35px;
+    outline: none;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fefefe;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+.meet-button {
+  bottom: 45px;
+  min-width: 275px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 18px 0;
+  text-decoration: none;
+  @include center(horizontal);
+  @include transition(.3s);
+
+  @media (max-width: $screen-xs-max) {
+    bottom: 22px;
+  }
+
+  &:hover {
+    color: #333;
+    background: $yellow;
+    border-color: $yellow;
+    text-decoration: none;
+  }
+}

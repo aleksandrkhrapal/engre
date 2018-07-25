@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/aos.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex flex-row justify-content-between align-items-center">
+				<div class="header-wrapper__left d-flex flex-row align-items-center">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="start-project">
+						<a href="#">
+							<i class="mdi mdi-plus">
+								<svg class="circle-plus" expanded="true" height="40px" width="40px">
+									<circle class="innerCircle" cx="50%" cy="50%" r="10px"></circle>
+								</svg>
+							</i>
+							<span>Start a project</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-wrapper__right d-flex flex-row justify-content-between align-items-center">
+					<nav class="main-nav">
+						<a href="about-us.html">About Engre</a>
+						<a href="#">Intellectual services</a>
+						<a href="news.html" class="active">What's new?</a>
+						<a href="blog.html">Blog</a>
+						<a href="#">EDU</a>
+						<a href="#">Partnership</a>
+						<a href="#">Careers</a>
+					</nav>
+					<div class="select-lang-wrapper">
+						<div class="dropdown dropdown-select-lang">
+							<button type="button" class="selected-lang" data-toggle="dropdown">
+								En <i class="mdi mdi-chevron-down"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item selected" href="#">En</a>
+								<a class="dropdown-item" href="#">Fr</a>
+								<a class="dropdown-item" href="#">De</a>
+							</div>
+						</div>
+					</div>
+					<div class="profile-wrapper">
+						<div class="dropdown dropdown-profile">
+							<span class="profile-icon" data-toggle="dropdown">
+								<i class="mdi mdi-account-circle"></i>
+							</span>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="dropdown-profile-top d-flex flex-row justify-content-between align-items-center">
+									<span>Opentech</span>
+									<a href="#" class="logout-button"><i class="mdi mdi-logout-variant"></i></a>
+								</div>
+								<div class="row">
+									<div class="col-md-7 profile-list">
+										<h2>My Stuff</h2>
+										<a href="#">Company</a>
+										<a href="#">Project</a>
+										<a href="#">Chat</a>
+										<a href="#">Partnership</a>
+										<a href="#">Contract and documents</a>
+										<a href="#">Followings</a>
+									</div>
+									<div class="col-md-5 profile-list">
+										<h2>Settings</h2>
+										<a href="#">My profile</a>
+										<a href="#">Notification</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu-button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section-top">
+				<div class="wrapper">
+					<div class="title-wrap">
+						<span>News</span>
+					</div>
+					<div class="categories-wrapper d-flex justify-content-between align-items-center">
+						<div class="categories-list d-flex justify-content-between align-items-end">
+							<div class="category-active-mobile">
+								<a href="#">All <span class="mdi mdi-menu-down"></span></a>
+							</div>
+							<div class="category-active">
+
+								<span class="mdi mdi-menu-down"></span>
+							</div>
+							<div class="categories-dropdown">
+								<a href="news.html" class="active">All</a>
+								<a href="news-category.html">Analytics</a>
+								<a href="#">Industry events</a>
+								<a href="#">Industry news</a>
+								<a href="#">World articles</a>
+								<a href="#">Site communities</a>
+							</div>
+						</div>
+						<div class="search-wrap d-flex justify-content-between align-items-center">
+							<div class="search-input-wrap">
+								<input type="search" placeholder="Search...">
+							</div>
+							<span class="mdi mdi-magnify search-button"></span>
+						</div>
+					</div>
+					<div class="filters-wrapper">
+						<div class="filter-col">
+							<label>Date</label>
+							<div class="date-wrapper">
+								<span class="mdi mdi-calendar-range"></span>
+								<input type="date">
+							</div>
+						</div>
+						<div class="filter-col">
+							<label>Country</label>
+							<div class="select-wrapper">
+								<span class="mdi mdi-menu-down"></span>
+								<select>
+									<option value="">Country</option>
+									<option value="">Country</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter-col">
+							<label>Sphere</label>
+							<div class="select-wrapper">
+								<span class="mdi mdi-menu-down"></span>
+								<select>
+									<option value="">Science</option>
+									<option value="">Science</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter-col">
+							<label>Sorted by</label>
+							<div class="select-wrapper">
+								<span class="mdi mdi-menu-down"></span>
+								<select>
+									<option value="">Popularity</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="filters-active d-flex">
+						<span class="filters-title">Active filters:</span>
+						<div class="filters-list">
+							<span class="selected-filter">Design <i class="mdi mdi-close"></i></span>
+							<span class="filters-clear">Clear</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-news">
+				<div class="section-news-holder">
+					<div class="wrapper">
+						<div class="news-row">
+							<div class="news-heading d-flex justify-content-between align-items-center">
+								<span>World News</span>
+								<div class="subscribe-wrap">
+									<a href="#" class="subscribe-button">Subscribe</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-8">
+									<a href="news-article.html" class="news-block">
+										<div class="news-media" style="background-image: url('images/news-img5.jpg');">
+											<span class="mdi mdi-play-circle-outline play-video-button"></span>
+										</div>
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading video preview</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4">
+									<a href="news-article.html" class="news-block">
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="news-row">
+							<div class="news-heading d-flex justify-content-between align-items-center">
+								<span>Industry news</span>
+								<div class="subscribe-wrap">
+									<a href="#" class="subscribe-button subscribed">Subscribed</a>
+									<i class="mdi mdi-bell-outline notifications"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<a href="news-article.html" class="news-block">
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-8">
+									<a href="news-article.html" class="news-block">
+										<div class="news-media" style="background-image: url('images/news-img6.jpg');">
+
+										</div>
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading picture preview</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="news-row">
+							<div class="news-heading d-flex justify-content-between align-items-center">
+								<span>Analytics</span>
+								<div class="subscribe-wrap">
+									<a href="#" class="subscribe-button subscribed">Subscribed</a>
+									<i class="mdi mdi-bell-ring notifications"></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<a href="news-article.html" class="news-block h-100" style="background-image: url('images/news-img7.jpg');">
+										<div class="news-info bg-img">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4">
+									<a href="news-article.html" class="news-block" style="margin-bottom: 30px;">
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+									<a href="news-article.html" class="news-block">
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4">
+									<a href="news-article.html" class="news-block h-100 vertical-content">
+										<div class="news-media" style="background-image: url('images/news-img8.jpg');"></div>
+										<div class="news-info">
+											<span class="category-name">Category name</span>
+											<h3 class="news-name">News heading without picture</h3>
+											<span class="news-date">Fed 28, 2018</span>
+											<p>From better metrics and bond-market innovations to broader investor access, here are some of the key developments in sustainable investing.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
+				<div class="footer-wrapper__col">
+					<span>© 2018 Marketplace Inc. <a href="#">Terms</a></span>
+					<div class="social-links">
+						<a href="#">
+							<i class="mdi mdi-facebook-box"></i>
+						</a>
+						<a href="#">
+							<i class="mdi mdi-linkedin-box"></i>
+						</a>
+						<a href="#">
+							<i class="mdi mdi-twitter-box"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-phone"></i>
+						<mark>00 1 206-266-2992</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-phone-forward"></i>
+						<mark>Call back</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-email"></i>
+						<mark>Email us</mark>
+					</a>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-telegram"></i>
+						<mark>Telegram</mark>
+					</a>
+					<a href="#" class="footer-block">
+						<i class="mdi mdi-facebook-messenger"></i>
+						<mark>Messenger</mark>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="mobile-menu-mask"></div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+.main-footer {
+  background: $blue-dark;
+  padding: 20px 0;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 0;
+  }
+}
+
+.footer-wrapper {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    align-items: inherit;
+  }
+
+  &__col {
+    font-size: 0;
+    letter-spacing: -3px;
+
+    @media (max-width: 1024px) {
+      &:first-child {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        order: 3;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 300;
+      letter-spacing: normal;
+      color: #fff;
+      margin-right: 10px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+      }
+      
+      a {
+        color: #fff;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .social-links {
+      display: inline-block;
+      vertical-align: top;
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 3px;
+
+        i {
+          font-size: 22px;
+          line-height: 18px;
+          color: #fff;
+          @include transition(.2s);
+          
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    .footer-block {
+      display: inline-block;
+      vertical-align: middle;
+      letter-spacing: normal;
+      margin: 0 20px;
+
+      @media (max-width: 820px) {
+        margin: 0 15px 0 0;
+      }
+
+      @media (max-width: 700px) {
+        display: block;
+        margin: 0 0 15px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      @media (max-width: $screen-xs-max) {
+        display: block;
+        margin: 0 0 15px 0;
+      }
+      
+      &:hover {
+        i, mark {
+          color: $yellow;
+        }
+      }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 24px;
+        line-height: 24px;
+        margin-right: 10px;
+        @include transition(.2s);
+      }
+
+      mark {
+        display: inline-block;
+        vertical-align: middle;
+        background: none;
+        padding: 0;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+        color: #fff;
+        @include transition(.2s);
+      }
+    }
+  }
+}

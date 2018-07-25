@@ -1,0 +1,311 @@
+// reviews modal
+.reviews-modal {
+  .modal-dialog {
+    max-width: 755px;
+    border: none;
+    box-shadow: $bs-hover;
+
+    .modal-content {
+      border: none;
+      border-radius: 8px;
+      background-color: #f1f5f8;
+    }
+
+    .modal-heading {
+      background-color: #fff;
+      padding: 15px 40px 15px 20px;
+      border-radius: 8px 8px 0 0;
+
+      .modal-title {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 24px;
+          line-height: 24px;
+          color: $blue-dark;
+          margin-right: 5px;
+        }
+
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 700;
+          color: $blue-dark;
+        }
+      }
+    }
+
+    .close-modal {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+
+    .modal-wrapper {
+      padding: 20px 25px;
+      background-color: #f1f5f8;
+      border-radius: 8px;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 20px 15px;
+      }
+    }
+  }
+}
+
+.reviews-top {
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 0;
+  }
+
+  .is-row-info {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.svg-wrap {
+  width: 0;
+  overflow: hidden;
+  animation: wave 3s forwards;
+  margin-bottom: 30px;
+
+  img {
+    width: 1920px;
+  }
+}
+
+.review-block {
+  padding: 35px 25px 30px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: $bs-default;
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 35px 15px 30px 15px;
+  }
+
+  .review-block-top {
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+    }
+
+    .is-row-img {
+      background: none;
+      box-shadow: none;
+      height: auto;
+
+      img {
+        @include reset-position;
+      }
+    }
+
+    .is-col {
+      margin-bottom: 0;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .review-content-wrap {
+    .review-content-top {
+      margin-bottom: 20px;
+
+      span {
+        display: block;
+        color: #808080;
+        font-size: 45px;
+        line-height: 25px;
+        position: relative;
+        left: -9px;
+      }
+
+      .review-content-info {
+        i, a {
+          display: block;
+          font-style: normal;
+          font-size: 18px;
+          line-height: 20px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+        }
+        
+        a {
+          text-decoration: underline;
+          color: $blue-dark;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .review-text {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 0.4px;
+      text-align: justify;
+      margin: 0;
+    }
+  }
+}
+
+// people modal
+.people-modal-dialog {
+  max-width: 1200px;
+  border: none;
+  box-shadow: $bs-hover;
+
+  @media (max-width: $screen-md-max) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 0;
+  }
+
+  .modal-content {
+    border: none;
+    background-color: #f1f5f8;
+
+    .videoWrap {
+      iframe {
+        border-radius: 0 0 4px 4px;
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+
+    .people-modal-top {
+      background-color: #fff;
+      padding: 18px 20px;
+      border-radius: 8px 8px 0 0;
+
+      .people-name {
+        display: block;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        color: $blue-dark;
+
+        .mdi {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 23px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.people-modal-content {
+  padding: 40px 30px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px;
+  }
+}
+
+.people-modal-left {
+  margin-bottom: 30px;
+
+  .people-modal-img {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
+
+  .people-modal-info {
+    text-align: center;
+
+    span {
+      display: block;
+
+      &.name {
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 5px 0;
+      }
+
+      &.position {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      &.date {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.people-modal-right {
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0 0 30px 0;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+}

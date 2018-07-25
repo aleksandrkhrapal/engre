@@ -1,0 +1,419 @@
+.form-enter-section {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: calc(50% - 260px);
+  left: calc(50% - 255px);
+  @include transition(.4s .3s);
+  
+  @media (max-height: 800px) {
+    position: relative;
+    height: 730px;
+    width: 520px;
+    padding: 100px 0 50px 0;
+  }
+
+  @media (max-width: 768px) {
+    left: calc(50% - 215px);
+  }
+
+  @media (max-width: 767px) {
+    position: relative;
+    height: 730px;
+    width: 520px;
+    padding: 100px 0 50px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    height: 620px;
+    left: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 100px 15px 50px 15px;
+
+    &.move-position {
+      padding: 100px 15px 50px 47px;
+    }
+  }
+
+  .go-to-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 102px;
+    cursor: pointer;
+    @include transition(.4s .3s);
+
+    &.go-to-register {
+      right: 0;
+
+      span {
+        top: 47%;
+        left: -85px;
+
+        @media (max-width: $screen-xs-max) {
+          left: -68px;
+          top: 50%;
+        }
+      }
+    }
+
+    &.go-to-login {
+      left: 0;
+
+      span {
+        top: 50%;
+        left: -103px;
+
+        @media (max-width: $screen-xs-max) {
+          left: -123px;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      white-space: nowrap;
+      transform: rotate(-90deg);
+      transform-origin: center center;
+      position: absolute;
+      font-size: 28px;
+      line-height: 30px;
+      font-weight: 300;
+      color: #333;
+      
+      i {
+        font-style: normal;
+        font-weight: 700;
+        color: $blue-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .signUp {
+    z-index: 1;
+    transform: perspective(160px) translate3d(215px, 0px, -85px);
+
+    @media (max-width: $screen-xs-max) {
+      transform: perspective(160px) translate3d(135px, 0px, -85px);
+    }
+
+    .inputs-wrap, .sign-in-social {
+      opacity: 0;
+    }
+  }
+
+  .signIn {
+    z-index: 2;
+
+    .go-to-button {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .active-dx {
+    animation-name: foregrounding-dx;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $screen-xs-max) {
+      animation-name: foregrounding-dx-mob;
+    }
+
+    .inputs-wrap, .sign-in-social {
+      opacity: 1;
+    }
+
+    .go-to-button {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .active-sx {
+    animation-name: foregrounding-sx;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $screen-xs-max) {
+      animation-name: foregrounding-sx-mob;
+    }
+
+    .inputs-wrap, .sign-in-social {
+      opacity: 1;
+    }
+  }
+
+  .inactive-dx {
+    animation-name: overshadowing-dx;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $screen-xs-max) {
+      animation-name: overshadowing-dx-mob;
+    }
+
+    .inputs-wrap, .sign-in-social {
+      opacity: 0;
+    }
+  }
+
+  .inactive-sx {
+    animation-name: overshadowing-sx;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+
+    @media (max-width: $screen-xs-max) {
+      animation-name: overshadowing-sx-mob;
+    }
+
+    .inputs-wrap, .sign-in-social {
+      opacity: 0;
+    }
+
+    .go-to-button {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.input-row {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 25px;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 9px 10px;
+    color: $blue-dark;
+    @include transition(.2s);
+
+    &:focus,
+    &.active {
+      border-color: $blue-dark;
+
+      + label {
+        top: -14px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #333;
+    @include transition(.2s);
+  }
+}
+
+.sign-in-social {
+  text-align: center;
+  @include transition(.4s .3s);
+
+  &__title {
+    display: block;
+    background: url("../images/repeat-bg.png") repeat-x 50% 50%;
+    margin-bottom: 20px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 22px;
+    }
+    
+    span {
+      display: inline-block;
+      background-color: #fff;
+      padding: 0 10px;
+      font-size: 16px;
+      line-height: 18px;
+      color: $blue-dark;
+    }
+  }
+
+  .social-buttons {
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px;
+      @include transition(.2s);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.enter-form {
+  position: absolute;
+  background: #fff;
+  width: 460px;
+  height: 580px;
+  border-radius: 3px;
+  box-shadow: $bs-hover;
+
+  @media (max-width: $screen-xs-max) {
+    width: 83%;
+    height: 465px;
+  }
+
+  h2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: -70px;
+    margin: 0;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: #fff;
+
+    @media (max-width: $screen-xs-max) {
+      top: -50px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .inputs-wrap {
+    padding: 45px 92px 0 92px;
+    @include transition(.4s .3s);
+
+    @media (max-width: $screen-xs-max) {
+      padding: 20px 20px 0 20px;
+    }
+
+    h3 {
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      color: #333;
+      margin: 0 0 40px 0;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0 0 20px 0;
+        text-align: center;
+      }
+    }
+
+    .forgot-pass {
+      display: inline-block;
+      color: $blue-dark;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      margin: 0 10px 25px 10px;
+      border-bottom: 1px solid $blue-dark;
+      text-decoration: none;
+      @include transition(.2s);
+
+      &:hover {
+        text-decoration: none;
+        border-color: transparent;
+      }
+    }
+
+    .enter-form-button {
+      margin-bottom: 35px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .remember-me-wrap {
+      padding: 0 0 0 10px;
+      margin-bottom: 40px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .hint-wrapper {
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 13px;
+          line-height: 15px;
+        }
+
+        a {
+          color: #333;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reset-pass-wrapper {
+  @include center(both);
+
+  @media (max-height: 650px) {
+    @include reset-position;
+    padding: 120px 0 60px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    @include reset-position;
+    padding: 120px 0 60px 0;
+  }
+  
+  .enter-form {
+    position: relative;
+    height: auto;
+    padding-bottom: 25px;
+
+    @media (max-height: 650px) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 290px;
+      margin: 0 auto;
+    }
+  }
+}
