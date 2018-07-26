@@ -233,6 +233,15 @@
   }
 }
 
+.input-row-button {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 25px;
+  }
+}
+
 .sign-in-social {
   text-align: center;
   @include transition(.4s .3s);
@@ -364,26 +373,26 @@
         margin-bottom: 20px;
       }
     }
+  }
+}
 
-    .hint-wrapper {
-      p {
-        margin: 0;
-        font-size: 14px;
-        line-height: 18px;
+.hint-wrapper {
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
 
-        @media (max-width: $screen-xs-max) {
-          font-size: 13px;
-          line-height: 15px;
-        }
+    @media (max-width: $screen-xs-max) {
+      font-size: 13px;
+      line-height: 15px;
+    }
 
-        a {
-          color: #333;
-          text-decoration: underline;
+    a {
+      color: #333;
+      text-decoration: underline;
 
-          &:hover {
-            text-decoration: none;
-          }
-        }
+      &:hover {
+        text-decoration: none;
       }
     }
   }
