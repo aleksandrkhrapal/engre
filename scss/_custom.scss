@@ -415,7 +415,7 @@ input {
           }
         }
 
-        span {
+        .mdi {
           display: inline-block;
         }
       }
@@ -537,7 +537,7 @@ input {
         display: none;
       }
 
-      span {
+      .mdi {
         display: none;
         color: #fff;
       }
@@ -805,7 +805,7 @@ input {
         display: block;
       }
 
-      span {
+      .mdi {
         display: block;
         @include center(vertical);
         right: 5px;
@@ -854,7 +854,7 @@ input {
     }
   }
 
-  span {
+  .mdi {
     display: block;
     @include center(vertical);
     right: 0;
@@ -919,7 +919,7 @@ input {
         box-shadow: $bs-hover;
       }
 
-      i {
+      .mdi {
         vertical-align: middle;
         margin-left: 10px;
         font-size: 20px;
@@ -1367,7 +1367,7 @@ input {
                 margin-right: 0;
               }
 
-              i {
+              .mdi {
                 display: inline-block;
                 vertical-align: middle;
                 font-size: 25px;
@@ -1416,7 +1416,7 @@ input {
     text-decoration: none;
 
     &:hover, &.active {
-      i {
+      .mdi {
         color: $blue-dark;
       }
 
@@ -1426,7 +1426,7 @@ input {
       }
     }
 
-    i {
+    .mdi {
       display: inline-block;
       vertical-align: middle;
       font-style: normal;
@@ -1811,7 +1811,7 @@ input {
     margin-right: 15px;
     @include transition(.2s);
 
-    i {
+    .mdi {
       @include center(both);
       color: #fff;
       font-size: 24px;

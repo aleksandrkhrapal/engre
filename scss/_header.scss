@@ -60,7 +60,7 @@
         &:hover {
           text-decoration: none;
 
-          i {
+          .mdi {
             .circle-plus {
               circle {
                 stroke-opacity: 1;
@@ -72,7 +72,7 @@
           }
         }
 
-        i {
+        .mdi {
           display: block;
           color: #fff;
           font-size: 19px;
@@ -105,7 +105,7 @@
           }
         }
 
-        span {
+        .start-text {
           display: block;
           font-size: 16px;
           line-height: 18px;
@@ -267,7 +267,7 @@
             margin-top: 2px;
           }
 
-          i {
+          .mdi {
             position: absolute;
             top: 0;
             right: 0;
@@ -363,7 +363,7 @@
             }
           }
 
-          i {
+          .mdi {
             color: #fff;
             font-size: 24px;
             line-height: 24px;
@@ -399,7 +399,7 @@
               margin-bottom: 20px;
             }
 
-            span {
+            .name {
               display: block;
               font-size: 18px;
               line-height: 20px;

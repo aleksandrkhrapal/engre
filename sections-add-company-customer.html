@@ -45,7 +45,7 @@
 						<a href="about-us.html">About Engre</a>
 						<a href="#">Intellectual services</a>
 						<a href="news.html">What's new?</a>
-						<a href="blog.html" class="active">Blog</a>
+						<a href="blog.html">Blog</a>
 						<a href="edu.html">EDU</a>
 						<a href="partnership.html">Partnership</a>
 						<a href="careers.html">Careers</a>
@@ -64,7 +64,7 @@
 					</div>
 					<div class="profile-wrapper">
 						<div class="dropdown dropdown-profile">
-							<span class="profile-icon" data-toggle="dropdown">
+							<span class="profile-icon notification" data-toggle="dropdown">
 								<span class="mdi mdi-account-circle"></span>
 							</span>
 							<div class="dropdown-menu dropdown-menu-right">
@@ -100,44 +100,131 @@
 			</div>
 		</header>
 		<main>
-			<section class="section-top">
-				<div class="wrapper">
-					<div class="title-wrap">
-						<span>Blog</span>
+			<div class="setting-wrapper">
+				<div class="settings-section">
+					<div class="heading-title">
+						<div class="wrapper">
+							<h2>My Stuff customer</h2>
+						</div>
 					</div>
-					<div class="categories-wrapper d-flex justify-content-between align-items-center">
-						<div class="categories-list d-flex justify-content-between align-items-end">
-							<div class="category-active">
+					<div class="wrapper">
+						<div class="categories-wrapper d-flex justify-content-between align-items-center">
+							<div class="categories-list d-flex justify-content-between align-items-end">
+								<div class="category-active-mobile">
+									<a href="#">Company <span class="mdi mdi-menu-down"></span></a>
+								</div>
+								<div class="category-active">
 
-								<span class="mdi mdi-menu-down"></span>
-							</div>
-							<div class="categories-dropdown">
-								<a href="blog.html">All</a>
-								<a href="blog-category.html">Analytics</a>
-								<a href="#">Industry events</a>
-								<a href="#">Industry articles</a>
-								<a href="#">World articles</a>
-								<a href="#">Site communities</a>
-								<a href="blog-ask.html" class="active">Ask a question</a>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="categories-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Notifications</a>
+									<a href="#" class="active">Company</a>
+									<a href="#">Projects</a>
+									<a href="#">Chat</a>
+									<a href="#">Membership</a>
+									<a href="#">Contract & Documents</a>
+								</div>
 							</div>
 						</div>
-						<div class="search-wrap d-flex justify-content-between align-items-center">
-							<div class="search-input-wrap">
-								<input type="search" placeholder="Search...">
+						<div class="settings-user-info d-flex flex-row justify-content-between align-items-center">
+							<span><i>Active </i>2 projects</span>
+							<span><i>Joined </i>Mar 2018</span>
+						</div>
+
+						<div class="settings-holder">
+							<div class="back-wrapper position-top-left">
+								<span class="back-icon">
+									<span class="mdi mdi-arrow-left"></span>
+								</span>
+								<mark>Create Company</mark>
 							</div>
-							<span class="mdi mdi-magnify search-button"></span>
+							<div class="profile-holder">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="upload-wrapper">
+											<span>Your photo</span>
+											<div class="upload-input">
+												<input type="file">
+												<i>Choose photo from your computer</i>
+											</div>
+											<i class="text-hint">JPEG, PNG, GIF, or BMP • 50MB file limit</i>
+										</div>
+										<div class="upload-wrapper">
+											<span>Video Company</span>
+											<div class="upload-input">
+												<input type="file">
+												<i>Choose a video from your computer</i>
+											</div>
+											<i class="text-hint">avi, mov, mp4 • 100MB file limit</i>
+											<input type="text" placeholder="Or link" class="input-link">
+										</div>
+										<div class="upload-wrapper">
+											<span>Document</span>
+											<div class="upload-input">
+												<input type="file">
+												<i>Choose a pdf from your computer</i>
+											</div>
+											<i class="text-hint">PDF• 20MB file limit</i>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="input-row">
+													<input type="text" id="id-input1">
+													<label for="id-input1">Name</label>
+													<i class="text-hint">Your name is displayed on your profile.</i>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="input-row">
+													<input type="text" id="id-input2">
+													<label for="id-input2">Location</label>
+													<i class="text-hint">E.g. Brooklyn, NY</i>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="input-row">
+													<input type="email" id="id-input3" value="test@gmail.com" class="active">
+													<label for="id-input3">Email</label>
+													<i class="text-hint">Can not be changed</i>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="input-row">
+													<input type="text" id="id-input4">
+													<label for="id-input4">Time zone</label>
+													<i class="text-hint">Most time zones are automatically adjusted for you. We'll use this setting for emails.</i>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-row">
+													<textarea id="id-input5"></textarea>
+													<label for="id-input5">Biography</label>
+													<i class="text-hint">We suggest a short bio. If it's 300 characters or less it'll look great on your profile.</i>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<button type="submit" class="button-styles light-blue">
+													Create profile <span class="mdi mdi-content-save"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="blog-ask-section">
-				<div class="wrapper">
-					<div class="row">
-						<div class="col-lg-3">123</div>
-						<div class="col-lg-9">123</div>
-					</div>
-				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">

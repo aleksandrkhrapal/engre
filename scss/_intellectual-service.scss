@@ -310,7 +310,7 @@
       background-color: #798794;
     }
 
-    span {
+    .mdi {
       @include center(both);
       color: #fff;
       font-size: 25px;
@@ -344,7 +344,7 @@
       background-color: #39bfeb;
     }
 
-    span {
+    .mdi {
       margin-left: 5px;
     }
   }

@@ -63,7 +63,7 @@
         vertical-align: middle;
         margin: 0 3px;
 
-        i {
+        .mdi {
           font-size: 22px;
           line-height: 18px;
           color: #fff;
@@ -101,12 +101,12 @@
       }
       
       &:hover {
-        i, mark {
+        .mdi, mark {
           color: $yellow;
         }
       }
 
-      i {
+      .mdi {
         display: inline-block;
         vertical-align: middle;
         color: #fff;
