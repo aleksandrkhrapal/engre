@@ -1006,7 +1006,7 @@ input {
           margin-bottom: 0;
         }
 
-        span {
+        .mdi {
           display: block;
           font-size: 22px;
           line-height: 22px;
@@ -1465,7 +1465,7 @@ input {
       padding: 20px 15px;
     }
 
-    span {
+    > span {
       display: block;
       font-size: 18px;
       line-height: 20px;
@@ -1497,15 +1497,17 @@ input {
           margin-bottom: 15px;
         }
 
-        span {
+        mark {
           display: block;
           font-size: 16px;
           line-height: 18px;
           font-weight: 700;
           color: $blue-dark;
           margin-right: 5px;
+          background: none;
+          padding: 0;
 
-          i {
+          .mdi {
             vertical-align: middle;
             font-size: 25px;
             line-height: 25px;
@@ -1519,7 +1521,7 @@ input {
             display: inline-block;
             vertical-align: middle;
 
-            i {
+            .mdi {
               display: block;
               color: #99a9b8;
               font-size: 25px;
@@ -1637,8 +1639,7 @@ input {
           height: 25px;
         }
 
-        i {
-
+        .mdi {
           color: #fff;
           font-size: 20px;
           line-height: 50px;
@@ -1705,7 +1706,7 @@ input {
     margin-bottom: 10px;
 
     &[aria-expanded="true"] {
-      span {
+      mark {
         &.plus {
           display: none;
         }
@@ -1717,7 +1718,7 @@ input {
     }
 
     &[aria-expanded="false"] {
-      span {
+      mark {
         &.plus {
           display: block;
         }
@@ -1728,14 +1729,16 @@ input {
       }
     }
 
-    span {
+    mark {
+      padding: 0;
+      background: none;
       font-size: 16px;
       line-height: 18px;
       font-weight: 700;
       color: #99a9b8;
       cursor: pointer;
 
-      i {
+      .mdi {
         font-size: 23px;
         line-height: 23px;
         position: relative;

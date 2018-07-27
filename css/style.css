@@ -10,7 +10,7 @@
     background-color: #fff;
     padding: 15px 40px 15px 20px;
     border-radius: 8px 8px 0 0; }
-    .reviews-modal .modal-dialog .modal-heading .modal-title span {
+    .reviews-modal .modal-dialog .modal-heading .modal-title .mdi {
       display: inline-block;
       vertical-align: middle;
       font-size: 24px;
@@ -90,7 +90,7 @@
           margin-bottom: 10px; } }
   .review-block .review-content-wrap .review-content-top {
     margin-bottom: 20px; }
-    .review-block .review-content-wrap .review-content-top span {
+    .review-block .review-content-wrap .review-content-top .mdi {
       display: block;
       color: #808080;
       font-size: 45px;
@@ -3677,18 +3677,18 @@ input {
           margin-bottom: 30px; }
         .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .input-row {
           margin-bottom: 0; }
-        .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row span {
+        .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .mdi {
           display: block;
           font-size: 22px;
           line-height: 22px;
           cursor: pointer;
           width: 22px;
           margin-left: 15px; }
-          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row span.edit {
+          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .mdi.edit {
             color: #0d47a1; }
-          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row span.delete {
+          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .mdi.delete {
             color: #f33; }
-          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row span.add {
+          .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .mdi.add {
             color: #4fc5eb; }
         .more-filters-wrapper .more-filter-dropdown .dropdown-menu .save-filter-row .filter-name {
           display: block;
@@ -3997,7 +3997,7 @@ input {
     @media (max-width: 575px) {
       .comments-section__header {
         padding: 20px 15px; } }
-    .comments-section__header span {
+    .comments-section__header > span {
       display: block;
       font-size: 18px;
       line-height: 20px;
@@ -4019,14 +4019,16 @@ input {
       @media (max-width: 575px) {
         .comments-section__body .comment-row .comment-row-header .col-left {
           margin-bottom: 15px; } }
-      .comments-section__body .comment-row .comment-row-header .col-left span {
+      .comments-section__body .comment-row .comment-row-header .col-left mark {
         display: block;
         font-size: 16px;
         line-height: 18px;
         font-weight: 700;
         color: #0d47a1;
-        margin-right: 5px; }
-        .comments-section__body .comment-row .comment-row-header .col-left span i {
+        margin-right: 5px;
+        background: none;
+        padding: 0; }
+        .comments-section__body .comment-row .comment-row-header .col-left mark .mdi {
           vertical-align: middle;
           font-size: 25px;
           line-height: 25px;
@@ -4035,7 +4037,7 @@ input {
       .comments-section__body .comment-row .comment-row-header .col-left .likes-wrap a {
         display: inline-block;
         vertical-align: middle; }
-        .comments-section__body .comment-row .comment-row-header .col-left .likes-wrap a i {
+        .comments-section__body .comment-row .comment-row-header .col-left .likes-wrap a .mdi {
           display: block;
           color: #99a9b8;
           font-size: 25px;
@@ -4114,12 +4116,12 @@ input {
       .comment-answer-area .comment-answer .edit-buttons-wrap .edit-button {
         width: 25px;
         height: 25px; } }
-    .comment-answer-area .comment-answer .edit-buttons-wrap .edit-button i {
+    .comment-answer-area .comment-answer .edit-buttons-wrap .edit-button .mdi {
       color: #fff;
       font-size: 20px;
       line-height: 50px; }
       @media (max-width: 575px) {
-        .comment-answer-area .comment-answer .edit-buttons-wrap .edit-button i {
+        .comment-answer-area .comment-answer .edit-buttons-wrap .edit-button .mdi {
           font-size: 15px;
           line-height: 25px; } }
   .comment-answer-area .comment-answer .comment-answer-textarea {
@@ -4163,21 +4165,23 @@ input {
   margin: 20px 0; }
   .comment-branch .comment-branch-header {
     margin-bottom: 10px; }
-    .comment-branch .comment-branch-header[aria-expanded="true"] span.plus {
+    .comment-branch .comment-branch-header[aria-expanded="true"] mark.plus {
       display: none; }
-    .comment-branch .comment-branch-header[aria-expanded="true"] span.minus {
+    .comment-branch .comment-branch-header[aria-expanded="true"] mark.minus {
       display: block; }
-    .comment-branch .comment-branch-header[aria-expanded="false"] span.plus {
+    .comment-branch .comment-branch-header[aria-expanded="false"] mark.plus {
       display: block; }
-    .comment-branch .comment-branch-header[aria-expanded="false"] span.minus {
+    .comment-branch .comment-branch-header[aria-expanded="false"] mark.minus {
       display: none; }
-    .comment-branch .comment-branch-header span {
+    .comment-branch .comment-branch-header mark {
+      padding: 0;
+      background: none;
       font-size: 16px;
       line-height: 18px;
       font-weight: 700;
       color: #99a9b8;
       cursor: pointer; }
-      .comment-branch .comment-branch-header span i {
+      .comment-branch .comment-branch-header mark .mdi {
         font-size: 23px;
         line-height: 23px;
         position: relative;

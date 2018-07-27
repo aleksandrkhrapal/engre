@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('.video-bg').click();
 
     $(".dropdown-select-lang .dropdown-menu a").click(function () {
-        $(".selected-lang").html($(this).text() + ' <i class="mdi mdi-chevron-down"></i>');
+        $(".selected-lang").html($(this).text() + ' <span class="mdi mdi-chevron-down"></span>');
 
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
