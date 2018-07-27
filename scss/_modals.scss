@@ -364,3 +364,25 @@
     }
   }
 }
+
+.modal-dialog-email {
+  box-shadow: none !important;
+  width: 275px;
+
+  .modal-content {
+    border-radius: 3px;
+  }
+}
+
+.invite-email {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #666;
+  border: none;
+  outline: none;
+}

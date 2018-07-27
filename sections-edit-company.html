@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -141,35 +142,43 @@
 									<div class="col-md-4">
 										<div class="upload-wrapper">
 											<span>Logo Company</span>
-											<div class="upload-input">
-												<input type="file">
-												<i>Choose photo from your computer</i>
+											<div class="uploaded-img-company">
+												<img src="images/review-logo1.png" alt="">
 											</div>
-											<i class="text-hint">JPEG, PNG, GIF, or BMP • 50MB file limit</i>
+											<div class="edit-photo-button">
+												<span class="mdi mdi-pencil"></span>
+												<i>Edit photo</i>
+											</div>
 										</div>
 										<div class="upload-wrapper">
 											<span>Video Company</span>
-											<div class="upload-input">
-												<input type="file">
-												<i>Choose a video from your computer</i>
+											<div class="uploaded-documents">
+												<span class="mdi mdi-youtube"></span>
+												<span class="doc-name">verylongnamevideofile.mp4</span>
+												<span class="mdi mdi-delete delete"></span>
 											</div>
-											<i class="text-hint">avi, mov, mp4 • 100MB file limit</i>
-											<input type="text" placeholder="Or link" class="input-link">
+										</div>
+										<div class="upload-wrapper">
+											<span>Link</span>
+											<div class="uploaded-documents">
+												<span class="doc-name">https://youtu.be/iyeAOe1Yqcc</span>
+												<span class="mdi mdi-delete delete"></span>
+											</div>
 										</div>
 										<div class="upload-wrapper">
 											<span>Document</span>
-											<div class="upload-input">
-												<input type="file">
-												<i>Choose a pdf from your computer</i>
+											<div class="uploaded-documents">
+												<span class="mdi mdi-youtube"></span>
+												<span class="doc-name">opentech-doc.pdf</span>
+												<span class="mdi mdi-delete delete"></span>
 											</div>
-											<i class="text-hint">PDF• 20MB file limit</i>
 										</div>
 									</div>
 									<div class="col-md-8">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="input-row">
-													<input type="text" id="id-input1">
+													<input type="text" id="id-input1" class="active" value="Opentech">
 													<label for="id-input1">Name of company</label>
 													<i class="text-hint">Company name is displayed on site.</i>
 												</div>
@@ -177,9 +186,9 @@
 											<div class="col-md-6">
 												<div class="input-row">
 													<div class="dropdown dropdown-select dropdown-select-location">
-														<div class="selected-wrap" data-toggle="dropdown">
+														<div class="selected-wrap active" data-toggle="dropdown">
 															<span class="label">Location</span>
-															<span class="selected-item"></span>
+															<span class="selected-item">Madrid, Spain</span>
 															<span class="mdi mdi-magnify select-search-button"></span>
 														</div>
 														<div class="dropdown-menu">
@@ -249,9 +258,9 @@
 											<div class="col-md-6">
 												<div class="input-row">
 													<div class="dropdown dropdown-select">
-														<div class="selected-wrap" data-toggle="dropdown">
+														<div class="selected-wrap active" data-toggle="dropdown">
 															<span class="label">Time zone</span>
-															<span class="selected-item"></span>
+															<span class="selected-item">(GMT-05:00) Eastern Time </span>
 															<span class="mdi mdi-menu-down"></span>
 														</div>
 														<div class="dropdown-menu">
@@ -274,9 +283,9 @@
 											<div class="col-md-6">
 												<div class="input-row">
 													<div class="dropdown dropdown-select">
-														<div class="selected-wrap" data-toggle="dropdown">
+														<div class="selected-wrap active" data-toggle="dropdown">
 															<span class="label">Type of ownership</span>
-															<span class="selected-item"></span>
+															<span class="selected-item">FLP</span>
 															<span class="mdi mdi-menu-down"></span>
 														</div>
 														<div class="dropdown-menu">
@@ -296,7 +305,7 @@
 											</div>
 											<div class="col-md-6">
 												<div class="input-row">
-													<input type="date" id="id-input4">
+													<input type="date" id="id-input4" class="active" value="2018-07-22">
 													<label for="id-input4">Date creation</label>
 													<span class="mdi mdi-calendar-range"></span>
 												</div>
@@ -306,9 +315,9 @@
 											<div class="col-md-6">
 												<div class="input-row">
 													<div class="dropdown dropdown-select">
-														<div class="selected-wrap" data-toggle="dropdown">
+														<div class="selected-wrap active" data-toggle="dropdown">
 															<span class="label">Industry</span>
-															<span class="selected-item"></span>
+															<span class="selected-item">Design</span>
 															<span class="mdi mdi-menu-down"></span>
 														</div>
 														<div class="dropdown-menu">
@@ -329,9 +338,9 @@
 											<div class="col-md-6">
 												<div class="input-row">
 													<div class="dropdown dropdown-select">
-														<div class="selected-wrap" data-toggle="dropdown">
+														<div class="selected-wrap active" data-toggle="dropdown">
 															<span class="label">Sub industry</span>
-															<span class="selected-item"></span>
+															<span class="selected-item">Airplane</span>
 															<span class="mdi mdi-menu-down"></span>
 														</div>
 														<div class="dropdown-menu">
@@ -353,7 +362,7 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="input-row">
-													<textarea id="id-input5"></textarea>
+													<textarea id="id-input5" class="active">Analyst. Problem solver. Wannabe gamer. Lifelong zombie nerd. Professional student. Troublemaker.</textarea>
 													<label for="id-input5">Biography</label>
 													<i class="text-hint">We suggest a short bio. If it's 300 characters or less it'll look great on your profile.</i>
 												</div>
@@ -380,11 +389,17 @@
 															</div>
 														</div>
 													</div>
+													<div class="selected-langs">
+														<span class="lang">En <span class="mdi mdi-close"></span></span>
+														<span class="lang">Sp <span class="mdi mdi-close"></span></span>
+														<span class="lang">Fr <span class="mdi mdi-close"></span></span>
+														<span class="lang">Ua <span class="mdi mdi-close"></span></span>
+													</div>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="input-row">
-													<input type="text" id="id-input6">
+													<input type="text" id="id-input6" class="active" value="opentech.com">
 													<label for="id-input6">Website</label>
 													<i class="text-hint">Company site.</i>
 												</div>

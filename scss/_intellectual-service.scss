@@ -390,15 +390,17 @@
 .is-project-image {
   position: relative;
   margin-bottom: 50px;
-  border-radius: 8px;
   background: #000;
   overflow: hidden;
 
   @media (max-width: $screen-xs-max) {
     margin-bottom: 20px;
+    background: none;
   }
 
   img {
+    border-radius: 3px;
+
     @media (max-width: $screen-xs-max) {
       margin-bottom: 15px;
     }
