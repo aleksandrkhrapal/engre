@@ -83,6 +83,13 @@
   background-color: #fff;
   box-shadow: $bs-default;
   position: relative;
+
+  &.settings-remove-bg-mobile {
+    @media (max-width: $screen-sm-max) {
+      background: none;
+      padding: 0;
+    }
+  }
 }
 
 .notifications-setting-top {
@@ -125,7 +132,7 @@
   padding: 15px 0;
   margin-bottom: 15px;
   @include transition(.2s);
-  
+
   &:hover {
     text-decoration: none;
     color: #fff;
@@ -183,7 +190,7 @@
       }
 
       &:hover {
-       box-shadow: $bs-hover;
+        box-shadow: $bs-hover;
 
         .category-col__info {
           h4 {
@@ -213,12 +220,12 @@
           @include transition(.2s);
         }
 
-         p {
-           font-size: 16px;
-           line-height: 1.5;
-           font-weight: 300;
-           text-align: justify;
-         }
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          font-weight: 300;
+          text-align: justify;
+        }
 
         .subscribe-button-wrap {
           text-align: center;
@@ -234,7 +241,7 @@
             font-weight: 700;
             text-decoration: none;
             @include transition(.2s);
-            
+
             &:hover,
             &.subscribed {
               background-color: $red;
@@ -357,7 +364,7 @@
   position: relative;
   white-space: nowrap;
   padding: 12px 10px;
-  
+
   &:after {
     content: '';
     display: block;
@@ -467,10 +474,37 @@
 }
 
 .add-company-wrapper {
-  padding: 140px 15px;
+  padding: 100px 15px;
 
   @media (max-width: $screen-xs-max) {
     padding: 50px 15px;
+  }
+}
+
+.add-company-hint {
+  text-align: center;
+  margin-bottom: 30px;
+
+  span {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+  }
+}
+
+.read-more-info {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: $blue-dark;
+  border-bottom: 1px solid $blue-dark;
+  @include transition(.2s);
+
+  &:hover {
+    text-decoration: none;
+    border-color: transparent;
   }
 }
 
@@ -561,5 +595,160 @@
     line-height: 14px;
     font-weight: 300;
     color: $blue-dark;
+  }
+}
+
+.reviews-wrap {
+  padding: 30px 30px 0 30px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 0;
+  }
+
+  .review-block {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: $bs-default;
+    padding: 20px 20px 20px 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    [class*='col-'] {
+      position: initial;
+    }
+
+    .status {
+      @include center(vertical);
+      left: 0;
+      width: 4px;
+      height: 40px;
+      border-radius: 0 10px 10px 0;
+
+      &.grey {
+        background-color: #e9eff5;
+      }
+
+      &.red {
+        background-color: $red;
+      }
+
+      &.blue {
+        background-color: #4cc3e9;
+      }
+
+      &.yellow {
+        background-color: $yellow;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: 300;
+    }
+
+    mark {
+      display: inline-block;
+      background: none;
+      padding: 0;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+
+      @media (max-width: $screen-sm-max) {
+        margin-bottom: 10px;
+      }
+
+      &.project-name {
+        white-space: nowrap;
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        @media (max-width: $screen-sm-max) {
+          white-space: normal;
+          display: inline-block;
+          overflow: inherit;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 30px;
+          background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
+
+          @media (max-width: $screen-sm-max) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .review-controls {
+      @media (max-width: $screen-sm-max) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .mdi {
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &.inprocess {
+          color: #4fc5eb;
+          cursor: inherit;
+        }
+        
+        &.finished {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-top-right {
+  .dropdown-menu {
+    transform: translate3d(-97px, -42px, 0px) !important;
+    text-align: right;
+
+    @media (max-width: $screen-sm-max) {
+      transform: translate3d(- 108px, - 30px, 0px) !important;
+    }
+  }
+}
+
+.reviews-search-wrap {
+  background-color: #f1f5f8;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: $bs-hover;
+
+  .review-search-block {
+    background: #fff;
+    box-shadow: $bs-default;
+    padding: 30px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .is-project-row {
+      margin: 0;
+
+      .is-row-img {
+        box-shadow: none;
+      }
+    }
   }
 }
