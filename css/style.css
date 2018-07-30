@@ -239,7 +239,7 @@
     .career-modal-dialog {
       margin: 30px auto; } }
   .career-modal-dialog .modal-content {
-    padding: 75px 90px; }
+    padding: 35px 90px; }
     @media (max-width: 575px) {
       .career-modal-dialog .modal-content {
         padding: 50px 30px; } }
@@ -255,6 +255,17 @@
       left: 0;
       width: 100%;
       text-align: center; }
+    .career-modal-dialog .modal-content mark {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      color: #0d47a1;
+      padding: 0;
+      margin-bottom: 30px;
+      background: none; }
     .career-modal-dialog .modal-content .input-row-button input {
       min-width: initial;
       width: 100%; }
@@ -1007,6 +1018,17 @@
       font-size: 0; }
       .input-row input[type='date']:focus, .input-row input[type='date'].active, .input-row textarea[type='date']:focus, .input-row textarea[type='date'].active {
         font-size: 18px; }
+    .input-row input.file, .input-row textarea.file {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 10;
+      cursor: pointer; }
+      .input-row input.file:hover + .repeat-icon-text i, .input-row textarea.file:hover + .repeat-icon-text i {
+        border-color: transparent; }
   .input-row > .mdi {
     position: absolute;
     top: 11px;
@@ -3491,6 +3513,8 @@ input {
       color: #fff;
       margin-right: 20px;
       position: relative; }
+      .categories-wrapper .categories-list a:hover {
+        text-decoration: none; }
       @media (max-width: 575px) {
         .categories-wrapper .categories-list a {
           display: block;
@@ -4480,5 +4504,26 @@ input {
             .dropdown-select .dropdown-menu .dropdown-list-wrapper .dropdown-list .dropdown-list-row a.active {
               font-weight: 700;
               color: #0d47a1; }
+
+.repeat-icon-text {
+  white-space: nowrap; }
+  .repeat-icon-text:hover i {
+    border-color: transparent; }
+  .repeat-icon-text .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0d47a1;
+    font-size: 35px;
+    margin-left: -11px; }
+  .repeat-icon-text i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #0d47a1;
+    font-style: normal;
+    border-bottom: 1px solid #0d47a1;
+    transition: all 0.2s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */
