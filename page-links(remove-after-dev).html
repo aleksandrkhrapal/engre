@@ -204,10 +204,13 @@
 						<a href="is-customer.html" target="_blank">Интеллектуальные услуги заказчик</a>
 					</li>
 					<li>
-						<a href="settings-notifiactions.html" target="_blank">Настройки уведомления</a>
+						<a href="settings-notifications-customer.html" target="_blank">Настройки уведомления заказчик</a>
 					</li>
 					<li>
-						<a href="settings-notifiactions-pm.html" target="_blank">Настройки уведомления ПМ</a>
+						<a href="settings-notifications-contractor.html" target="_blank">Настройки уведомления исполнитель</a>
+					</li>
+					<li>
+						<a href="settings-notifications-pm.html" target="_blank">Настройки уведомления ПМ</a>
 					</li>
 					<li>
 						<a href="settings-profile-edit.html" target="_blank">Настройки редактирования профиля</a>
@@ -265,6 +268,19 @@
 			<!-- rad-remove after dev -->
 		</main>
 		<footer class="main-footer">
+			<div class="callback-wrap">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="input-row">
+							<input type="tel" id="id-tel">
+							<label for="id-tel">Your phone</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<input type="submit" class="btn-site" value="Call me">
+					</div>
+				</div>
+			</div>
 			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
 				<div class="footer-wrapper__col">
 					<span>© 2018 Marketplace Inc. <a href="#">Terms</a></span>
@@ -285,7 +301,7 @@
 						<span class="mdi mdi-phone"></span>
 						<mark>00 1 206-266-2992</mark>
 					</a>
-					<a href="#" class="footer-block">
+					<a href="#" class="footer-block footer-callback-button">
 						<span class="mdi mdi-phone-forward"></span>
 						<mark>Call back</mark>
 					</a>
