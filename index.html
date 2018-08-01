@@ -187,5 +187,22 @@
 		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/lib/slick.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+
+		<script>
+            // footer callback div
+            $('.footer-callback-button').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.callback-wrap').toggleClass('active');
+
+                $(document).one('click', function closeMenu(e) {
+                    if ($('.callback-wrap').has(e.target).length === 0) {
+                        $('.callback-wrap').removeClass('active');
+                    } else {
+                        $(document).one('click', closeMenu);
+                    }
+                });
+            });
+		</script>
 	</body>
 </html>

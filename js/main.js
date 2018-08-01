@@ -233,4 +233,53 @@ $(document).ready(function () {
             }
         });
     });
+
+    // contract effects
+    $('.show-hide-button').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+
+        if ($('.columns-wrap').hasClass('active')) {
+            $('.columns-wrap').removeClass('active');
+        } else {
+            $('.columns-wrap').addClass('active');
+        }
+    });
+
+    $('.col-doc').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+
+        if ($('.doc-details').hasClass('show')) {
+            $('.doc-details').removeClass('show');
+        } else {
+            $('.doc-details').addClass('show');
+        }
+    });
+
+    $('.doc-detail-close').on('click', function (e) {
+        e.preventDefault();
+        $('.doc-details').removeClass('show');
+        $('.col-doc').removeClass('active');
+    });
+
+    if ($(window).width() < 1100) {
+        $('.doc-project').on('click', function (e) {
+            e.preventDefault();
+
+            if ($('.columns-wrap').hasClass('active')) {
+                $('.columns-wrap').removeClass('active');
+            } else {
+                $('.columns-wrap').addClass('active');
+            }
+        });
+    }
 });

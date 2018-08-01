@@ -281,9 +281,9 @@
   letter-spacing: 0.5px;
   position: relative;
   text-align: center;
-  border: none;
   outline: none !important;
   cursor: pointer;
+  border: 2px solid transparent;
   @include transition(.2s);
 
   @media (max-width: $screen-lg-max) {
@@ -331,6 +331,17 @@
 
     &:hover {
       background-color: #ffca3d;
+    }
+  }
+
+  &.invert-light-blue {
+    color: #4fc5eb;
+    background-color: transparent;
+    border: 2px solid #4fc5eb;
+
+    &:hover {
+      background-color: #39bfeb;
+      color: #fff;
     }
   }
 

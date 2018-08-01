@@ -198,6 +198,14 @@
     margin-bottom: 25px;
   }
 
+  .select-search-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   input, textarea {
     display: block;
     width: 100%;
@@ -216,11 +224,13 @@
     &:focus,
     &.active {
       border-color: $blue-dark;
+      cursor: auto;
 
       + label {
         top: -14px;
         font-size: 14px;
         line-height: 16px;
+        cursor: auto;
       }
     }
 
@@ -231,6 +241,10 @@
       &.active  {
         font-size: 18px;
       }
+    }
+
+    &[type='search'] {
+      padding: 9px 25px 9px 10px;
     }
 
     &.file {
