@@ -940,7 +940,22 @@
           font-weight: 700;
           color: #333;
           min-height: 40px;
-          margin-bottom: 10px;
+          margin-bottom: 2px;
+          padding-right: 15px;
+        }
+
+        mark {
+          display: block;
+          padding: 0;
+          background: none;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 300;
+
+          span {
+            display: block;
+            font-weight: 700;
+          }
         }
 
         .dropdown {
@@ -1003,6 +1018,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+    padding-right: 20px;
   }
 
   .doc-details-name {
@@ -1112,6 +1128,11 @@
 }
 
 .menu-wrap {
+  @media (max-width: $screen-xs-max) {
+    white-space: nowrap;
+    overflow: auto;
+  }
+
   a {
     display: inline-block;
     vertical-align: middle;
