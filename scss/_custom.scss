@@ -180,6 +180,76 @@ input[type=date]::-webkit-inner-spin-button {
   }
 }
 
+// radio buttons styles
+.radio-button {
+  display: inline-block;
+  vertical-align: middle;
+
+  input {
+    display: none;
+    
+    &:checked {
+      + label {
+        .radio-circle {
+          border-color: $blue-light;
+
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        
+        i {
+          color: $blue-light;
+        }
+      }
+    }
+  }
+
+  label {
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+
+    .radio-circle {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: 2px solid #99a9b8;
+      position: relative;
+      @include transition(.3s);
+
+      &:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $blue-light;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        @include center(both);
+        @include transition(.3s);
+      }
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.5px;
+      color: #99a9b8;
+      @include transition(.3s);
+    }
+  }
+}
+
 input {
   background: none;
 }
@@ -854,6 +924,18 @@ input {
         }
       }
     }
+  }
+}
+
+.repeat-title18 {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
   }
 }
 
@@ -1783,7 +1865,7 @@ input {
 .dropdown-menu {
   box-shadow: $bs-hover;
   border: none;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 10px 20px;
   margin-top: 10px;
 
@@ -1799,6 +1881,35 @@ input {
     &:hover {
       color: $blue-dark;
       background: none;
+    }
+
+    &:before {
+      display: inline-block;
+      font: normal normal normal 24px/1 "Material Design Icons";
+      font-size: 22px;
+      line-height: 22px;
+      text-rendering: auto;
+      position: absolute;
+      top: 7px;
+      left: -5px;
+    }
+
+    &.finished {
+      color: $red;
+
+      &:before {
+        content: "\F23C";
+        color: $red;
+      }
+    }
+
+    &.start {
+      color: $blue-light;
+
+      &:before {
+        content: "\F23C";
+        color: $blue-light;
+      }
     }
   }
 }
