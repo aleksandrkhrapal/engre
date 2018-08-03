@@ -1434,3 +1434,43 @@
     margin-bottom: 15px;
   }
 }
+
+.chat-wrap {
+  min-height: 750px;
+  border-radius: 3px;
+
+  .chat-list {
+    box-shadow: $bs-hover;
+    width: 50%;
+    background-color: #f1f5f8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .chat-holder-sections {
+    width: 50%;
+  }
+}
+
+.chat-holder {
+  background-color: #f1f5f8;  
+}
+
+.chat-header {
+  background-color: #fff;
+  padding: 30px;
+  min-height: 80px;
+}
+
+.chat-list-body {
+  padding: 40px 30px;
+  overflow: auto;
+  height: calc(100% - 80px);
+}
+
+.chat-text-bold18 {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
