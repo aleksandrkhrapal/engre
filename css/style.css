@@ -835,11 +835,15 @@
 
 .video-bg {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   z-index: -1; }
+  @media (max-width: 1199px) {
+    .video-bg {
+      display: none; } }
 
 @media (max-width: 575px) {
   .homepage-main-wrapper {
@@ -852,7 +856,11 @@
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 100px 15px;
-  width: 1010px; }
+  width: 1010px;
+  display: none; }
+  @media (max-width: 1199px) {
+    .hp-main-text {
+      display: block; } }
   @media (max-width: 1024px) {
     .hp-main-text {
       width: 100%; } }
@@ -3785,6 +3793,16 @@ input::-webkit-calendar-picker-indicator {
 input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none; }
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
 
 .btn-site {
   display: inline-block;
