@@ -752,6 +752,11 @@
     @media (max-width: $screen-sm-max) {
       transform: translate3d(- 108px, - 30px, 0px) !important;
     }
+
+    &.dropdown-menu-position0 {
+      left: 0 !important;
+      top: 0 !important;
+    }
   }
 }
 

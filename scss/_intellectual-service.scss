@@ -101,27 +101,6 @@
     box-shadow: $bs-hover;
   }
 
-  .is-row-top {
-    margin-bottom: 35px;
-
-    @media (max-width: $screen-xs-max) {
-      margin-bottom: 25px;
-    }
-
-    .is-col {
-      span {
-        font-size: 16px;
-        line-height: 18px;
-      }
-    }
-
-    .is-row-info {
-      @media (max-width: $screen-xs-max) {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
   .is-row-description {
     margin-bottom: 30px;
 
@@ -143,6 +122,27 @@
       @media (max-width: $screen-xs-max) {
         line-height: 24px;
       }
+    }
+  }
+}
+
+.is-row-top {
+  margin-bottom: 35px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 25px;
+  }
+
+  .is-col {
+    span {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .is-row-info {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
     }
   }
 }
@@ -283,7 +283,7 @@
   text-align: center;
   outline: none !important;
   cursor: pointer;
-  border: 2px solid transparent;
+  //border: 2px solid transparent;
   @include transition(.2s);
 
   @media (max-width: $screen-lg-max) {
@@ -337,7 +337,7 @@
   &.invert-light-blue {
     color: #4fc5eb;
     background-color: transparent;
-    border: 2px solid #4fc5eb;
+    box-shadow: 0 0 0 2px $blue-lightgit stat inset;
 
     &:hover {
       background-color: #39bfeb;
@@ -403,6 +403,7 @@
   margin-bottom: 50px;
   background: #000;
   overflow: hidden;
+  border-radius: 3px;
 
   @media (max-width: $screen-xs-max) {
     margin-bottom: 20px;
