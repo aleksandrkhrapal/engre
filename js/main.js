@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
     // input focus
-    $('.input-row input, .input-row textarea').on('change', function () {
+    $('.input-row input, .input-row textarea, .chat-search input').on('change', function () {
         if ($(this).val()) {
             $(this).addClass('active');
         } else {
@@ -212,10 +212,18 @@ $(document).ready(function () {
     }));
 
     // textarea on click make new line
-    $('textarea').each(function () {
+    $('.textarea-autoheight').each(function () {
         this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
     }).on('input', function () {
         this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+
+    // chat message
+    $('.chat-message-textarea').each(function () {
+        this.setAttribute('style', 'height: 33px; overflow-y:hidden;');
+    }).on('input', function () {
+        this.style.height = '33';
         this.style.height = (this.scrollHeight) + 'px';
     });
 
@@ -285,5 +293,21 @@ $(document).ready(function () {
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+
+    $('.chat-show-mobile').on('click', function () {
+        showChat();
+    });
+
+    $('.close-chat').on('click', function () {
+        showChat();
+    });
+
+    function showChat() {
+        if ($('.chat-holder').hasClass('active')) {
+            $('.chat-holder').removeClass('active');
+        } else {
+            $('.chat-holder').addClass('active');
+        }
+    }
 });
