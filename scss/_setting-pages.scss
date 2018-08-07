@@ -988,6 +988,7 @@
 
         &.active {
           border: 1px solid $blue-light;
+          box-shadow: none;
           
           .text-wrap {
             span {
@@ -1135,6 +1136,7 @@
     margin-bottom: 10px;
 
     mark {
+      display: block;
       background: none;
       padding: 0;
       font-weight: 700;
@@ -1911,5 +1913,225 @@
     position: absolute;
     top: 0;
     right: 5px;
+  }
+}
+
+.board-wrapper {
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 15px;
+  }
+}
+
+.board-section {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: #f1f5f8;
+  border-radius: 3px;
+  box-shadow: $bs-hover;
+
+  .board-top {
+    background-color: #fff;
+    padding: 1px 20px 1px 1px;
+    border-radius: 3px 3px 0 0;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 1px 1px 20px 1px;
+
+      .back-wrapper {
+        a {
+          .back-icon {
+            margin-bottom: 10px;
+          }
+
+          mark {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+    .board-controls {
+      padding-top: 5px;
+
+      @media (max-width: $screen-xs-max) {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        padding: 0;
+      }
+
+      .mdi {
+        font-size: 22px;
+        line-height: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.board-body {
+  padding: 50px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 20px 15px;
+  }
+
+  .board-task {
+    border-radius: 8px;
+    box-shadow: $bs-default;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    .board-task-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border-radius: 50%;
+
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .board-task-text {
+      flex: 1;
+
+      .task-name {
+        display: block;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        color: $blue-dark;
+      }
+
+      .board-task-info {
+        .task-info-col {
+          margin-right: 15px;
+
+          .mdi {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          i {
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .dropdown {
+      .mdi {
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.add-task-wrapper {
+  width: 100%;
+  box-shadow: $bs-default;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  @include transition(.3s);
+
+  @media (max-width: $screen-md-max) {
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $blue-light;
+  }
+  
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 22px;
+    color: $blue-light;
+  }
+}
+
+.progress-holder {
+  white-space: nowrap;
+
+  @media (max-width: $screen-lg-max) {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.progress-control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid $blue-light;
+  background-color: #fff;
+  position: relative;
+  box-shadow: $bs-default;
+  text-align: center;
+  cursor: pointer;
+
+  .mdi {
+    display: block;
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+.progress-circle-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 80px;
+  margin: 0 10px;
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    @include center(both);
+  }
+
+  .progress-circle {
+    transform: rotate(-90deg);
+    box-shadow: -8px 0 13px 0 rgba(13, 71, 161, 0.08);
+    border-radius: 50%;
   }
 }
