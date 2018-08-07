@@ -401,62 +401,6 @@
     margin-bottom: 30px;
   }
 
-  .news-heading {
-    margin-bottom: 30px;
-
-    @media (max-width: $screen-xs-max) {
-      display: block !important;
-      margin-bottom: 15px;
-    }
-
-    > span {
-      display: block;
-      font-size: 30px;
-      line-height: 32px;
-      font-weight: 300;
-      letter-spacing: 1.5px;
-      color: $blue-dark;
-      text-transform: uppercase;
-
-      @media (max-width: $screen-xs-max) {
-        margin-bottom: 15px;
-        font-size: 25px;
-        line-height: 27px;
-      }
-    }
-
-    .subscribe-wrap {
-      .subscribe-button {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 12px 40px;
-        border-radius: 3px;
-        border: 2px solid $red;
-        font-size: 16px;
-        line-height: 18px;
-        font-weight: 700;
-        color: $red;
-        @include transition(.2s);
-
-        &:hover,
-        &.subscribed {
-          color: #fff;
-          background-color: $red;
-          text-decoration: none;
-        }
-      }
-
-      .notifications {
-        vertical-align: middle;
-        font-size: 25px;
-        line-height: 25px;
-        color: $red;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-    }
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -563,6 +507,62 @@
         height: 100%;
         background: rgba(0, 0, 0, .4);
       }*/
+    }
+  }
+}
+
+.news-heading {
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    display: block !important;
+    margin-bottom: 15px;
+  }
+
+  > span {
+    display: block;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: $blue-dark;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+      font-size: 25px;
+      line-height: 27px;
+    }
+  }
+
+  .subscribe-wrap {
+    .subscribe-button {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 12px 40px;
+      border-radius: 3px;
+      border: 2px solid $red;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      color: $red;
+      @include transition(.2s);
+
+      &:hover,
+      &.subscribed {
+        color: #fff;
+        background-color: $red;
+        text-decoration: none;
+      }
+    }
+
+    .notifications {
+      vertical-align: middle;
+      font-size: 25px;
+      line-height: 25px;
+      color: $red;
+      margin-left: 10px;
+      cursor: pointer;
     }
   }
 }

@@ -107,18 +107,32 @@
 					</div>
 					<div class="categories-wrapper d-flex justify-content-between align-items-center">
 						<div class="categories-list d-flex justify-content-between align-items-end">
+							<div class="category-active-mobile">
+								<a href="#">Ask a question <span class="mdi mdi-menu-down"></span></a>
+							</div>
 							<div class="category-active">
 
 								<span class="mdi mdi-menu-down"></span>
 							</div>
 							<div class="categories-dropdown">
-								<a href="blog.html">All</a>
-								<a href="blog-category.html">Analytics</a>
-								<a href="#">Industry events</a>
-								<a href="#">Industry articles</a>
-								<a href="#">World articles</a>
-								<a href="#">Site communities</a>
-								<a href="blog-ask.html" class="active">Ask a question</a>
+								<a href="blog.html">Latest</a>
+								<a href="#" class="active">Ask a question</a>
+								<a href="#">Design</a>
+								<a href="blog-category.html">Infrastructure solutions</a>
+								<a href="#">Tooling</a>
+								<a href="#">Software</a>
+								<a href="#">Hardware</a>
+								<a href="#">Project management</a>
+								<div class="categories-more dropdown">
+									<a href="#" class="selected" data-toggle="dropdown">
+										More <span class="mdi mdi-menu-down"></span>
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">More 1</a>
+										<a class="dropdown-item" href="#">More 2</a>
+										<a class="dropdown-item" href="#">More 3</a>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="search-wrap d-flex justify-content-between align-items-center">
@@ -130,11 +144,134 @@
 					</div>
 				</div>
 			</section>
-			<section class="blog-ask-section">
-				<div class="wrapper">
-					<div class="row">
-						<div class="col-lg-3">123</div>
-						<div class="col-lg-9">123</div>
+			<section class="section-news">
+				<div class="section-news-holder">
+					<div class="wrapper">
+						<div class="blog-ask-section">
+							<div class="row justify-content-between">
+								<div class="col-md-3">
+									<div class="d-flex justify-content-between align-items-center blog-ask-top">
+										<div class="news-heading">
+											<span>Feeds</span>
+										</div>
+										<div class="blog-filters-button">
+											<span class="mdi mdi-folder-edit"></span>
+											<mark>edit</mark>
+										</div>
+										<!--<div class="blog-filters-button">
+											<span class="mdi mdi-content-save"></span>
+											<mark>save</mark>
+										</div>-->
+									</div>
+									<div class="feeds-select">
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check1">
+											<label for="check1">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">New feed</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check3">
+											<label for="check3">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Analytics</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check4">
+											<label for="check4">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Industry events</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check5">
+											<label for="check5">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Industry articles</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check6">
+											<label for="check6">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">World articles</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black checkbox_feeds">
+											<input type="checkbox" id="check2">
+											<label for="check2">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Site communities</i>
+											</label>
+										</div>
+									</div>
+									<!--<div class="feeds-select">
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check1">
+											<label for="check1">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">New feed</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check3">
+											<label for="check3">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Analytics</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check4">
+											<label for="check4">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Industry events</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check5">
+											<label for="check5">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Industry articles</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check6">
+											<label for="check6">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">World articles</i>
+											</label>
+										</div>
+										<div class="checkbox checkbox_black">
+											<input type="checkbox" id="check2">
+											<label for="check2">
+												<span class="check-wrap"></span>
+												<i class="remember-me-text">Site communities</i>
+											</label>
+										</div>
+									</div>-->
+								</div>
+								<div class="col-md-8">
+									<div class="blog-ask-top">
+										<div class="news-heading">
+											<span>Question</span>
+										</div>
+									</div>
+									<div class="ask-wrapper" data-toggle="modal" data-target="#ask-modal">
+										<div class="author-info-block d-flex align-items-center">
+											<div class="avatar-img">
+												<img src="images/avatar.png" alt="">
+											</div>
+											<div class="author-detail-info">
+												<span>Constan Satterfield</span>
+											</div>
+										</div>
+										<span class="question-span">What is your question?</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -194,6 +331,64 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade reviews-modal" id="ask-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog " role="document">
+				<div class="modal-content">
+					<div class="ask-modal-top">
+						<span class="modal-close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close"></span></span>
+						<h2>You are asking your first question!</h2>
+						<p>How to quickly get a good answer:</p>
+						<p>- Keep your question short and to the point</p>
+						<p>- Check for grammar or spelling errors</p>
+						<p>- Phrase it like a question</p>
+					</div>
+					<div class="ask-modal-body">
+						<div class="ask-modal-body-top d-flex justify-content-between align-items-center flex-wrap">
+							<div class="author-info-block d-flex align-items-center">
+								<div class="avatar-img">
+									<img src="images/avatar.png" alt="">
+								</div>
+								<div class="author-detail-info">
+									<span>Constan Satterfield</span>
+								</div>
+							</div>
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown">
+									<span class="label">Analytics</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">New feed</a>
+												<a href="#">Analytics</a>
+												<a href="#">Industry events</a>
+												<a href="#">Industry articles</a>
+												<a href="#">World articles</a>
+												<a href="#">Site communities</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ask-modal-body-textarea">
+							<div class="input-row">
+								<textarea class="textarea-autoheight" id="id-input7" style="height:38px;overflow-y:hidden;"></textarea>
+								<label for="id-input7">Start your question with "What", "How", "Why", etc.</label>
+							</div>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn-site">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="mobile-menu-mask"></div>
 
