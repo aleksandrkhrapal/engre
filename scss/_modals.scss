@@ -802,9 +802,17 @@
   border-radius: 8px 8px 0 0;
   color: #fff;
 
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 15px;
+  }
+
   .modal-close {
     top: 30px;
     color: #fff;
+
+    @media (max-width: $screen-xs-max) {
+      top: 20px;
+    }
   }
 
   h2 {
@@ -828,4 +836,8 @@
 
 .ask-modal-body {
   padding: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 15px;
+  }
 }

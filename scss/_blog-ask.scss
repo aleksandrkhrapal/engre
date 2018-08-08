@@ -1,6 +1,10 @@
 .blog-ask-section {
   .blog-ask-top {
     margin-bottom: 40px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 20px;
+    }
   }
 
   .news-heading {
@@ -43,6 +47,11 @@
   box-shadow: $bs-default;
   background-color: #fff;
   padding: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 15px;
+  }
 
   .checkbox {
     margin-bottom: 20px;
@@ -79,6 +88,11 @@
   margin-bottom: 30px;
   cursor: pointer;
 
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+  }
+
   .author-info-block {
     margin-bottom: 20px;
   }
@@ -101,4 +115,146 @@
 
 .ask-modal-body-textarea {
   margin-bottom: 20px;
+}
+
+.ask-question-wrap {
+  border-radius: 3px;
+  box-shadow: $bs-default;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  @include transition(.3s);
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+  }
+
+  .hide-block {
+    color: $red;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      top: 20px;
+      right: 15px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &:hover {
+    box-shadow: $bs-hover;
+    
+    .question-title {
+      color: $blue-dark;
+    }
+  }
+
+  .comment-row-header {
+    margin: 0;
+  }
+
+  .question-info {
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0;
+    }
+  }
+
+  .more-text {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 23px;
+    line-height: 23px;
+    cursor: pointer;
+    @include transition(.2s);
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+    }
+    
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.ask-row {
+  margin-top: 30px;
+
+  .comment-row-header {
+    margin-bottom: 20px;
+  }
+}
+
+.question-title {
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  @include transition(.3s);
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.ask-question-bread-crumbs {
+  margin-bottom: 20px;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+    @include transition(.2s);
+
+    &:hover {
+      text-decoration: none;
+      color: $blue-dark;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '·';
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 14px;
+      color: #666;
+      margin: 0 3px 0 5px;
+    }
+
+    &.active {
+      text-decoration: underline;
+      pointer-events: none;
+    }
+  }
 }

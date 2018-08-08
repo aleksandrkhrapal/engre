@@ -1416,6 +1416,15 @@ input {
         text-decoration: none;
       }
     }
+
+    mark {
+      display: block;
+      padding: 0;
+      background: none;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 300;
+    }
   }
 
   .detail-info-hover {
@@ -1545,6 +1554,10 @@ input {
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &.comment-info-col-last {
+    margin-left: auto;
   }
 
   .comment-info-control {
