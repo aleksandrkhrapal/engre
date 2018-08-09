@@ -13,4 +13,8 @@ $(document).ready(function () {
            adminContainer.addClass('container-sm');
        }
     });
+
+    if ($(window).width() < 1200) {
+        $('.sidebar-trigger').click();
+    }
 });
