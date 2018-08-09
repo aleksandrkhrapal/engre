@@ -31,15 +31,15 @@
 					</div>
 				</div>
 				<nav class="admin-sidebar__menu">
-					<a href="#" class="active">
+					<a href="admin-dashboard.html">
 						<span class="mdi mdi-view-dashboard"></span>
 						<i>Dashboard</i>
 					</a>
-					<a href="#">
+					<a href="admin-project.html" class="active">
 						<span class="mdi mdi-folder"></span>
 						<i>Project</i>
 					</a>
-					<a href="#">
+					<a href="admin-content.html">
 						<span class="mdi mdi-text-subject"></span>
 						<i>Content</i>
 					</a>
@@ -96,44 +96,68 @@
 				</div>
 
 				<div class="admin-container__body">
-					<div class="admin-container-row">
-						<span class="admin-title">Visits by users</span>
-						<div class="admin-row">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="row align-items-center">
-										<div class="col-md-6">
-											<img src="images/graph-img2.png" class="img-fluid" alt="">
-										</div>
-										<div class="col-md-6">
-											<div class="chart-hints-wrap">
-												<span class="hints-title">Customer project</span>
-												<ul class="hints-list">
-													<li class="blue">Visualize impactful mindshare</li>
-													<li class="red">Enable value-added convergence</li>
-													<li class="orange">Visualize vertical interfaces</li>
-													<li class="green">Integrate clicks-and-mortar methodologies</li>
-													<li class="violet">Monetize B2B portals</li>
-												</ul>
+					<div class="row project-filters">
+						<div class="input-row">
+							<div class="dropdown dropdown-select dropdown-select-location">
+								<div class="selected-wrap" data-toggle="dropdown">
+									<span class="label">Search by name</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-magnify select-search-button"></span>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-search">
+										<span class="mdi mdi-magnify icon-left"></span>
+										<span class="mdi mdi-close icon-right"></span>
+										<input type="search" placeholder="Start typing" autofocus="">
+									</div>
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#" class="active">Project 1</a>
+												<a href="#">Project 2</a>
+												<a href="#">Project 3</a>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6">
-									<div class="row align-items-center">
-										<div class="col-md-6">
-											<img src="images/graph-img2.png" class="img-fluid" alt="">
+							</div>
+						</div>
+
+						<div class="input-row">
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="label">Sort by industry</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Link 1</a>
+												<a href="#">Link 2</a>
+												<a href="#">Link 3</a>
+											</div>
 										</div>
-										<div class="col-md-6">
-											<div class="chart-hints-wrap">
-												<span class="hints-title">Contractor services</span>
-												<ul class="hints-list">
-													<li class="blue">Matrix compelling infrastructures</li>
-													<li class="red">Whiteboard robust mindshare</li>
-													<li class="orange">Engage visionary applications</li>
-													<li class="green">Repurpose real-time relationships</li>
-													<li class="violet">Strategize robust solutions</li>
-												</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="input-row">
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="label">Sort by</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Link 1</a>
+												<a href="#">Link 2</a>
+												<a href="#">Link 3</a>
 											</div>
 										</div>
 									</div>
@@ -141,124 +165,207 @@
 							</div>
 						</div>
 					</div>
-					<div class="admin-container-row">
-						<span class="admin-title">Filter statistics</span>
-						<div class="admin-row">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="input-row">
-												<div class="dropdown dropdown-select">
-													<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
-														<span class="label">Customers searched</span>
-														<span class="selected-item"></span>
-														<span class="mdi mdi-menu-down"></span>
-													</div>
-													<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<div class="dropdown-list-wrapper">
-															<div class="dropdown-list">
-																<div class="dropdown-list-row">
-																	<a href="#">Link 1</a>
-																	<a href="#">Link 2</a>
-																	<a href="#">Link 3</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="input-row">
-												<div class="dropdown dropdown-select">
-													<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
-														<span class="label">Design</span>
-														<span class="selected-item"></span>
-														<span class="mdi mdi-menu-down"></span>
-													</div>
-													<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<div class="dropdown-list-wrapper">
-															<div class="dropdown-list">
-																<div class="dropdown-list-row">
-																	<a href="#">Link 1</a>
-																	<a href="#">Link 2</a>
-																	<a href="#">Link 3</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+					<div class="row flex-wrap">
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status grey"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
 									</div>
-									<div class="filter-statistics">
-										<div class="fs-row d-flex justify-content-between">
-											<span class="requests">Show me Successful Airplane Projects in Technology on Earth Sorted by Popularity</span>
-											<div class="requests-number">248</div>
-										</div>
-										<div class="fs-row d-flex justify-content-between">
-											<span class="requests">Show me All Projects in Software on Ukraine Sorted by rating</span>
-											<div class="requests-number">202</div>
-										</div>
-										<div class="fs-row d-flex justify-content-between">
-											<span class="requests">Show me Airplane Projects in Technology on Earth Sorted by New</span>
-											<div class="requests-number">154</div>
-										</div>
-										<div class="fs-row d-flex justify-content-between">
-											<span class="requests">Show me Projects in Tooling on Germany Sorted by Popularity</span>
-											<div class="requests-number">78</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6">
-									<img src="images/graph-img3.png" class="img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status grey"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status dark-grey"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status blue"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status yellow"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status red"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<div class="dropdown dropdown-top-right">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Messages</a>
+													<a class="dropdown-item" href="#">Project board</a>
+													<a class="dropdown-item" href="#">Edit project</a>
+													<a class="dropdown-item" href="#">User management</a>
+													<a class="dropdown-item" href="#">Document</a>
+													<a class="dropdown-item" href="#">To archive</a>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="admin-container-row">
-						<span class="admin-title">Users in the company</span>
-						<div class="admin-row">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="input-row">
-												<div class="dropdown dropdown-select">
-													<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
-														<span class="label">Customer</span>
-														<span class="selected-item"></span>
-														<span class="mdi mdi-menu-down"></span>
-													</div>
-													<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<div class="dropdown-list-wrapper">
-															<div class="dropdown-list">
-																<div class="dropdown-list-row">
-																	<a href="#">Link 1</a>
-																	<a href="#">Link 2</a>
-																	<a href="#">Link 3</a>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
+					<div class="status-hint-wrap bg-white-mobile" style="margin: 15px 0 30px 0;">
+						<span class="deadline">- deadline</span>
+						<span class="new-message">- new message</span>
+						<span class="changes">- changes on the board</span>
+					</div>
+					<div class="repeat-title-line d-flex justify-content-center align-items-center">
+						<span>Archive</span>
+					</div>
+					<div class="row flex-wrap">
+						<div class="col-md-6">
+							<div class="info-block-wrap">
+								<div class="status dark-grey"></div>
+								<div class="row align-items-center">
+									<div class="col-md-5">
+										<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+									</div>
+									<div class="col-md-5">
+										<span>Budget: <mark>$200 000 000</mark></span>
+										<span>Company: <mark>OneTech</mark></span>
+									</div>
+									<div class="col-md-2">
+										<div class="review-controls d-flex justify-content-end align-items-center">
+											<span class="mdi mdi-undo-variant"></span>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-6">
-									<img src="images/graph-img4.png" class="img-fluid" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="admin-container-row">
-						<span class="admin-title">Companies in the industry</span>
-						<div class="admin-row">
-							<div class="row">
-								<div class="col-lg-6">
-									<img src="images/graph-img5.png" class="img-fluid" alt="">
 								</div>
 							</div>
 						</div>

@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: calc(100% + 100px);
   overflow-x: hidden;
   width: 335px;
   z-index: 100;
@@ -399,6 +399,377 @@
     .requests-number {
       width: 55px;
       text-align: right;
+    }
+  }
+}
+
+.project-filters {
+  padding: 0 15px;
+
+  .input-row {
+    margin-right: 15px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-right: 0;
+      width: 100%;
+
+      .dropdown-select {
+        min-width: initial;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.admin-menu {
+  border-bottom: 1px solid $blue-dark;
+  margin-bottom: 50px;
+  white-space: nowrap;
+  overflow-y: hidden;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+    color: $blue-dark;
+    padding-bottom: 7px;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $blue-dark;
+      opacity: 0;
+      visibility: hidden;
+      @include transition(.2s);
+    }
+
+    &.active {
+      font-weight: 700;
+
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.admin-add-button {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $blue-dark;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition(.2s);
+
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 30px;
+  }
+  
+  &:hover {
+    color: #333;
+    text-decoration: none;
+    
+    .mdi {
+      color: #333;
+    }
+  }
+
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    top: -1px;
+    color: $blue-dark;
+    @include transition(.2s);
+  }
+}
+
+.content-cards {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: $bs-default;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  @include transition(.3s);
+
+  &:hover {
+    box-shadow: $bs-hover;
+
+    .card-description {
+      .name-article {
+        color: $blue-dark;
+      }
+    }
+  }
+
+  .card-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 25px;
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  .card-description {
+    flex: 1;
+    padding: 10px 0;
+    position: relative;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 0;
+    }
+
+    span {
+      display: block;
+    }
+    
+    .mdi {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 20px;
+      line-height: 20px;
+      cursor: pointer;
+      color: $blue-dark;
+
+      @media (max-width: $screen-xs-max) {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .name-category {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 5px;
+    }
+
+    .name-article {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      @include transition(.2s);
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .date {
+      font-size: 18px;
+      line-height: 20px;
+      color: #666;
+      margin-bottom: 5px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: 300;
+      margin: 0;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.admin-edit-top {
+  margin-bottom: 50px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.admin-back {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $blue-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition(.2s);
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
+  }
+  
+  &:hover {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.edit-controls {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    @include transition(.2s);
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    
+    &.move {
+      color: $blue-dark;
+    }
+    
+    &.archive {
+      color: $red;
+    }
+
+    .mdi {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.edit-wrapper {
+  .edit-top {
+    margin-bottom: 40px;
+  }
+
+  .article-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $blue-dark;
+
+    .mdi {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .textarea-edit {
+    height: 350px;
+    width: 100%;
+    border-radius: 3px;
+    border: solid 1px #99a9b8;
+    padding: 15px;
+    resize: none;
+    outline: none;
+    color: #333;
+    margin-bottom: 40px;
+  }
+}
+
+.edit-buttons {
+  a {
+    margin-left: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.btn-sign {
+  display: inline-block;
+  min-width: 275px;
+  min-height: 50px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $blue-dark;
+  border: 2px solid $blue-dark;
+  cursor: pointer;
+  padding: 11px 0;
+  text-transform: uppercase;
+  text-align: center;
+  @include transition(.2s);
+  
+  &:hover {
+    background-color: $blue-dark;
+    text-decoration: none;
+    color: #fff;
+
+    .st0 {
+      fill: #fff !important;
+    }
+  }
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 41px;
+    margin-left: -41px;
+
+    .st0 {
+      @include transition(.2s);
     }
   }
 }

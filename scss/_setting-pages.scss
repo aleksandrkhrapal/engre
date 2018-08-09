@@ -628,10 +628,6 @@
   border: 1px solid transparent;
   @include transition(.3s);
 
-  &:hover {
-    box-shadow: none;
-  }
-
   &.active {
     border-color: $blue-light;
     box-shadow: none;

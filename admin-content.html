@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html" class="active">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-bell"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>total backers</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>funded projects</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>live projects</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body">
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="admin-menu">
+							<a href="#" class="active">All articles</a>
+							<a href="#">Drafts</a>
+							<a href="#">Other pages</a>
+							<a href="#">Archived</a>
+						</div>
+						<div class="button-wrap">
+							<a href="#" class="admin-add-button">Add content <span class="mdi mdi-plus-box"></span></a>
+						</div>
+					</div>
+					<div class="row project-filters">
+						<div class="input-row">
+							<div class="dropdown dropdown-select dropdown-select-location">
+								<div class="selected-wrap" data-toggle="dropdown">
+									<span class="label">Search by name, tags</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-magnify select-search-button"></span>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-search">
+										<span class="mdi mdi-magnify icon-left"></span>
+										<span class="mdi mdi-close icon-right"></span>
+										<input type="search" placeholder="Start typing" autofocus="">
+									</div>
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#" class="active">Project 1</a>
+												<a href="#">Project 2</a>
+												<a href="#">Project 3</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="input-row">
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="label">Sort by industry</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Link 1</a>
+												<a href="#">Link 2</a>
+												<a href="#">Link 3</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="input-row">
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="label">Sort by</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Link 1</a>
+												<a href="#">Link 2</a>
+												<a href="#">Link 3</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-wrapper">
+						<div class="row flex-wrap">
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="content-cards d-flex">
+									<div class="card-img" style="background-image: url('images/news-img2.jpg');"></div>
+									<div class="card-description">
+										<span class="mdi mdi-pencil"></span>
+										<span class="name-category">Название подраздела</span>
+										<span class="name-article">Название статьи раздела</span>
+										<span class="date">Feb 14, 2018</span>
+										<p>We all want our dollars to go the extra mile. One nonprofit does just that from the front lines of disaster response.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/admin-main.js"></script>
+	</body>
+</html>
