@@ -47,7 +47,7 @@
 						<span class="mdi mdi-file-document"></span>
 						<i>Document</i>
 					</a>
-					<a href="admin-finances.html" class="active">
+					<a href="admin-finances.html">
 						<span class="mdi mdi-cash-usd"></span>
 						<i>Finances</i>
 					</a>
@@ -63,7 +63,7 @@
 						<span class="mdi mdi-message-text"></span>
 						<i>Chat</i>
 					</a>
-					<a href="admin-settings-languages.html">
+					<a href="admin-settings-languages.html" class="active">
 						<span class="mdi mdi-settings"></span>
 						<i>Settings</i>
 					</a>
@@ -96,9 +96,32 @@
 				</div>
 
 				<div class="admin-container__body">
-					<div class="system-text">
-						<span>This section is under development</span>
-						<p>Please choose another section</p>
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="admin-menu">
+							<a href="admin-settings-languages.html">Languages</a>
+							<a href="admin-settings-profile.html">Profile</a>
+							<a href="admin-settings-change-pass.html" class="active">Change password</a>
+							<a href="admin-settings-category.html">Category</a>
+							<a href="admin-settings-industry.html">Industry</a>
+							<a href="admin-settings-stop-words.html">Stop words</a>
+						</div>
+					</div>
+					<div class="admin-change-pass-wrapper">
+						<div class="input-row">
+							<input type="password" id="id1">
+							<label for="id1">Old Password</label>
+						</div>
+						<div class="input-row">
+							<input type="password" id="id2">
+							<label for="id2">New password</label>
+						</div>
+						<div class="input-row">
+							<input type="password" id="id3">
+							<label for="id3">Repeat Password</label>
+						</div>
+						<div class="enter-form-button">
+							<input class="btn-site" type="submit" value="Save">
+						</div>
 					</div>
 				</div>
 			</div>

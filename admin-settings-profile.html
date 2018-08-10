@@ -47,7 +47,7 @@
 						<span class="mdi mdi-file-document"></span>
 						<i>Document</i>
 					</a>
-					<a href="admin-finances.html" class="active">
+					<a href="admin-finances.html">
 						<span class="mdi mdi-cash-usd"></span>
 						<i>Finances</i>
 					</a>
@@ -63,7 +63,7 @@
 						<span class="mdi mdi-message-text"></span>
 						<i>Chat</i>
 					</a>
-					<a href="admin-settings-languages.html">
+					<a href="admin-settings-languages.html" class="active">
 						<span class="mdi mdi-settings"></span>
 						<i>Settings</i>
 					</a>
@@ -96,9 +96,80 @@
 				</div>
 
 				<div class="admin-container__body">
-					<div class="system-text">
-						<span>This section is under development</span>
-						<p>Please choose another section</p>
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="admin-menu">
+							<a href="admin-settings-languages.html">Languages</a>
+							<a href="admin-settings-profile.html" class="active">Profile</a>
+							<a href="admin-settings-change-pass.html">Change password</a>
+							<a href="admin-settings-category.html">Category</a>
+							<a href="admin-settings-industry.html">Industry</a>
+							<a href="admin-settings-stop-words.html">Stop words</a>
+						</div>
+					</div>
+					<div class="admin-profile-holder">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="upload-wrapper">
+									<span>Your photo</span>
+									<div class="uploaded-img">
+										<img src="images/profile-edit-img1.png" alt="">
+									</div>
+									<div class="edit-photo-button">
+										<span class="mdi mdi-pencil"></span>
+										<i>Edit photo</i>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-row">
+											<input type="text" id="id-input1">
+											<label for="id-input1">Name</label>
+											<i class="text-hint">Your name is displayed on your profile.</i>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-row">
+											<input type="text" id="id-input2">
+											<label for="id-input2">Location</label>
+											<i class="text-hint">E.g. Brooklyn, NY</i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-row">
+											<input type="email" id="id-input3" value="test@gmail.com" class="active">
+											<label for="id-input3">Email</label>
+											<i class="text-hint">Can not be changed</i>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-row">
+											<input type="text" id="id-input4">
+											<label for="id-input4">Time zone</label>
+											<i class="text-hint">Most time zones are automatically adjusted for you. We'll use this setting for emails.</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-8">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<button type="submit" class="button-styles light-blue">
+											Update profile <span class="mdi mdi-content-save"></span>
+										</button>
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="reset-pass-link">Reset password</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

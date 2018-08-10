@@ -1,4 +1,43 @@
 $(document).ready(function () {
+    // admin sidebar
+    $('.sidebar-trigger').on('click', function (e) {
+        e.preventDefault();
+
+        var adminSidebar = $('.admin-sidebar');
+        var adminContainer = $('.admin-container');
+
+        if (adminSidebar.hasClass('sidebar-sm')) {
+            adminSidebar.removeClass('sidebar-sm');
+            adminContainer.removeClass('container-sm');
+        } else {
+            adminSidebar.addClass('sidebar-sm');
+            adminContainer.addClass('container-sm');
+        }
+    });
+
+    if ($(window).width() < 1200) {
+        $('.sidebar-trigger').click();
+    }
+
+    // confirm modal
+    $('.delete-button, .close-confirm-modal').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if ($('.confirm-modal-wrapper').hasClass('show')) {
+            $('.confirm-modal-wrapper').removeClass('show');
+        } else {
+            $('.confirm-modal-wrapper').addClass('show');
+        }
+
+        $(document).one('click', function closeMenu(e) {
+            if ($('.confirm-modal-wrapper').has(e.target).length === 0) {
+                $('.confirm-modal-wrapper').removeClass('show');
+            } else {
+                $(document).one('click', closeMenu);
+            }
+        });
+    });
+
     // login registration
     $(".go-to-login").click(function () {
         $('.form-enter-section').removeClass('move-position');

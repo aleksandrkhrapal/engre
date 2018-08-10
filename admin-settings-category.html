@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="admin-documents.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="admin-finances.html">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="admin-user-management.html">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-bell notification"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="admin-settings-languages.html" class="active">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>total backers</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>funded projects</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>live projects</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body">
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="admin-menu">
+							<a href="admin-settings-languages.html">Languages</a>
+							<a href="admin-settings-profile.html">Profile</a>
+							<a href="admin-settings-change-pass.html">Change password</a>
+							<a href="admin-settings-category.html" class="active">Category</a>
+							<a href="admin-settings-industry.html">Industry</a>
+							<a href="admin-settings-stop-words.html">Stop words</a>
+						</div>
+						<div class="button-wrap">
+							<a href="#" class="admin-add-button" data-toggle="modal" data-target="#addmodal">Add category <span class="mdi mdi-plus-box"></span></a>
+						</div>
+					</div>
+					<div class="settings-columns category-columns d-flex flex-wrap">
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Design</span>
+							</div>
+						</div>
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Infrastructure solutions</span>
+							</div>
+						</div>
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Tooling</span>
+							</div>
+						</div>
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Software development</span>
+							</div>
+						</div>
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Hardware development</span>
+							</div>
+						</div>
+						<div class="settings-col">
+							<span class="mdi mdi-pencil edit"></span>
+							<span class="mdi mdi-cursor-move move"></span>
+
+							<div class="settings-list">
+								<span>Project management</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="addmodal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="delete-button">
+						<span class="mdi mdi-delete"></span>
+					</div>
+					<div class="back-wrapper position-top-left" data-dismiss="modal" aria-label="Close">
+						<a href="#">
+							<span class="back-icon">
+								<span class="mdi mdi-arrow-left"></span>
+							</span>
+							<mark>Back</mark>
+						</a>
+					</div>
+					<div class="modal-add-wrap">
+						<div class="input-row">
+							<input type="text" id="id1">
+							<label for="id1">Category</label>
+						</div>
+						<button type="submit" class="button-styles light-blue">
+							Save <span class="mdi mdi-content-save"></span>
+						</button>
+						<!--<div class="text-center">-->
+							<!--<span class="admin-add-button dark">Add core skills</span>-->
+						<!--</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="confirm-modal-wrapper">
+			<div class="back-wrapper position-top-left close-confirm-modal">
+				<a href="#">
+					<span class="back-icon">
+						<span class="mdi mdi-arrow-left"></span>
+					</span>
+					<mark>Back</mark>
+				</a>
+			</div>
+			<div class="confirm-text">
+				<p>Are you sure you want to remove the industry, and all related sub-industries?</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-5">
+					<span class="button-styles light-blue">Delete</span>
+				</div>
+				<div class="col-5">
+					<span class="button-styles light-blue close-confirm-modal">Cancel</span>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

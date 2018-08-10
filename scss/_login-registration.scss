@@ -197,6 +197,16 @@
   @media (max-width: $screen-xs-max) {
     margin-bottom: 25px;
   }
+  
+  &.input-row-admin {
+    input, textarea {
+      color: #333;
+      
+      &:focus {
+        color: $blue-dark;
+      }
+    }
+  }
 
   .select-search-button {
     position: absolute;

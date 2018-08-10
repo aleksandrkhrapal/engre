@@ -2031,6 +2031,13 @@ input {
   border-bottom: 1px solid $blue-dark;
   @include transition(.2s);
 
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
   &:hover {
     text-decoration: none;
     border-color: transparent;

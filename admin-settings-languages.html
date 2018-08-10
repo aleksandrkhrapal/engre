@@ -47,7 +47,7 @@
 						<span class="mdi mdi-file-document"></span>
 						<i>Document</i>
 					</a>
-					<a href="admin-finances.html" class="active">
+					<a href="admin-finances.html">
 						<span class="mdi mdi-cash-usd"></span>
 						<i>Finances</i>
 					</a>
@@ -63,7 +63,7 @@
 						<span class="mdi mdi-message-text"></span>
 						<i>Chat</i>
 					</a>
-					<a href="admin-settings-languages.html">
+					<a href="admin-settings-languages.html" class="active">
 						<span class="mdi mdi-settings"></span>
 						<i>Settings</i>
 					</a>
@@ -96,9 +96,68 @@
 				</div>
 
 				<div class="admin-container__body">
-					<div class="system-text">
-						<span>This section is under development</span>
-						<p>Please choose another section</p>
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="admin-menu">
+							<a href="admin-settings-languages.html" class="active">Languages</a>
+							<a href="admin-settings-profile.html">Profile</a>
+							<a href="admin-settings-change-pass.html">Change password</a>
+							<a href="admin-settings-category.html">Category</a>
+							<a href="admin-settings-industry.html">Industry</a>
+							<a href="admin-settings-stop-words.html">Stop words</a>
+						</div>
+					</div>
+					<div class="row project-filters">
+						<div class="input-row">
+							<div class="dropdown dropdown-select">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="label">Main page</span>
+									<span class="selected-item"></span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Link 1</a>
+												<a href="#">Link 2</a>
+												<a href="#">Link 3</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="admin-row admin-settings">
+						<div class="admin-select-lang">
+							<a href="#" class="active">English</a>
+							<a href="#">French</a>
+							<a href="#">German</a>
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="The best solutions in one platform">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="Now, creating, giving, and tracking solutions is as easy as 1,2,3.">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="Skip video">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="Start a project">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="Your city">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="About us">
+						</div>
+						<div class="input-row input-row-admin">
+							<input type="text" value="Intellectual services">
+						</div>
+					</div>
+					<div class="text-center">
+						<input type="submit" value="Save" class="btn-site">
 					</div>
 				</div>
 			</div>
