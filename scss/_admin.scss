@@ -51,6 +51,15 @@
           padding: 10px 13px;
         }
 
+        .mdi {
+          &.notification {
+            &:after {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+
         i {
           opacity: 0;
           visibility: hidden;
@@ -144,6 +153,26 @@
         font-size: 25px;
         line-height: 24px;
         @include transition(.2s);
+
+        &.notification {
+          position: relative;
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            border: 2px solid $blue-dark;
+            border-radius: 50%;
+            background-color: $yellow;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(.3s);
+          }
+        }
       }
 
       i {
@@ -254,9 +283,22 @@
   
   &__body {
     padding: 50px 35px;
+    min-height: calc(100vh - 100px);
+    position: relative;
 
     @media (max-width: $screen-xs-max) {
       padding: 20px 15px;
+      min-height: initial;
+    }
+
+    .col-doc {
+      @media (max-width: 768px) {
+        width: 185px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
     }
   }
 }
@@ -771,5 +813,33 @@
     .st0 {
       @include transition(.2s);
     }
+  }
+}
+
+.system-text {
+  @include center(both);
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+
+  @media (max-width: $screen-xs-max) {
+    @include reset-position;
+    padding: 50px 0;
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0;
   }
 }

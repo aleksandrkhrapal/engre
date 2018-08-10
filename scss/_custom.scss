@@ -1926,6 +1926,10 @@ input {
     position: relative;
     background: none;
 
+    img {
+      width: 40px;
+    }
+
     &:hover {
       color: $blue-dark;
       background: none;
