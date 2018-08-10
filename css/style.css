@@ -5115,6 +5115,25 @@
     padding: 50px 35px;
     min-height: calc(100vh - 100px);
     position: relative; }
+    .admin-container__body.admin-chat {
+      padding: 0; }
+      .admin-container__body.admin-chat .settings-holder {
+        box-shadow: none; }
+        .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-list {
+          box-shadow: none; }
+        .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder {
+          height: 100%; }
+          .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .chat-wrapper {
+            background-color: #fff;
+            height: calc(100% - 120px); }
+            .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .chat-wrapper .date span {
+              background-color: #fff; }
+          .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .admin-chat-wrap {
+            position: relative;
+            height: 100%;
+            margin-top: 40px; }
+          .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .chat-input-wrapper {
+            box-shadow: 0 2px 15px 0 rgba(13, 71, 161, 0.08) inset; }
     @media (max-width: 575px) {
       .admin-container__body {
         padding: 20px 15px;
