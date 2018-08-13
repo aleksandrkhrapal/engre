@@ -1,4 +1,27 @@
 $(document).ready(function () {
+    // admin chat effects
+    if($(window).width() > 767) {
+        $('.admin-chat-toggle, .admin-chat-control').on('click', function (e) {
+            e.preventDefault();
+            if ($('.admin-chat-wrap, .chat-input-wrapper').hasClass('hide')) {
+                $('.admin-chat-wrap, .chat-input-wrapper').removeClass('hide');
+            } else {
+                $('.admin-chat-wrap, .chat-input-wrapper').addClass('hide');
+            }
+        });
+    }
+
+    if($(window).width() < 767) {
+        $('.admin-chat-toggle, .close-chat').on('click', function (e) {
+            e.preventDefault();
+            if ($('.chat-holder').hasClass('active')) {
+                $('.chat-holder').removeClass('active');
+            } else {
+                $('.chat-holder').addClass('active');
+            }
+        });
+    }
+
     // admin sidebar
     $('.sidebar-trigger').on('click', function (e) {
         e.preventDefault();
@@ -349,4 +372,6 @@ $(document).ready(function () {
             $('.chat-holder').addClass('active');
         }
     }
+
+
 });

@@ -131,12 +131,12 @@
 
       &:hover {
         color: $yellow;
-        
+
         i {
           color: $yellow;
         }
       }
-      
+
       &.active {
         background-color: #fff;
         color: $blue-dark;
@@ -280,7 +280,7 @@
       }
     }
   }
-  
+
   &__body {
     padding: 50px 35px;
     min-height: calc(100vh - 100px);
@@ -303,11 +303,56 @@
             .chat-wrapper {
               background-color: #fff;
               height: calc(100% - 120px);
-              
+              padding: 35px 30px 70px 80px;
+
+              .admin-chat-control {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: calc(100% - 120px);
+                width: 50px;
+                background-color: #99a9b8;
+                z-index: 10;
+                border-radius: 3px 0 0 3px;
+                cursor: pointer;
+
+                @media (max-width: $screen-sm-max) {
+                  display: none;
+                }
+                
+                .mdi {
+                  display: block;
+                  text-align: center;
+                  font-size: 24px;
+                  line-height: 24px;
+                  color: #fff;
+                  padding: 20px 0;
+                }
+
+                .author {
+                  display: block;
+                  position: absolute;
+                  bottom: 20px;
+                  left: 35px;
+                  transform: rotate(-90deg);
+                  white-space: nowrap;
+                  transform-origin: bottom left;
+                  font-size: 18px;
+                  line-height: 20px;
+                  font-weight: 700;
+                  color: #fff;
+                }
+              }
+
               .date {
                 span {
                   background-color: #fff;
                 }
+              }
+
+              .chat-message {
+                box-shadow: none;
+                border: 1px solid #99a9b8;
               }
             }
 
@@ -315,10 +360,29 @@
               position: relative;
               height: 100%;
               margin-top: 40px;
+              @include transition(.4s);
+
+              &.hide {
+                transform: translateX(100%);
+              }
+
+              @media (max-width: $screen-sm-max) {
+                margin-top: 0;
+              }
             }
 
             .chat-input-wrapper {
               box-shadow: 0 2px 15px 0 rgba(13, 71, 161, 0.08) inset;
+              padding: 10px 30px 5px 80px;
+              @include transition(.4s);
+
+              @media (max-width: $screen-sm-max) {
+                padding: 10px 15px 5px 15px;
+              }
+
+              &.hide {
+                transform: translateX(100%);
+              }
             }
           }
         }
@@ -341,6 +405,7 @@
     }
   }
 }
+
 // admin sidebar ends
 
 .admin-body {
@@ -578,11 +643,11 @@
   @media (max-width: $screen-sm-max) {
     margin-bottom: 30px;
   }
-  
+
   &:hover, &.dark {
     color: #333;
     text-decoration: none;
-    
+
     .mdi {
       color: #333;
     }
@@ -648,7 +713,7 @@
     span {
       display: block;
     }
-    
+
     .mdi {
       position: absolute;
       top: 5px;
@@ -732,7 +797,7 @@
   @media (max-width: $screen-xs-max) {
     margin-bottom: 15px;
   }
-  
+
   &:hover {
     text-decoration: none;
     color: #333;
@@ -768,11 +833,11 @@
     &:hover {
       text-decoration: none;
     }
-    
+
     &.move {
       color: $blue-dark;
     }
-    
+
     &.archive {
       color: $red;
     }
@@ -845,7 +910,7 @@
   text-transform: uppercase;
   text-align: center;
   @include transition(.2s);
-  
+
   &:hover {
     background-color: $blue-dark;
     text-decoration: none;
@@ -918,7 +983,7 @@
     @media (max-width: $screen-xs-max) {
       font-size: 14px;
     }
-    
+
     &:hover {
       text-decoration: none;
       color: $blue-dark;

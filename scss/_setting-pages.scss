@@ -1701,7 +1701,7 @@
   overflow: auto;
 
   @media (max-width: $screen-sm-max) {
-    padding: 20px 15px 50px 15px;
+    padding: 20px 15px 50px 15px !important;
     height: calc(100% - 62px);
   }
 
