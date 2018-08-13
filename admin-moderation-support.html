@@ -55,11 +55,11 @@
 						<span class="mdi mdi-account-key"></span>
 						<i>User management</i>
 					</a>
-					<a href="admin-moderation-messages.html">
+					<a href="admin-moderartion-messages.html" class="active">
 						<span class="mdi mdi-bell notification"></span>
 						<i>Moderation <mark class="notification">12</mark></i>
 					</a>
-					<a href="admin-chat.html" class="active">
+					<a href="admin-chat.html">
 						<span class="mdi mdi-message-text"></span>
 						<i>Chat</i>
 					</a>
@@ -96,73 +96,46 @@
 				</div>
 
 				<div class="admin-container__body admin-chat">
-					<div class="settings-holder settings-remove-bg-mobile overflow-hidden">
+					<div class="settings-holder settings-remove-bg-mobile overflow-hidden moderation-wrapper">
+						<div class="d-flex justify-content-between flex-wrap moderation-menu">
+							<div class="admin-menu">
+								<a href="admin-moderation-messages.html">Messages <span class="number">4</span></a>
+								<a href="admin-moderation-projects.html">Projects <span class="number">2</span></a>
+								<a href="admin-moderation-reviews.html">Reviews <span class="number">3</span></a>
+								<a href="admin-moderation-support.html" class="active">Support <span class="number">2</span></a>
+							</div>
+						</div>
 						<div class="chat-wrap d-flex">
 							<div class="chat-list">
-								<div class="chat-header d-flex justify-content-between">
-									<span class="chat-text-bold18">Contact</span>
-									<div class="chat-search d-flex align-items-center justify-content-end">
-										<input type="search" placeholder="Search">
-										<span class="mdi mdi-magnify"></span>
-									</div>
-								</div>
 								<div class="chat-list-body">
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center active">
-										<div class="img-wrap">
-											<img src="images/avatar.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Peter Quill</a>
-												<span class="date">23:12</span>
+									<div class="repeat-title-line d-flex justify-content-center align-items-center">
+										<span>22 May</span>
+									</div>
+									<div class="moderation-list-row">
+										<div class="chat-list-row admin-chat-toggle d-flex align-items-center active">
+											<div class="img-wrap">
+												<img src="images/avatar.png" alt="">
 											</div>
-											<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Peter Quill</a>
+													<span class="date">23:12</span>
+												</div>
+												<p class="chat-text">Congrats on the new job!</p>
 											</div>
 										</div>
 									</div>
-
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center">
-										<div class="img-wrap">
-											<img src="images/avatar.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Thanos</a>
-												<span class="date">13:10</span>
+									<div class="moderation-list-row">
+										<div class="chat-list-row admin-chat-toggle d-flex align-items-center active">
+											<div class="img-wrap">
+												<img src="images/avatar.png" alt="">
 											</div>
-											<p class="chat-text">Thank you</p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center">
-										<div class="img-wrap">
-											<img src="images/admin-logo.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Engre / Admin</a>
-												<span class="date">10:08</span>
-											</div>
-											<p class="chat-text">Congratulations on getting started on the platform</p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Peter Quill</a>
+													<span class="date">23:12</span>
+												</div>
+												<p class="chat-text">Congrats on the new job!</p>
 											</div>
 										</div>
 									</div>
@@ -173,22 +146,25 @@
 									<span class="mdi mdi-arrow-left close-chat"></span>
 									<span class="chat-text-bold18">Peter Quill <span class="chat-activity">Last seen at 14:34</span></span>
 								</div>
-								<div class="admin-chat-wrap">
-									<div class="chat-wrapper">
-										<div class="admin-chat-control">
+								<div class="admin-chat-wrap admin-moderation-wrap">
+									<div class="chat-wrapper chat-wrapper-noheading">
+										<div class="admin-chat-control" style="height: calc(100% - 98px);">
 											<span class="mdi mdi-chevron-right"></span>
 											<span class="author">Peter Quill / Admin Engre</span>
-										</div>
-										<div class="date">
-											<div class="svg-wrap">
-												<img src="images/wave.svg" alt="">
-											</div>
-											<span>Yestarday</span>
 										</div>
 										<div class="d-flex justify-content-start">
 											<div class="chat-message incoming">
 												<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
 												<span class="time">23:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message system-message d-flex align-items-center justify-content-between">
+												<span class="chat-text-bold16">Customer wants to close the project</span>
+												<div class="message-controls">
+													<span class="mdi mdi-close-box cancel"></span>
+													<span class="mdi mdi-checkbox-marked confirm"></span>
+												</div>
 											</div>
 										</div>
 										<div class="d-flex justify-content-start">

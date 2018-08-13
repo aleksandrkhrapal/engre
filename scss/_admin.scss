@@ -291,6 +291,7 @@
 
       .settings-holder {
         box-shadow: none;
+        background: none;
 
         .chat-wrap {
           .chat-list {
@@ -298,12 +299,22 @@
           }
 
           .chat-holder {
-            height: 100%;
+            @media (min-width: $screen-sm-max) {
+              height: 600px;
+            }
 
             .chat-wrapper {
               background-color: #fff;
               height: calc(100% - 120px);
               padding: 35px 30px 70px 80px;
+
+              &.chat-wrapper-noheading {
+                height: calc(100% - 40px);
+
+                .admin-chat-control {
+                  height: calc(100% - 40px);
+                }
+              }
 
               .admin-chat-control {
                 position: absolute;
@@ -319,7 +330,7 @@
                 @media (max-width: $screen-sm-max) {
                   display: none;
                 }
-                
+
                 .mdi {
                   display: block;
                   text-align: center;
@@ -362,12 +373,30 @@
               margin-top: 40px;
               @include transition(.4s);
 
+              .review-text {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 300;
+                margin: 0 0 30px 0;
+                font-style: italic;
+                letter-spacing: 0.4px;
+                text-align: justify;
+              }
+
               &.hide {
                 transform: translateX(100%);
               }
 
               @media (max-width: $screen-sm-max) {
                 margin-top: 0;
+              }
+
+              &.admin-moderation-wrap {
+                margin-top: 98px;
+
+                @media (max-width: $screen-sm-max) {
+                  margin-top: 30px;
+                }
               }
             }
 
@@ -592,6 +621,14 @@
     padding-bottom: 7px;
     position: relative;
     text-decoration: none;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 9px;
+      line-height: 9px;
+      color: $blue-dark;
+    }
 
     &:hover {
       &:after {
@@ -1090,6 +1127,116 @@
           @include transition(.2s);
         }
       }
+    }
+  }
+}
+
+.moderation-wrapper {
+  background: none;
+
+  .chat-header {
+    display: none !important;
+
+    @media (max-width: $screen-sm-max) {
+      display: flex !important;
+    }
+  }
+
+  .chat-wrap {
+    height: auto;
+
+    .chat-list-body {
+      height: auto;
+    }
+  }
+}
+
+.moderation-menu {
+  padding: 30px 30px 0 30px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 20px 15px;
+  }
+
+  .admin-menu {
+    margin: 0;
+  }
+}
+
+.moderation-list-row {
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .chat-list-row {
+    margin: 0;
+    box-shadow: $bs-default !important;
+    position: relative;
+    z-index: 1;
+
+    &.active {
+      border-color: transparent;
+    }
+  }
+
+  .chat-input-wrapper {
+    @include reset-position;
+    position: relative;
+  }
+}
+
+.moderation-buttons {
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+    
+    &.mdi-close {
+      background-color: $yellow;
+      color: #333;
+    }
+    
+    &.mdi-cancel, &.mdi-delete {
+      background-color: $red;
+    }
+
+    &.mdi-pause {
+      background-color: $blue-dark;
+    }
+
+    &.mdi-check {
+      background-color:$green;
+    }
+
+    &:before {
+      @include center(both);
+    }
+  }
+}
+
+.project-chat-name {
+  border-bottom: 1px solid #99a9b8;
+  margin-bottom: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 0 30px 30px 30px;
+
+  a {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: $blue-dark;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }

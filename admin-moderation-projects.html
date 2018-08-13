@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="admin-documents.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="admin-finances.html">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="admin-user-management.html">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="admin-moderation-messages.html" class="active">
+						<span class="mdi mdi-bell notification"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="admin-chat.html">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="admin-settings-languages.html">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>total backers</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>funded projects</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>live projects</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body admin-chat">
+					<div class="settings-holder settings-remove-bg-mobile overflow-hidden moderation-wrapper">
+						<div class="d-flex justify-content-between flex-wrap moderation-menu">
+							<div class="admin-menu">
+								<a href="admin-moderation-messages.html">Messages <span class="number">4</span></a>
+								<a href="admin-moderation-projects.html" class="active">Projects <span class="number">2</span></a>
+								<a href="admin-moderation-reviews.html">Reviews <span class="number">3</span></a>
+								<a href="admin-moderation-support.html">Support <span class="number">2</span></a>
+							</div>
+						</div>
+						<div class="moderation-menu">
+							<div class="row project-filters">
+								<div class="input-row">
+									<div class="dropdown dropdown-select dropdown-select-location">
+										<div class="selected-wrap" data-toggle="dropdown">
+											<span class="label">Search by name</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-magnify select-search-button"></span>
+										</div>
+										<div class="dropdown-menu">
+											<div class="dropdown-search">
+												<span class="mdi mdi-magnify icon-left"></span>
+												<span class="mdi mdi-close icon-right"></span>
+												<input type="search" placeholder="Start typing" autofocus="">
+											</div>
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#" class="active">Project 1</a>
+														<a href="#">Project 2</a>
+														<a href="#">Project 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="input-row">
+									<div class="dropdown dropdown-select">
+										<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+											<span class="label">Sort by industry</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-menu-down"></span>
+										</div>
+										<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#">Link 1</a>
+														<a href="#">Link 2</a>
+														<a href="#">Link 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="input-row">
+									<div class="dropdown dropdown-select">
+										<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+											<span class="label">Sort by</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-menu-down"></span>
+										</div>
+										<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#">Link 1</a>
+														<a href="#">Link 2</a>
+														<a href="#">Link 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-wrap d-flex">
+							<div class="chat-list">
+								<div class="chat-list-body">
+									<div class="info-block-wrap admin-chat-toggle">
+										<div class="status dark-blue"></div>
+										<div class="row align-items-center">
+											<div class="col-md-7">
+												<span>Project: <i>pause Павел Мороз</i><br><mark class="project-name">Repurpose viral metrics</mark></span>
+											</div>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
+											</div>
+											<div class="col-md-1">
+												<div class="review-controls d-flex justify-content-end align-items-center">
+													<span class="mdi mdi-pause pause"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="info-block-wrap admin-chat-toggle active">
+										<div class="row align-items-center">
+											<div class="col-md-7">
+												<span>Project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
+											</div>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
+											</div>
+											<div class="col-md-1">
+												<div class="review-controls d-flex justify-content-end align-items-center">
+													<!--<span class="mdi mdi-pause pause"></span>-->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="info-block-wrap admin-chat-toggle">
+										<div class="status grey"></div>
+										<div class="row align-items-center">
+											<div class="col-md-7">
+												<span>Project: <i>pause Павел Мороз</i><br><mark class="project-name">Repurpose viral metrics</mark></span>
+											</div>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
+											</div>
+											<div class="col-md-1">
+												<div class="review-controls d-flex justify-content-end align-items-center">
+													<!--<span class="mdi mdi-pause pause"></span>-->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat-holder chat-holder-sections">
+								<div class="chat-header d-flex">
+									<span class="mdi mdi-arrow-left close-chat"></span>
+									<span class="chat-text-bold18">Peter Quill <span class="chat-activity">Last seen at 14:34</span></span>
+								</div>
+								<div class="admin-chat-wrap">
+									<div class="chat-wrapper chat-wrapper-noheading">
+										<div class="admin-chat-control">
+											<span class="mdi mdi-chevron-right"></span>
+											<span class="author">Peter Quill / Admin Engre</span>
+										</div>
+										<div class="project-chat-name">
+											<a href="#">Empower real-time webservices</a>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
+												<span class="time">23:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message system-message d-flex align-items-center justify-content-between">
+												<span class="chat-text-bold16">Customer wants to close the project</span>
+												<div class="message-controls">
+													<span class="mdi mdi-close-box cancel"></span>
+													<span class="mdi mdi-checkbox-marked confirm"></span>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">Thank you</p>
+												<span class="time">13:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message your-message">
+												<p class="chat-text">Did you look at the details of the project?</p>
+												<span class="time">13:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">This is not the latest version</p>
+												<span class="time">15:12</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-input-wrapper">
+									<div class="d-flex align-items-center">
+										<div class="col-smiles">
+											<span class="mdi mdi-emoticon"></span>
+										</div>
+										<div class="col-add">
+											<span class="mdi mdi-paperclip"></span>
+										</div>
+										<div class="col-message">
+											<textarea placeholder="Write a message and press Enter" class="chat-message-textarea" style="height: 33px; overflow-y:hidden;"></textarea>
+										</div>
+										<div class="moderation-buttons">
+											<span class="mdi mdi-close"></span>
+											<span class="mdi mdi-cancel"></span>
+											<span class="mdi mdi-pause"></span>
+											<span class="mdi mdi-check"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

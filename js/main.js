@@ -362,16 +362,20 @@ $(document).ready(function () {
     });
 
     $('.close-chat').on('click', function () {
-        showChat();
+        $('.chat-holder').removeClass('active');
+        $('body').removeClass('overflow-h');
+        $('main').removeClass('z-index101');
     });
 
     function showChat() {
         if ($('.chat-holder').hasClass('active')) {
             $('.chat-holder').removeClass('active');
+            $('body').removeClass('overflow-h');
+            $('main').removeClass('z-index101');
         } else {
             $('.chat-holder').addClass('active');
+            $('body').addClass('overflow-h');
+            $('main').addClass('z-index101');
         }
     }
-
-
 });

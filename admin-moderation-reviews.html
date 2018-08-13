@@ -55,11 +55,11 @@
 						<span class="mdi mdi-account-key"></span>
 						<i>User management</i>
 					</a>
-					<a href="admin-moderation-messages.html">
+					<a href="admin-moderation-messages.html" class="active">
 						<span class="mdi mdi-bell notification"></span>
 						<i>Moderation <mark class="notification">12</mark></i>
 					</a>
-					<a href="admin-chat.html" class="active">
+					<a href="admin-chat.html">
 						<span class="mdi mdi-message-text"></span>
 						<i>Chat</i>
 					</a>
@@ -96,73 +96,51 @@
 				</div>
 
 				<div class="admin-container__body admin-chat">
-					<div class="settings-holder settings-remove-bg-mobile overflow-hidden">
+					<div class="settings-holder settings-remove-bg-mobile overflow-hidden moderation-wrapper">
+						<div class="d-flex justify-content-between flex-wrap moderation-menu">
+							<div class="admin-menu">
+								<a href="admin-moderation-messages.html">Messages <span class="number">4</span></a>
+								<a href="admin-moderation-projects.html">Projects <span class="number">2</span></a>
+								<a href="admin-moderation-reviews.html" class="active">Reviews <span class="number">3</span></a>
+								<a href="admin-moderation-support.html">Support <span class="number">2</span></a>
+							</div>
+						</div>
 						<div class="chat-wrap d-flex">
 							<div class="chat-list">
-								<div class="chat-header d-flex justify-content-between">
-									<span class="chat-text-bold18">Contact</span>
-									<div class="chat-search d-flex align-items-center justify-content-end">
-										<input type="search" placeholder="Search">
-										<span class="mdi mdi-magnify"></span>
-									</div>
-								</div>
 								<div class="chat-list-body">
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center active">
-										<div class="img-wrap">
-											<img src="images/avatar.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Peter Quill</a>
-												<span class="date">23:12</span>
+									<div class="info-block-wrap admin-chat-toggle">
+										<div class="status grey"></div>
+										<div class="row align-items-center">
+											<div class="col-md-8">
+												<span>Feedback on the project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
 											</div>
-											<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
 											</div>
 										</div>
 									</div>
-
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center">
-										<div class="img-wrap">
-											<img src="images/avatar.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Thanos</a>
-												<span class="date">13:10</span>
+									<div class="info-block-wrap admin-chat-toggle active">
+										<div class="status grey"></div>
+										<div class="row align-items-center">
+											<div class="col-md-8">
+												<span>Feedback on the project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
 											</div>
-											<p class="chat-text">Thank you</p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
 											</div>
 										</div>
 									</div>
-
-									<div class="chat-list-row admin-chat-toggle d-flex align-items-center">
-										<div class="img-wrap">
-											<img src="images/admin-logo.png" alt="">
-										</div>
-										<div class="chat-preview-info">
-											<div class="preview-top">
-												<a href="#">Engre / Admin</a>
-												<span class="date">10:08</span>
+									<div class="info-block-wrap admin-chat-toggle">
+										<div class="status grey"></div>
+										<div class="row align-items-center">
+											<div class="col-md-8">
+												<span>Feedback on the project: <br><mark class="project-name">Repurpose viral metrics</mark></span>
 											</div>
-											<p class="chat-text">Congratulations on getting started on the platform</p>
-										</div>
-										<div class="dropdown">
-											<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a class="dropdown-item" href="#">Inactive (ban)</a>
-												<a class="dropdown-item" href="#">Delete</a>
+											<div class="col-md-4">
+												<span>Budget: <mark>$200 000 000</mark></span>
+												<span>Deadline: <mark>12.12.2018</mark></span>
 											</div>
 										</div>
 									</div>
@@ -174,40 +152,24 @@
 									<span class="chat-text-bold18">Peter Quill <span class="chat-activity">Last seen at 14:34</span></span>
 								</div>
 								<div class="admin-chat-wrap">
-									<div class="chat-wrapper">
+									<div class="chat-wrapper chat-wrapper-noheading">
 										<div class="admin-chat-control">
 											<span class="mdi mdi-chevron-right"></span>
 											<span class="author">Peter Quill / Admin Engre</span>
 										</div>
-										<div class="date">
-											<div class="svg-wrap">
-												<img src="images/wave.svg" alt="">
-											</div>
-											<span>Yestarday</span>
+										<div class="project-chat-name">
+											<a href="#">Integrate clicks-and-mortar methodology</a>
 										</div>
-										<div class="d-flex justify-content-start">
-											<div class="chat-message incoming">
-												<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
-												<span class="time">23:12</span>
-											</div>
+										<div class="rating-wrap">
+											<img src="images/icon-diamond.svg" alt="">
+											<img src="images/icon-diamond.svg" alt="">
+											<img src="images/icon-diamond.svg" alt="">
 										</div>
-										<div class="d-flex justify-content-start">
-											<div class="chat-message incoming">
-												<p class="chat-text">Thank you</p>
-												<span class="time">13:12</span>
-											</div>
-										</div>
-										<div class="d-flex justify-content-end">
-											<div class="chat-message your-message">
-												<p class="chat-text">Did you look at the details of the project?</p>
-												<span class="time">13:12</span>
-											</div>
-										</div>
-										<div class="d-flex justify-content-start">
-											<div class="chat-message incoming">
-												<p class="chat-text">This is not the latest version</p>
-												<span class="time">15:12</span>
-											</div>
+										<p class="review-text">Mauna Loa, the biggest volcano on Earth — and one of the most active — covers half the Island of Hawaii. Just 35 miles to the northeast, Mauna Kea, known to native Hawaiians as Mauna a Wakea, rises nearly 14,000 feet above sea level. To them it represents a spiritual connection between our planet and the heavens above. </p>
+										<div class="uploaded-documents d-inline-block" style="width: auto">
+											<span class="mdi mdi-youtube"></span>
+											<span class="doc-name">verylongnamevideofile.mp4</span>
+											<span class="mdi mdi-delete delete"></span>
 										</div>
 									</div>
 								</div>
@@ -221,6 +183,11 @@
 										</div>
 										<div class="col-message">
 											<textarea placeholder="Write a message and press Enter" class="chat-message-textarea" style="height: 33px; overflow-y:hidden;"></textarea>
+										</div>
+										<div class="moderation-buttons">
+											<span class="mdi mdi-delete"></span>
+											<span class="mdi mdi-close"></span>
+											<span class="mdi mdi-check"></span>
 										</div>
 									</div>
 								</div>
