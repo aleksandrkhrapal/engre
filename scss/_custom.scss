@@ -48,6 +48,10 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+input:required {
+  box-shadow: none;
+}
+
 /* Webkit browsers like Safari and Chrome */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -57,6 +61,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 textarea {
   background: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 //btn styles
@@ -444,13 +454,6 @@ input {
   }
 }
 
-// styles only for IE
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  main {
-    min-height: calc(100vh - 160px);
-  }
-}
-
 .section-top {
   background: $gradient;
   margin-top: -70px;
@@ -639,10 +642,10 @@ input {
         content: '';
         display: block;
         position: absolute;
-        bottom: -13px;
+        bottom: -9px;
         left: 0;
         width: 100%;
-        height: 4px;
+        height: 2px;
         background-color: #fff;
       }
 
@@ -759,32 +762,30 @@ input {
       color: #fff;
       margin-right: 20px;
       position: relative;
+      //@include transition(.2s);
 
       &:after {
         content: '';
         display: block;
         position: absolute;
-        bottom: -13px;
+        bottom: -11px;
         left: 0;
         width: 100%;
-        height: 4px;
+        height: 2px;
         background-color: #fff;
         opacity: 0;
         visibility: hidden;
         @include transition(.2s);
-
-        @media (max-width: 900px) {
-
-        }
       }
 
       &:hover {
         text-decoration: none;
+        color: $yellow;
 
-        &:after {
+        /*&:after {
           opacity: 1;
           visibility: visible;
-        }
+        }*/
       }
 
       @media (max-width: $screen-xs-max) {
@@ -799,7 +800,12 @@ input {
 
       &.active {
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 500;
+        color: #fff;
+        
+        &:hover {
+          color: #fff;
+        }
 
         @media (max-width: $screen-xs-max) {
           display: none;

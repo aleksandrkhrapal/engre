@@ -1531,7 +1531,7 @@
     border-radius: 3px 3px 0 0;
   }
 
-  .mdi {
+  .close-chat {
     display: none;
 
     @media (max-width: $screen-sm-max) {
@@ -1562,6 +1562,7 @@
     margin-bottom: 20px;
     position: relative;
     border: 1px solid transparent;
+    cursor: pointer;
     @include transition(.3s);
 
     &:hover {
@@ -1841,10 +1842,15 @@
       line-height: 20px;
       font-weight: 700;
       color: #333;
+      @include transition(.4s);
     }
 
     &:focus, &.active {
       width: 100%;
+
+      @include input-placeholder {
+        font-weight: 300;
+      }
     }
   }
 

@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+    // textarea on click make new line
+    $('.textarea-autoheight').each(function () {
+        this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+    }).on('input', function () {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+
     // admin chat effects
     if($(window).width() > 767) {
         $('.admin-chat-toggle, .admin-chat-control').on('click', function (e) {
@@ -272,14 +281,6 @@ $(document).ready(function () {
             $(this).slick('slickPrev');
         }
     }));
-
-    // textarea on click make new line
-    $('.textarea-autoheight').each(function () {
-        this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-    }).on('input', function () {
-        this.style.height = 'auto';
-        this.style.height = (this.scrollHeight) + 'px';
-    });
 
     // chat message
     $('.chat-message-textarea').each(function () {
