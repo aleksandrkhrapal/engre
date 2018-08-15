@@ -97,6 +97,10 @@
     margin-bottom: 15px;
   }
 
+  @media (max-width: $screen-sm-max) {
+    padding: 30px 15px;
+  }
+
   &:hover {
     box-shadow: $bs-hover;
   }
@@ -372,6 +376,10 @@
 
   @media (max-width: 1024px) {
     padding: 75px 30px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 75px 15px;
   }
 
   .is-col {
