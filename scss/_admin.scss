@@ -346,6 +346,7 @@
                   line-height: 24px;
                   color: #fff;
                   padding: 20px 0;
+                  @include transition(.2s);
                 }
 
                 .author {
@@ -393,6 +394,12 @@
 
               &.hide {
                 transform: translateX(calc(100% - 50px));
+
+                .admin-chat-control {
+                  .mdi {
+                    transform: scaleX(-1);
+                  }
+                }
               }
 
               @media (max-width: $screen-sm-max) {
@@ -1186,7 +1193,13 @@
 
 .moderation-list-row {
   margin-bottom: 20px;
-  //overflow: hidden;
+  box-shadow: $bs-default !important;
+  overflow: hidden;
+  @include transition(.3s);
+
+  &:hover {
+    box-shadow: none !important;
+  }
 
   .chat-list-row {
     margin: 0;
@@ -1195,7 +1208,7 @@
     z-index: 1;
 
     &:hover {
-      box-shadow: none !important;
+      box-shadow: $bs-default !important;
     }
 
     &.active {
@@ -1206,6 +1219,7 @@
   .chat-input-wrapper {
     @include reset-position;
     position: relative;
+    padding: 10px 15px 5px 20px;
   }
 }
 

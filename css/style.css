@@ -3201,7 +3201,7 @@
       left: 0;
       width: 100%;
       overflow: auto;
-      height: calc(100% - 330px);
+      height: calc(100% - 390px);
       padding: 0 20px; }
       .doc-details .doc-details-activity .dd-activity-scroll-wrap .dd-activity-row {
         margin-bottom: 30px; }
@@ -3743,7 +3743,7 @@
       border: none;
       outline: none;
       width: 100%;
-      padding: 5px 0;
+      padding: 8px 0;
       resize: none;
       font-size: 16px;
       line-height: 23px;
@@ -5170,7 +5170,8 @@
               font-size: 24px;
               line-height: 24px;
               color: #fff;
-              padding: 20px 0; }
+              padding: 20px 0;
+              transition: all 0.2s ease-in-out; }
             .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .chat-wrapper .admin-chat-control .author {
               display: block;
               position: absolute;
@@ -5203,6 +5204,8 @@
             text-align: justify; }
           .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .admin-chat-wrap.hide {
             transform: translateX(calc(100% - 50px)); }
+            .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .admin-chat-wrap.hide .admin-chat-control .mdi {
+              transform: scaleX(-1); }
           @media (max-width: 767px) {
             .admin-container__body.admin-chat .settings-holder .chat-wrap .chat-holder .admin-chat-wrap {
               margin-top: 0; } }
@@ -5767,14 +5770,19 @@
     margin: 0; }
 
 .moderation-list-row {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08) !important;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; }
+  .moderation-list-row:hover {
+    box-shadow: none !important; }
   .moderation-list-row .chat-list-row {
     margin: 0;
     box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08) !important;
     position: relative;
     z-index: 1; }
     .moderation-list-row .chat-list-row:hover {
-      box-shadow: none !important; }
+      box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08) !important; }
     .moderation-list-row .chat-list-row.active {
       border-color: transparent; }
   .moderation-list-row .chat-input-wrapper {
@@ -5784,7 +5792,8 @@
     bottom: auto;
     right: auto;
     transform: none;
-    position: relative; }
+    position: relative;
+    padding: 10px 15px 5px 20px; }
 
 .moderation-buttons span {
   display: inline-block;
@@ -7456,7 +7465,11 @@ input {
             font-weight: 300;
             color: #666;
             margin-bottom: 9px;
-            padding: 0; }
+            padding: 0;
+            transition: all 0.2s ease-in-out; }
+            .dropdown-select .dropdown-menu .dropdown-list-wrapper .dropdown-list .dropdown-list-row a:hover {
+              text-decoration: none;
+              color: #0d47a1; }
             .dropdown-select .dropdown-menu .dropdown-list-wrapper .dropdown-list .dropdown-list-row a:last-child {
               margin-bottom: 0; }
             .dropdown-select .dropdown-menu .dropdown-list-wrapper .dropdown-list .dropdown-list-row a.active {

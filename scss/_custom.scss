@@ -2197,6 +2197,12 @@ input {
             color: #666;
             margin-bottom: 9px;
             padding: 0;
+            @include transition(.2s);
+            
+            &:hover {
+              text-decoration: none;
+              color: $blue-dark;
+            }
 
             &:last-child {
               margin-bottom: 0;
