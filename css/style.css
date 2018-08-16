@@ -2399,14 +2399,33 @@
     visibility: visible; }
 
 .explore-list {
-  max-width: 460px;
-  margin: 30px auto 0 auto;
-  padding: 0 0 0 15px;
-  text-align: left; }
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  @media (max-width: 1199px) {
+    .explore-list {
+      margin: 0 0 50px 0; } }
   .explore-list li {
     font-size: 16px;
     line-height: 18px;
-    margin: 15px 0; }
+    font-weight: 300;
+    margin: 15px 0;
+    position: relative;
+    padding-left: 30px; }
+    .explore-list li.plus:before {
+      content: '\F12C';
+      color: #3c3; }
+    .explore-list li.minus:before {
+      content: "\F156";
+      color: #f33; }
+    .explore-list li:before {
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      font-size: 20px;
+      line-height: 20px;
+      font: normal normal normal 24px/1 "Material Design Icons"; }
 
 .notifications-setting-top {
   padding: 50px 120px; }
@@ -2706,10 +2725,12 @@
   @media (max-width: 575px) {
     .add-company-wrapper {
       padding: 50px 15px; } }
+  .add-company-wrapper .button-styles-wrap .button-styles {
+    margin: 0 10px 50px 10px; }
 
 .add-company-hint {
-  text-align: center;
-  margin-bottom: 30px; }
+  padding-left: 30px;
+  margin-bottom: 20px; }
   @media (max-width: 575px) {
     .add-company-hint {
       margin-bottom: 15px; } }
@@ -2717,7 +2738,7 @@
     display: block;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 300; }
+    font-weight: 700; }
 
 .read-more-info {
   display: inline-block;
@@ -2753,11 +2774,18 @@
         line-height: 20px; } }
   .add-company-title p {
     font-size: 18px;
-    line-height: 23px; }
+    line-height: 26px;
+    margin: 0; }
     @media (max-width: 575px) {
       .add-company-title p {
         font-size: 14px;
         line-height: 23px; } }
+  .add-company-title i {
+    display: block;
+    font-style: normal;
+    color: #0d47a1;
+    font-size: 16px;
+    line-height: 18px; }
 
 .button-styles-wrap .button-styles {
   display: inline-block;
@@ -2768,7 +2796,7 @@
     .button-styles-wrap .button-styles {
       width: 100% !important;
       min-width: initial;
-      margin: 0 0 15px 0; } }
+      margin: 0 0 15px 0 !important; } }
 
 .input-link {
   display: block;

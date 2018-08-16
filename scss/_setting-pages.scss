@@ -118,15 +118,45 @@
 }
 
 .explore-list {
-  max-width: 460px;
-  margin: 30px auto 0 auto;
-  padding: 0 0 0 15px;
-  text-align: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (max-width: $screen-lg-max) {
+    margin: 0 0 50px 0;
+  }
 
   li {
     font-size: 16px;
     line-height: 18px;
+    font-weight: 300;
     margin: 15px 0;
+    position: relative;
+    padding-left: 30px;
+
+    &.plus {
+      &:before {
+        content: '\F12C';
+        color: $green;
+      }
+    }
+
+    &.minus {
+      &:before {
+        content: "\F156";
+        color: $red;
+      }
+    }
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      font-size: 20px;
+      line-height: 20px;
+      font: normal normal normal 24px/1 "Material Design Icons";
+    }
   }
 }
 
@@ -517,11 +547,17 @@
   @media (max-width: $screen-xs-max) {
     padding: 50px 15px;
   }
+
+  .button-styles-wrap {
+    .button-styles {
+      margin: 0 10px 50px 10px;
+    }
+  }
 }
 
 .add-company-hint {
-  text-align: center;
-  margin-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 20px;
 
   @media (max-width: $screen-xs-max) {
     margin-bottom: 15px;
@@ -531,7 +567,7 @@
     display: block;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: 700;
   }
 }
 
@@ -578,12 +614,21 @@
 
   p {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 26px;
+    margin: 0;
 
     @media (max-width: $screen-xs-max) {
       font-size: 14px;
       line-height: 23px;
     }
+  }
+
+  i {
+    display: block;
+    font-style: normal;
+    color: $blue-dark;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -597,7 +642,7 @@
     @media (max-width: $screen-xs-max) {
       width: 100% !important;
       min-width: initial;
-      margin: 0 0 15px 0;
+      margin: 0 0 15px 0 !important;
     }
   }
 }
