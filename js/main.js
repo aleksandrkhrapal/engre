@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    // footer callback div
+    $('.footer-callback-button').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.callback-wrap').toggleClass('active');
+
+        $(document).one('click', function closeMenu(e) {
+            if ($('.callback-wrap').has(e.target).length === 0) {
+                $('.callback-wrap').removeClass('active');
+            } else {
+                $(document).one('click', closeMenu);
+            }
+        });
+    });
+
     // textarea on click make new line
     $('.textarea-autoheight').each(function () {
         this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
@@ -288,21 +303,6 @@ $(document).ready(function () {
     }).on('input', function () {
         this.style.height = '33';
         this.style.height = (this.scrollHeight) + 'px';
-    });
-
-    // footer callback div
-    $('.footer-callback-button').on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.callback-wrap').toggleClass('active');
-
-        $(document).one('click', function closeMenu(e) {
-            if ($('.callback-wrap').has(e.target).length === 0) {
-                $('.callback-wrap').removeClass('active');
-            } else {
-                $(document).one('click', closeMenu);
-            }
-        });
     });
 
     // contract effects
