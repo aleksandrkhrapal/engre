@@ -227,13 +227,17 @@
     line-height: 20px;
     font-weight: 300;
     padding: 9px 10px;
-    color: $blue-dark;
+    color: #333;
     cursor: pointer;
     @include transition(.2s);
 
+    &:focus {
+      color: $blue-dark;
+      border-color: $blue-dark;
+    }
+
     &:focus,
     &.active {
-      border-color: $blue-dark;
       cursor: auto;
 
       + label {

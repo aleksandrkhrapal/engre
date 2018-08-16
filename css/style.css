@@ -1435,11 +1435,13 @@
     line-height: 20px;
     font-weight: 300;
     padding: 9px 10px;
-    color: #0d47a1;
+    color: #333;
     cursor: pointer;
     transition: all 0.2s ease-in-out; }
+    .input-row input:focus, .input-row textarea:focus {
+      color: #0d47a1;
+      border-color: #0d47a1; }
     .input-row input:focus, .input-row input.active, .input-row textarea:focus, .input-row textarea.active {
-      border-color: #0d47a1;
       cursor: auto; }
       .input-row input:focus + label, .input-row input.active + label, .input-row textarea:focus + label, .input-row textarea.active + label {
         top: -14px;
@@ -2736,8 +2738,8 @@
       margin-bottom: 15px; } }
   .add-company-hint span {
     display: block;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 20px;
     font-weight: 700; }
 
 .read-more-info {
@@ -7435,8 +7437,7 @@ input {
     .dropdown-select .selected-wrap .selected-item {
       font-size: 18px;
       line-height: 20px;
-      font-weight: 300;
-      color: #0d47a1; }
+      font-weight: 300; }
     .dropdown-select .selected-wrap .mdi {
       position: absolute;
       top: 10px;
