@@ -62,6 +62,10 @@
         line-height: 24px;
         font-weight: 300;
         margin: 0 0 30px 0;
+
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }
@@ -414,6 +418,10 @@
 .modal-dialog-email {
   box-shadow: none !important;
   width: 275px;
+
+  @media (max-width: $screen-xs-max) {
+    width: calc(100% - 20px);
+  }
 
   .modal-content {
     border-radius: 3px;

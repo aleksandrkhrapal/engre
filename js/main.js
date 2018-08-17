@@ -381,4 +381,9 @@ $(document).ready(function () {
             }
         }
     }
+
+    $('.col-options').on('click', function () {
+        $(this).toggleClass('active');
+        $('.moderation-buttons').toggleClass('show');
+    });
 });

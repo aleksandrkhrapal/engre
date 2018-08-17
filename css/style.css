@@ -46,6 +46,8 @@
       line-height: 24px;
       font-weight: 300;
       margin: 0 0 30px 0; }
+      .reviews-modal .modal-dialog .modal-wrapper p:last-child {
+        margin: 0; }
 
 .add-review {
   margin-top: 30px; }
@@ -300,6 +302,9 @@
 .modal-dialog-email {
   box-shadow: none !important;
   width: 275px; }
+  @media (max-width: 575px) {
+    .modal-dialog-email {
+      width: calc(100% - 20px); } }
   .modal-dialog-email .modal-content {
     border-radius: 3px; }
 
@@ -2326,7 +2331,8 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, #007fac, rgba(0, 127, 172, 0));
-    z-index: 0; }
+    z-index: 0;
+    transition: all 0.2s ease-in-out; }
   .setting-wrapper .settings-section {
     position: relative;
     z-index: 10; }
@@ -2964,7 +2970,9 @@
   box-shadow: 0 13px 33px 0 rgba(13, 71, 161, 0.33); }
   @media (max-width: 575px) {
     .reviews-search-wrap {
-      padding: 15px; } }
+      padding: 0;
+      background: none;
+      box-shadow: none; } }
   .reviews-search-wrap .review-search-block {
     background: #fff;
     box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
@@ -3646,7 +3654,7 @@
   border: 1px solid transparent; }
   @media (max-width: 767px) {
     .chat-message {
-      width: 320px; } }
+      width: 300px; } }
   .chat-message.incoming {
     border-radius: 0 8px 8px 8px; }
   .chat-message.your-message {
@@ -3799,6 +3807,20 @@
         font-size: 16px;
         line-height: 23px;
         color: #99a9b8; }
+  .chat-input-wrapper .col-options {
+    display: none;
+    font-size: 22px;
+    line-height: 22px;
+    margin-left: 10px; }
+    .chat-input-wrapper .col-options .mdi-close {
+      display: none; }
+    .chat-input-wrapper .col-options.active .mdi-close {
+      display: block; }
+    .chat-input-wrapper .col-options.active .mdi-dots-vertical {
+      display: none; }
+    @media (max-width: 991px) {
+      .chat-input-wrapper .col-options {
+        display: block; } }
   .chat-input-wrapper .col-send {
     margin-left: 20px; }
     .chat-input-wrapper .col-send .mdi {
@@ -4923,7 +4945,7 @@
       .view-more-wrapper:before {
         transform: none;
         top: -15px;
-        left: -15px;
+        left: -8px;
         margin: 0;
         width: 50%;
         height: 100px; } }
@@ -5050,7 +5072,7 @@
         .admin-sidebar__menu a:hover i {
           color: #fdd835; }
       .admin-sidebar__menu a.active {
-        background-color: #fff;
+        background-color: #f1f5f8;
         color: #0d47a1; }
         .admin-sidebar__menu a.active i {
           color: #0d47a1; }
@@ -5826,6 +5848,18 @@
     position: relative;
     padding: 10px 15px 5px 20px; }
 
+@media (max-width: 991px) {
+  .moderation-buttons {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 90%;
+    right: 10px;
+    transition: all 0.3s ease-in-out; }
+    .moderation-buttons.show {
+      bottom: 100%;
+      opacity: 1;
+      visibility: visible; } }
 .moderation-buttons span {
   display: inline-block;
   vertical-align: middle;
@@ -5837,6 +5871,10 @@
   line-height: 20px;
   cursor: pointer;
   color: #fff; }
+  @media (max-width: 991px) {
+    .moderation-buttons span {
+      display: block;
+      margin: 10px 0; } }
   .moderation-buttons span.mdi-close {
     background-color: #fdd835;
     color: #333; }
@@ -7390,7 +7428,8 @@ input {
       display: block;
       text-align: center;
       border-bottom: none;
-      text-decoration: underline; } }
+      text-decoration: underline;
+      margin-bottom: 30px; } }
   .reset-pass-link:hover {
     text-decoration: none;
     border-color: transparent; }
@@ -7459,6 +7498,7 @@ input {
       left: 0;
       width: 100%;
       height: 30px;
+      border-radius: 0 0 8px 8px;
       background: linear-gradient(to top, white, rgba(255, 255, 255, 0)); }
     .dropdown-select .dropdown-menu .dropdown-search {
       position: relative;

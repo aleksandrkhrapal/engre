@@ -138,7 +138,7 @@
       }
 
       &.active {
-        background-color: #fff;
+        background-color: #f1f5f8;
         color: $blue-dark;
 
         i {
@@ -1224,6 +1224,21 @@
 }
 
 .moderation-buttons {
+  @media (max-width: $screen-md-max) {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 90%;
+    right: 10px;
+    @include transition(.3s);
+
+    &.show {
+      bottom: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   span {
     display: inline-block;
     vertical-align: middle;
@@ -1235,6 +1250,11 @@
     line-height: 20px;
     cursor: pointer;
     color: #fff;
+
+    @media (max-width: $screen-md-max) {
+      display: block;
+      margin: 10px 0;
+    }
 
     &.mdi-close {
       background-color: $yellow;
