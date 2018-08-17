@@ -2401,11 +2401,12 @@
     visibility: visible; }
 
 .explore-list {
-  padding: 0;
+  padding: 0 52px;
   margin: 0;
   list-style: none; }
   @media (max-width: 1199px) {
     .explore-list {
+      padding: 0;
       margin: 0 0 50px 0; } }
   .explore-list li {
     font-size: 16px;
