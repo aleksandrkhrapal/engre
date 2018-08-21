@@ -115,6 +115,19 @@
   }
 }
 
+.about-list {
+  margin: 0;
+  list-style: none;
+
+  li {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0 0 10px 0;
+  }
+}
+
 .banner-content-wrap {
   max-width: 800px;
   margin: -95px auto 0 auto;

@@ -1117,6 +1117,7 @@
 
       li {
         margin-bottom: 10px;
+        cursor: pointer;
 
         &:hover {
           mark {
@@ -1151,7 +1152,6 @@
           line-height: 20px;
           opacity: 0;
           visibility: hidden;
-          cursor: pointer;
           @include transition(.2s);
         }
       }
@@ -1320,6 +1320,11 @@
     overflow: hidden;
     cursor: pointer;
     user-select: none;
+    @include transition(.2s);
+
+    &:hover {
+      box-shadow: none;
+    }
 
     @media (max-width: $screen-xs-max) {
       width: 100%;
