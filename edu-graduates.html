@@ -150,6 +150,9 @@
 							<li>- environmental engineering,</li>
 							<li>- alternative energy engineering.</li>
 						</ul>
+						<div class="learn-more-button text-center">
+							<span class="btn-site" data-toggle="modal" data-target="#edu-modal">Learn more</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -211,6 +214,40 @@
 		</footer>
 
 		<div class="mobile-menu-mask"></div>
+
+		<!-- Modals -->
+		<div class="modal fade" id="edu-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered career-modal-dialog" role="document">
+				<div class="modal-content">
+					<h2>LEARN MORE</h2>
+					<span class="modal-close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close"></span></span>
+					<form action="#">
+						<div class="input-row">
+							<input type="text" id="id-name">
+							<label for="id-name">Name</label>
+						</div>
+						<div class="input-row">
+							<input type="email" id="id-email">
+							<label for="id-email">Email</label>
+						</div>
+						<div class="input-row">
+							<input type="text" id="id-company">
+							<label for="id-company">Company</label>
+						</div>
+						<div class="input-row">
+							<input type="tel" id="id-tel">
+							<label for="id-tel">Phone</label>
+						</div>
+						<div class="input-row">
+							<textarea placeholder="I am interested in..." class="height120"></textarea>
+						</div>
+						<div class="input-row-button">
+							<input class="btn-site" type="submit" value="Send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
 		<!-- Include script -->
 		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>

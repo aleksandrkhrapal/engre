@@ -292,6 +292,39 @@
   textarea {
     resize: none;
     min-height: 40px;
+
+    &::-webkit-input-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333;
+    }
+
+    &::-moz-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333;
+    }
+
+    &:-moz-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333;
+    }
+
+    &.height120 {
+      height: 120px;
+      border: 1px solid #333;
+    }
   }
 
   label {

@@ -1479,6 +1479,29 @@
   .input-row textarea {
     resize: none;
     min-height: 40px; }
+    .input-row textarea::-webkit-input-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333; }
+    .input-row textarea::-moz-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333; }
+    .input-row textarea:-ms-input-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333; }
+    .input-row textarea:-moz-placeholder {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #333; }
+    .input-row textarea.height120 {
+      height: 120px;
+      border: 1px solid #333; }
   .input-row label {
     position: absolute;
     top: 10px;
@@ -4598,6 +4621,9 @@
     font-size: 16px;
     line-height: 20px;
     padding: 9px 0 7px 0; }
+
+.learn-more-button {
+  padding-top: 50px; }
 
 .is-heading {
   width: 100%;
