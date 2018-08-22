@@ -106,6 +106,12 @@ select {
   &.w100 {
     width: 100%;
   }
+
+  &.expired {
+    background-color: $grey;
+    color: #fff;
+    pointer-events: none;
+  }
 }
 
 //checkbox styles

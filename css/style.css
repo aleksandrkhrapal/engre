@@ -6086,6 +6086,10 @@ select {
     background: #ffca3d; }
   .btn-site.w100 {
     width: 100%; }
+  .btn-site.expired {
+    background-color: #99a9b8;
+    color: #fff;
+    pointer-events: none; }
 
 .checkbox.checkbox_black label .check-wrap {
   border-color: #000; }
