@@ -6088,8 +6088,7 @@ select {
     width: 100%; }
   .btn-site.expired {
     background-color: #99a9b8;
-    color: #fff;
-    pointer-events: none; }
+    color: #fff; }
 
 .checkbox.checkbox_black label .check-wrap {
   border-color: #000; }
@@ -6988,6 +6987,10 @@ input {
         .back-to-wrapper a span {
           font-size: 20px;
           line-height: 20px; } }
+    .back-to-wrapper a mark {
+      background: none;
+      padding: 0;
+      color: #f33; }
 
 .comment-wrapper__author-info {
   background-color: #fff;
@@ -7656,6 +7659,16 @@ input {
     line-height: 26px;
     font-weight: 300;
     color: #fff; }
+  .error-page-wrapper .btn-site {
+    margin-bottom: 30px; }
+  .error-page-wrapper .back-previous {
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: all 0.2s ease-in-out; }
+    .error-page-wrapper .back-previous:hover {
+      border-color: transparent;
+      text-decoration: none; }
 
 @-moz-document url-prefix() {
   .videoWrap {

@@ -110,7 +110,6 @@ select {
   &.expired {
     background-color: $grey;
     color: #fff;
-    pointer-events: none;
   }
 }
 
@@ -1363,6 +1362,12 @@ input {
         line-height: 20px;
       }
     }
+    
+    mark {
+      background: none;
+      padding: 0;
+      color: $red;
+    }
   }
 }
 
@@ -2304,7 +2309,19 @@ input {
     color: #fff;
   }
 
-  p {
+  .btn-site {
+    margin-bottom: 30px;
+  }
 
+  .back-previous {
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    @include transition(.2s);
+
+    &:hover {
+      border-color: transparent;
+      text-decoration: none;
+    }
   }
 }
