@@ -2274,3 +2274,37 @@ input {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.error-page-wrapper {
+  @include center(both);
+  padding: 0 15px;
+  width: 550px;
+  text-align: center;
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    @include reset-position;
+    padding: 50px 15px;
+  }
+
+  span {
+    display: block;
+    color: #fff;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 0 0 50px 0;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  p {
+
+  }
+}
