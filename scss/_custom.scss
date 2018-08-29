@@ -506,6 +506,37 @@ input {
   }
 }
 
+.partner-nav {
+  @include transition(.3s);
+
+  .categories-wrapper {
+    margin: 0;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $blue-dark;
+
+  .categories-wrapper {
+    border-color: transparent;
+
+    .categories-list {
+      .categories-dropdown {
+        a {
+          &:after {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
 .categories-wrapper {
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 50px;

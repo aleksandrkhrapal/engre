@@ -113,6 +113,54 @@
       margin-bottom: 0;
     }
   }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.list-circle {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 15px;
+  list-style: none;
+
+  li {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $yellow;
+    }
+  }
+}
+
+.list-line {
+  margin: 0 0 30px 0;
+  padding: 0 0 0 15px;
+  list-style: none;
+
+  li {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
 }
 
 .about-list {
@@ -159,11 +207,15 @@
     font-size: 24px;
     line-height: 1.25;
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 30px 0;
+
+    &:last-child {
+      margin: 0;
+    }
 
     cite {
       display: block;
-      margin-top: 40px;
+      margin-top: 15px;
       font-weight: 500;
       text-align: center;
 
