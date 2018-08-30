@@ -387,21 +387,20 @@ $(document).ready(function () {
         $('.moderation-buttons').toggleClass('show');
     });
 
-    /*var fixmeTop = $('.partner-nav').offset().top;
+    var fixmeTop = $('.consulting-nav-wrap').offset().top;
     $(window).scroll(function() {
         var currentScroll = $(window).scrollTop();
         if (currentScroll >= fixmeTop) {
-            $('.partner-nav').addClass('fixed');
+            $('.consulting-nav-wrap').addClass('fixed');
         } else {
-            $('.partner-nav').removeClass('fixed');
+            $('.consulting-nav-wrap').removeClass('fixed');
         }
     });
 
-    $(document).on('click', '.partner-nav .categories-wrapper .categories-list a', function (event) {
-        event.preventDefault();
-
+    $(document).on('click', '.consulting-nav a', function (e) {
+        e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
+            scrollTop: $($.attr(this, 'href')).offset().top - 40
         }, 500);
-    });*/
+    });
 });

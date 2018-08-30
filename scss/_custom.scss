@@ -520,19 +520,11 @@ input {
   left: 0;
   width: 100%;
   background-color: $blue-dark;
+  z-index: 100;
 
-  .categories-wrapper {
-    border-color: transparent;
-
-    .categories-list {
-      .categories-dropdown {
-        a {
-          &:after {
-            opacity: 0;
-            visibility: hidden;
-          }
-        }
-      }
+  .consulting-nav {
+    a {
+      color: #fff;
     }
   }
 }

@@ -827,3 +827,21 @@
 .learn-more-button {
   padding-top: 50px;
 }
+
+.consulting-nav-wrap {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  @include transition(.3s);
+
+  .consulting-nav {
+    a {
+      display: inline-block;
+      margin-right: 20px;
+      color: #333;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300;
+      @include transition(.3s);
+    }
+  }
+}

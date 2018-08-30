@@ -4663,6 +4663,19 @@
 .learn-more-button {
   padding-top: 50px; }
 
+.consulting-nav-wrap {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out; }
+  .consulting-nav-wrap .consulting-nav a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out; }
+
 .is-heading {
   width: 100%;
   background-color: #fff;
@@ -6391,12 +6404,10 @@ input {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0d47a1; }
-  .fixed .categories-wrapper {
-    border-color: transparent; }
-    .fixed .categories-wrapper .categories-list .categories-dropdown a:after {
-      opacity: 0;
-      visibility: hidden; }
+  background-color: #0d47a1;
+  z-index: 100; }
+  .fixed .consulting-nav a {
+    color: #fff; }
 
 .categories-wrapper {
   border-bottom: 1px solid #ebebeb;
