@@ -387,7 +387,7 @@ $(document).ready(function () {
         $('.moderation-buttons').toggleClass('show');
     });
 
-    var fixmeTop = $('.partner-nav').offset().top;
+    /*var fixmeTop = $('.partner-nav').offset().top;
     $(window).scroll(function() {
         var currentScroll = $(window).scrollTop();
         if (currentScroll >= fixmeTop) {
@@ -403,5 +403,5 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
-    });
+    });*/
 });
