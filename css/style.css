@@ -2590,6 +2590,11 @@
   padding-top: 10px;
   padding-right: 40px;
   margin-bottom: 25px; }
+  .upload-wrapper.w275 {
+    width: 275px; }
+    @media (max-width: 767px) {
+      .upload-wrapper.w275 {
+        width: 100%; } }
   @media (max-width: 1199px) {
     .upload-wrapper {
       padding-right: 0; } }
@@ -4676,6 +4681,168 @@
     font-weight: 300;
     transition: all 0.3s ease-in-out; }
 
+.software-search {
+  position: relative; }
+  .software-search input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 25px 5px 10px;
+    border-bottom: 1px solid #b5b7b9;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #333; }
+  .software-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+    cursor: pointer; }
+    .software-search button .mdi {
+      font-size: 22px;
+      line-height: 32px; }
+
+.software-solutions {
+  padding-bottom: 100px; }
+  .software-solutions .software-col {
+    display: block;
+    padding: 20px;
+    box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; }
+    .software-solutions .software-col:hover {
+      box-shadow: 0 13px 33px 0 rgba(13, 71, 161, 0.33); }
+    @media (max-width: 575px) {
+      .software-solutions .software-col {
+        padding: 10px;
+        margin-bottom: 15px; } }
+    .software-solutions .software-col .software-logo {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      margin-right: 30px; }
+      @media (max-width: 575px) {
+        .software-solutions .software-col .software-logo {
+          width: 75px;
+          height: 75px;
+          margin-right: 15px; } }
+      .software-solutions .software-col .software-logo img {
+        max-width: 100%;
+        border-radius: 8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .software-solutions .software-col .software-info {
+      flex: 1;
+      color: #333; }
+      .software-solutions .software-col .software-info .software-info-top .software-info-title {
+        display: block;
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700; }
+        @media (max-width: 575px) {
+          .software-solutions .software-col .software-info .software-info-top .software-info-title {
+            font-size: 18px;
+            line-height: 20px; } }
+      .software-solutions .software-col .software-info .software-info-top p {
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 300;
+        margin: 0 0 15px 0; }
+      .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col {
+        margin-right: 30px; }
+        .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col:last-child {
+          margin-right: 0; }
+        @media (max-width: 575px) {
+          .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col {
+            margin-bottom: 15px; } }
+        .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col span {
+          display: block;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 300; }
+        .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col i {
+          display: block;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 700; }
+        .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col img {
+          display: inline-block;
+          vertical-align: middle;
+          height: 30px;
+          margin-right: 30px; }
+          .software-solutions .software-col .software-info .software-info-bottom .software-info-bottom-col img:last-child {
+            margin-right: 0; }
+
+.software-title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 80px; }
+  .software-title mark {
+    background: none;
+    padding: 0;
+    color: #0d47a1; }
+  @media (max-width: 575px) {
+    .software-title {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .software-dropdown {
+    margin: 15px 0; } }
+.software-dropdown .download-button {
+  min-width: 200px;
+  background-color: #4fc5eb;
+  outline: none;
+  border: none;
+  text-align: left;
+  border-radius: 3px;
+  padding: 15px 15px 13px 15px;
+  cursor: pointer; }
+  .software-dropdown .download-button[aria-expanded="true"] {
+    border-radius: 3px 3px 0 0; }
+  .software-dropdown .download-button mark {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    background: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    overflow: hidden; }
+    .software-dropdown .download-button mark .mdi {
+      float: right; }
+.software-dropdown .dropdown-menu {
+  margin-top: 0;
+  border-radius: 0 0 3px 3px;
+  padding: 0;
+  width: 100%; }
+  .software-dropdown .dropdown-menu a {
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out; }
+    .software-dropdown .dropdown-menu a:last-child {
+      border-radius: 0 0 3px 3px; }
+    .software-dropdown .dropdown-menu a:hover {
+      background-color: #f1f5f8; }
+
 .is-heading {
   width: 100%;
   background-color: #fff;
@@ -5705,6 +5872,13 @@
     vertical-align: middle;
     font-size: 20px;
     line-height: 20px; }
+.edit-controls .dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px; }
+  @media (max-width: 575px) {
+    .edit-controls .dropdown {
+      margin-left: 0; } }
 
 .edit-wrapper .edit-top {
   margin-bottom: 40px; }
@@ -5728,6 +5902,8 @@
   outline: none;
   color: #333;
   margin-bottom: 40px; }
+  .edit-wrapper .textarea-edit.height120 {
+    height: 120px; }
 
 .edit-buttons a {
   margin-left: 30px; }
@@ -7388,7 +7564,10 @@ input {
   margin-bottom: 10px;
   position: relative;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  .edit-buttons-wrap .edit-button:hover {
+    background-color: #798794; }
   @media (max-width: 575px) {
     .edit-buttons-wrap .edit-button {
       width: 25px;
@@ -7565,6 +7744,19 @@ input {
   .dropdown-select.dropdown-select-location .dropdown-menu {
     margin-top: -40px;
     transform: translate3d(0, 40px, 0px) !important; }
+  .dropdown-select.dropdown-software-adm {
+    min-width: 145px; }
+    .dropdown-select.dropdown-software-adm .selected-wrap {
+      border: none; }
+      .dropdown-select.dropdown-software-adm .selected-wrap .label {
+        color: #0d47a1;
+        font-weight: 700; }
+      .dropdown-select.dropdown-software-adm .selected-wrap .mdi {
+        color: #0d47a1; }
+        .dropdown-select.dropdown-software-adm .selected-wrap .mdi.upload {
+          right: 43px; }
+    .dropdown-select.dropdown-software-adm .dropdown-menu {
+      width: 200px; }
   .dropdown-select .selected-wrap {
     width: 100%;
     height: 40px;
@@ -7585,6 +7777,7 @@ input {
       position: absolute;
       top: 10px;
       left: 10px;
+      user-select: none;
       transition: all 0.2s ease-in-out; }
     .dropdown-select .selected-wrap .selected-item {
       font-size: 18px;
