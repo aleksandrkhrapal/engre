@@ -5928,11 +5928,11 @@
   text-transform: uppercase;
   text-align: center;
   transition: all 0.2s ease-in-out; }
-  .btn-sign:hover {
+  .btn-sign:hover, .btn-sign.signed {
     background-color: #0d47a1;
     text-decoration: none;
     color: #fff; }
-    .btn-sign:hover .st0 {
+    .btn-sign:hover .st0, .btn-sign.signed .st0 {
       fill: #fff !important; }
   .btn-sign svg {
     display: inline-block;

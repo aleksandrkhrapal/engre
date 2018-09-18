@@ -990,7 +990,7 @@
   text-align: center;
   @include transition(.2s);
 
-  &:hover {
+  &:hover, &.signed {
     background-color: $blue-dark;
     text-decoration: none;
     color: #fff;
