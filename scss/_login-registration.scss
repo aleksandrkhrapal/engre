@@ -534,7 +534,8 @@
 }
 
 .reset-pass-wrapper {
-  @include center(both);
+  @include center(horizontal);
+  top: 35%;
 
   @media (max-height: 650px) {
     @include reset-position;
