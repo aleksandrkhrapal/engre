@@ -1661,6 +1661,18 @@
   left: 50%;
   transform: translate(-50%);
   top: 35%; }
+  .reset-pass-wrapper.recover-pass h2 {
+    font-size: 43px;
+    line-height: 45px; }
+    @media (max-width: 575px) {
+      .reset-pass-wrapper.recover-pass h2 {
+        font-size: 24px;
+        line-height: 26px; } }
+  .reset-pass-wrapper.recover-pass .inputs-wrap {
+    padding: 80px 92px 0 92px; }
+    @media (max-width: 575px) {
+      .reset-pass-wrapper.recover-pass .inputs-wrap {
+        padding: 70px 20px 0 20px; } }
   @media (max-height: 650px) {
     .reset-pass-wrapper {
       position: inherit;
