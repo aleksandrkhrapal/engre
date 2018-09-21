@@ -6673,9 +6673,9 @@ input {
         .categories-wrapper .categories-list .category-active-mobile {
           display: block; } }
       .categories-wrapper .categories-list .category-active-mobile a {
-        font-weight: 700;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        text-shadow: 0 0 0.65px #fff, 0 0 0.65px #fff; }
         .categories-wrapper .categories-list .category-active-mobile a:after {
           content: '';
           display: block;
@@ -7008,7 +7008,7 @@ input {
     box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
     background-color: #fff;
     border: none;
-    padding: 8px 15px;
+    padding: 8px 21px 8px 15px;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.5px;

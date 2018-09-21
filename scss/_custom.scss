@@ -636,9 +636,9 @@ input {
       }
 
       a {
-        font-weight: 700;
         color: #fff;
         text-decoration: none;
+        text-shadow: 0 0 0.65px #fff, 0 0 0.65px #fff;
 
         &:after {
           content: '';
@@ -1048,7 +1048,7 @@ input {
     box-shadow: $bs-default;
     background-color: #fff;
     border: none;
-    padding: 8px 15px;
+    padding: 8px 21px 8px 15px;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.5px;
