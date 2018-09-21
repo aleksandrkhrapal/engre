@@ -876,6 +876,10 @@ input {
 
     &:hover {
       color: $yellow;
+
+      @media (max-width: 900px) {
+        color: #fff;
+      }
     }
   }
 

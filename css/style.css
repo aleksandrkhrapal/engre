@@ -1069,7 +1069,10 @@
   background: #0d47a1;
   padding: 20px 0;
   position: relative; }
-  @media (max-width: 575px) {
+  @media (max-width: 1400px) {
+    .main-footer {
+      padding: 10px 0; } }
+  @media (max-width: 991px) {
     .main-footer {
       padding: 20px 0; } }
 
@@ -1272,6 +1275,9 @@
   left: 50%;
   transform: translate(-50%);
   transition: all 0.3s ease-in-out; }
+  @media (max-width: 1400px) {
+    .meet-button {
+      padding: 15px 0; } }
   @media (max-width: 575px) {
     .meet-button {
       bottom: 22px; } }
@@ -6844,6 +6850,9 @@ input {
         right: auto; } }
     .search-wrap .search-button:hover {
       color: #fdd835; }
+      @media (max-width: 900px) {
+        .search-wrap .search-button:hover {
+          color: #fff; } }
   .search-wrap .search-input-wrap {
     position: absolute;
     top: 1px;

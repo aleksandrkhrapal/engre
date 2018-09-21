@@ -88,6 +88,10 @@
   @include center(horizontal);
   @include transition(.3s);
 
+  @media (max-width: 1400px) {
+    padding: 15px 0;
+  }
+
   @media (max-width: $screen-xs-max) {
     bottom: 22px;
   }

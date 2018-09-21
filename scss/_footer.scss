@@ -3,7 +3,11 @@
   padding: 20px 0;
   position: relative;
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: 1400px) {
+    padding: 10px 0;
+  }
+
+  @media (max-width: $screen-md-max) {
     padding: 20px 0;
   }
 }
