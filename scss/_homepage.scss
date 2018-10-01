@@ -7,6 +7,10 @@
   min-height: 100%;
   z-index: -1;
 
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+
   @media (max-width: $screen-lg-max) {
     display: none;
   }
