@@ -27,6 +27,10 @@ main {
   &.z-index101 {
     z-index: 101;
   }
+
+  @media (max-width: 1024px) {
+    margin-top: 59px;
+  }
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -475,7 +479,7 @@ input {
     height: 95px;
 
     @media (max-width: 900px) {
-      height: 80px;
+      height: 69px;
     }
   }
 }

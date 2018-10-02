@@ -673,11 +673,22 @@
 
 .main-header {
   padding-top: 30px;
-  z-index: 100;
-  position: relative; }
+  z-index: 100; }
   @media (max-width: 1024px) {
     .main-header {
-      padding-top: 15px; } }
+      padding: 5px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      will-change: transform;
+      transform: translateZ(0);
+      transition: all .5s; }
+      .main-header.header-scroll {
+        background-color: #0d47a1;
+        box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08); } }
+  .main-header.is-hidden {
+    transform: translateY(-100%); }
 
 .header-wrapper {
   max-width: 1420px;
@@ -779,11 +790,11 @@
     white-space: nowrap; }
     @media (max-width: 1024px) {
       .header-wrapper__right .main-nav {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        height: 100%;
+        height: 100vh;
         width: 280px;
         text-align: center;
         padding: 80px 15px 15px 15px;
@@ -1202,6 +1213,9 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -1; }
+  @media (max-width: 1440px) {
+    .video-bg {
+      width: 100%; } }
   @media (max-width: 1199px) {
     .video-bg {
       display: none; } }
@@ -6268,6 +6282,9 @@ main {
   position: relative; }
   main.z-index101 {
     z-index: 101; }
+  @media (max-width: 1024px) {
+    main {
+      margin-top: 59px; } }
 
 input::-webkit-calendar-picker-indicator {
   opacity: 0;
@@ -6566,7 +6583,7 @@ input {
     height: 95px; }
     @media (max-width: 900px) {
       .section-top.article-top {
-        height: 80px; } }
+        height: 69px; } }
 
 .title-wrap {
   text-align: center;
