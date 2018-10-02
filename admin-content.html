@@ -102,13 +102,36 @@
 				<div class="admin-container__body">
 					<div class="d-flex justify-content-between flex-wrap">
 						<div class="admin-menu">
-							<a href="#" class="active">All articles</a>
+							<a href="#" class="active">All content</a>
+							<a href="#">Blog</a>
+							<a href="#">News</a>
+							<a href="#">Education</a>
+							<a href="#">Partnership</a>
+							<a href="#">Careers</a>
 							<a href="#">Drafts</a>
-							<a href="#">Other pages</a>
 							<a href="#">Archived</a>
 						</div>
-						<div class="button-wrap">
-							<a href="#" class="admin-add-button">Add content <span class="mdi mdi-plus-box"></span></a>
+						<div class="dropdown-add-wrap">
+							<div class="dropdown dropdown-select dropdown-add">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="mdi upload mdi-plus-box"></span>
+									<span class="label">Add content</span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-right" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Blog</a>
+												<a href="#">News</a>
+												<a href="#">Education</a>
+												<a href="#">Partnership</a>
+												<a href="#">Careers</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row project-filters">
