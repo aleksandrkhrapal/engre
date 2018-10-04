@@ -80,12 +80,12 @@ select {
   min-height: 50px;
   border-radius: 3px;
   outline: none;
-  border: none;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #333;
   background: $yellow;
+  border: 2px solid transparent;
   cursor: pointer;
   padding: 15px 0;
   text-transform: uppercase;
@@ -2271,7 +2271,7 @@ input {
     height: 40px;
     border-bottom: 1px solid #333;
     outline: none;
-    padding: 9px 30px 9px 10px;
+    padding: 7px 30px 9px 10px;
     position: relative;
     cursor: pointer;
 

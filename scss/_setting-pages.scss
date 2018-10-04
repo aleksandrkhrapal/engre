@@ -334,6 +334,10 @@
   @media (max-width: $screen-sm-max) {
     padding: 90px 15px 30px 15px;
   }
+
+  &.profile-holder-edit-article {
+    padding: 90px 40px 30px 40px;
+  }
 }
 
 .upload-wrapper {
@@ -2354,5 +2358,15 @@
     transform: rotate(-90deg);
     box-shadow: -8px 0 13px 0 rgba(13, 71, 161, 0.08);
     border-radius: 50%;
+  }
+}
+
+.edit-articles-controls {
+  padding: 7px 30px;
+
+  @media (max-width: $screen-xs-max) {
+    justify-content: flex-start !important;
+    padding: 65px 5px 7px 5px;
+    margin-bottom: -70px;
   }
 }

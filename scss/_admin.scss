@@ -943,6 +943,11 @@
     font-weight: 700;
     color: $blue-dark;
 
+    @media (max-width: $screen-xs-max) {
+      font-size: 17px;
+      line-height: 19px;
+    }
+
     .mdi {
       margin-left: 10px;
       cursor: pointer;
@@ -967,8 +972,17 @@
 }
 
 .edit-buttons {
+  @media (max-width: $screen-xs-max) {
+    display: block !important;
+  }
+
   a {
     margin-left: 30px;
+
+    @media (max-width: $screen-md-max) {
+      min-width: initial;
+      padding: 13px;
+    }
 
     @media (max-width: $screen-xs-max) {
       margin-left: 0;
@@ -993,6 +1007,10 @@
   text-transform: uppercase;
   text-align: center;
   @include transition(.2s);
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
 
   &:hover, &.signed {
     background-color: $blue-dark;

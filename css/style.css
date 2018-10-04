@@ -2653,6 +2653,8 @@
   @media (max-width: 767px) {
     .profile-holder {
       padding: 90px 15px 30px 15px; } }
+  .profile-holder.profile-holder-edit-article {
+    padding: 90px 40px 30px 40px; }
 
 .upload-wrapper {
   padding-top: 10px;
@@ -4157,6 +4159,14 @@
     transform: rotate(-90deg);
     box-shadow: -8px 0 13px 0 rgba(13, 71, 161, 0.08);
     border-radius: 50%; }
+
+.edit-articles-controls {
+  padding: 7px 30px; }
+  @media (max-width: 575px) {
+    .edit-articles-controls {
+      justify-content: flex-start !important;
+      padding: 65px 5px 7px 5px;
+      margin-bottom: -70px; } }
 
 .section-about {
   padding: 80px 0 0 0;
@@ -6003,6 +6013,10 @@
   line-height: 20px;
   font-weight: 700;
   color: #0d47a1; }
+  @media (max-width: 575px) {
+    .edit-wrapper .article-title {
+      font-size: 17px;
+      line-height: 19px; } }
   .edit-wrapper .article-title .mdi {
     margin-left: 10px;
     cursor: pointer; }
@@ -6019,8 +6033,15 @@
   .edit-wrapper .textarea-edit.height120 {
     height: 120px; }
 
+@media (max-width: 575px) {
+  .edit-buttons {
+    display: block !important; } }
 .edit-buttons a {
   margin-left: 30px; }
+  @media (max-width: 991px) {
+    .edit-buttons a {
+      min-width: initial;
+      padding: 13px; } }
   @media (max-width: 575px) {
     .edit-buttons a {
       margin-left: 0;
@@ -6042,6 +6063,9 @@
   text-transform: uppercase;
   text-align: center;
   transition: all 0.2s ease-in-out; }
+  @media (max-width: 575px) {
+    .btn-sign {
+      width: 100%; } }
   .btn-sign:hover, .btn-sign.signed {
     background-color: #0d47a1;
     text-decoration: none;
@@ -6454,12 +6478,12 @@ select {
   min-height: 50px;
   border-radius: 3px;
   outline: none;
-  border: none;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #333;
   background: #fdd835;
+  border: 2px solid transparent;
   cursor: pointer;
   padding: 15px 0;
   text-transform: uppercase;
@@ -7999,7 +8023,7 @@ input {
     height: 40px;
     border-bottom: 1px solid #333;
     outline: none;
-    padding: 9px 30px 9px 10px;
+    padding: 7px 30px 9px 10px;
     position: relative;
     cursor: pointer; }
     .dropdown-select .selected-wrap.active .label {
