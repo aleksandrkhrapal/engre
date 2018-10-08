@@ -1339,6 +1339,35 @@ input {
   }
 }
 
+.tags-section {
+  padding: 0 30px;
+  margin-bottom: 50px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0;
+  }
+
+  .tag {
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    color: $blue-dark;
+    border-bottom: 1px solid $blue-dark;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @include transition(.2s);
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
 .career-details {
   padding: 0 30px;
 

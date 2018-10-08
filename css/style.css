@@ -7383,6 +7383,29 @@ input {
           font-size: 16px;
           line-height: 26px; } }
 
+.tags-section {
+  padding: 0 30px;
+  margin-bottom: 50px; }
+  @media (max-width: 575px) {
+    .tags-section {
+      padding: 0; } }
+  .tags-section .tag {
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #0d47a1;
+    border-bottom: 1px solid #0d47a1;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out; }
+    .tags-section .tag:hover {
+      border-color: transparent; }
+
 .career-details {
   padding: 0 30px; }
   @media (max-width: 575px) {
