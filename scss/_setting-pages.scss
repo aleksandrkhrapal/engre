@@ -97,6 +97,20 @@
   }
 }
 
+.delete-profile-wrapper {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  .mdi {
+    display: block;
+    color: $red;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+
 .explore-wrapper {
   position: absolute;
   top: 0;

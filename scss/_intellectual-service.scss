@@ -364,6 +364,11 @@
       margin-left: 5px;
     }
   }
+  
+  &.delete {
+    background-color: $red;
+    color: #fff;
+  }
 }
 
 // is project

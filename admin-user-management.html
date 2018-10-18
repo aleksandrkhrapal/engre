@@ -100,26 +100,70 @@
 				</div>
 
 				<div class="admin-container__body">
-					<div class="row project-filters">
-						<div class="input-row">
-							<div class="dropdown dropdown-select dropdown-select-location">
-								<div class="selected-wrap" data-toggle="dropdown">
-									<span class="label">Search by name</span>
-									<span class="selected-item"></span>
-									<span class="mdi mdi-magnify select-search-button"></span>
-								</div>
-								<div class="dropdown-menu">
-									<div class="dropdown-search">
-										<span class="mdi mdi-magnify icon-left"></span>
-										<span class="mdi mdi-close icon-right"></span>
-										<input type="search" placeholder="Start typing" autofocus="">
+					<div class="d-flex justify-content-between flex-wrap">
+						<div class="row project-filters">
+							<div class="input-row">
+								<div class="dropdown dropdown-select dropdown-select-location">
+									<div class="selected-wrap" data-toggle="dropdown">
+										<span class="label">Search by name</span>
+										<span class="selected-item"></span>
+										<span class="mdi mdi-magnify select-search-button"></span>
 									</div>
-									<div class="dropdown-list-wrapper">
-										<div class="dropdown-list">
-											<div class="dropdown-list-row">
-												<a href="#">Project 1</a>
-												<a href="#">Project 2</a>
-												<a href="#">Project 3</a>
+									<div class="dropdown-menu">
+										<div class="dropdown-search">
+											<span class="mdi mdi-magnify icon-left"></span>
+											<span class="mdi mdi-close icon-right"></span>
+											<input type="search" placeholder="Start typing" autofocus="">
+										</div>
+										<div class="dropdown-list-wrapper">
+											<div class="dropdown-list">
+												<div class="dropdown-list-row">
+													<a href="#">Project 1</a>
+													<a href="#">Project 2</a>
+													<a href="#">Project 3</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="input-row">
+								<div class="dropdown dropdown-select">
+									<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+										<span class="label">Sort by industry</span>
+										<span class="selected-item"></span>
+										<span class="mdi mdi-menu-down"></span>
+									</div>
+									<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+										<div class="dropdown-list-wrapper">
+											<div class="dropdown-list">
+												<div class="dropdown-list-row">
+													<a href="#">Link 1</a>
+													<a href="#">Link 2</a>
+													<a href="#">Link 3</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="input-row">
+								<div class="dropdown dropdown-select">
+									<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+										<span class="label">Sort by</span>
+										<span class="selected-item"></span>
+										<span class="mdi mdi-menu-down"></span>
+									</div>
+									<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+										<div class="dropdown-list-wrapper">
+											<div class="dropdown-list">
+												<div class="dropdown-list-row">
+													<a href="#">Link 1</a>
+													<a href="#">Link 2</a>
+													<a href="#">Link 3</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -127,41 +171,22 @@
 							</div>
 						</div>
 
-						<div class="input-row">
-							<div class="dropdown dropdown-select">
+						<div class="dropdown-add-wrap" style="margin: 0;">
+							<div class="dropdown dropdown-select dropdown-add">
 								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
-									<span class="label">Sort by industry</span>
-									<span class="selected-item"></span>
+									<span class="mdi upload mdi-plus-box"></span>
+									<span class="label">Add user</span>
 									<span class="mdi mdi-menu-down"></span>
 								</div>
-								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+								<div class="dropdown-menu dropdown-menu-right" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
 									<div class="dropdown-list-wrapper">
 										<div class="dropdown-list">
 											<div class="dropdown-list-row">
-												<a href="#">Link 1</a>
-												<a href="#">Link 2</a>
-												<a href="#">Link 3</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="input-row">
-							<div class="dropdown dropdown-select">
-								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
-									<span class="label">Sort by</span>
-									<span class="selected-item"></span>
-									<span class="mdi mdi-menu-down"></span>
-								</div>
-								<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
-									<div class="dropdown-list-wrapper">
-										<div class="dropdown-list">
-											<div class="dropdown-list-row">
-												<a href="#">Link 1</a>
-												<a href="#">Link 2</a>
-												<a href="#">Link 3</a>
+												<a href="#">Customer</a>
+												<a href="#">Contractor</a>
+												<a href="#">PM</a>
+												<a href="#">Bloger</a>
+												<a href="#">Content manager</a>
 											</div>
 										</div>
 									</div>

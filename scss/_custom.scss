@@ -829,7 +829,7 @@ input {
         text-decoration: none;
         text-shadow: 0 0 .65px #fff, 0 0 .65px #fff;
         color: #fff;
-        
+
         &:hover {
           color: #fff;
         }
@@ -848,6 +848,26 @@ input {
         }
       }
     }
+  }
+}
+
+.start-blog-button {
+  display: inline-block;
+  position: absolute;
+  bottom: -30px;
+  right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $blue-dark;
+  text-decoration: underline;
+  background-color: #f1f5f8;
+  border-radius: 3px 3px 0 0;
+  padding: 10px 20px 8px 20px;
+
+  &:hover {
+    text-decoration: none;
+    color: $blue-dark;
   }
 }
 
@@ -1131,36 +1151,6 @@ input {
   .filters-list {
     flex: 1;
 
-    .selected-filter {
-      display: inline-block;
-      vertical-align: middle;
-      border-radius: 3px;
-      background-color: $yellow;
-      box-shadow: $bs-default;
-      padding: 10px 15px;
-      font-size: 18px;
-      line-height: 20px;
-      color: #666;
-      margin: 0 20px 20px 0;
-      @include transition(.2s);
-
-      &:hover {
-        box-shadow: $bs-hover;
-      }
-
-      .mdi {
-        vertical-align: middle;
-        margin-left: 10px;
-        font-size: 20px;
-        cursor: pointer;
-        @include transition(.2s);
-
-        &:hover {
-          color: #000;
-        }
-      }
-    }
-
     .filters-clear {
       display: inline-block;
       vertical-align: middle;
@@ -1174,6 +1164,36 @@ input {
       &:hover {
         text-decoration: none;
       }
+    }
+  }
+}
+
+.selected-filter {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: $yellow;
+  box-shadow: $bs-default;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #666;
+  margin: 0 20px 20px 0;
+  @include transition(.2s);
+
+  &:hover {
+    box-shadow: $bs-hover;
+  }
+
+  .mdi {
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    @include transition(.2s);
+
+    &:hover {
+      color: #000;
     }
   }
 }
@@ -1465,7 +1485,7 @@ input {
         line-height: 20px;
       }
     }
-    
+
     mark {
       background: none;
       padding: 0;
@@ -2257,7 +2277,7 @@ input {
         color: $blue-dark;
         font-weight: 700;
       }
-      
+
       .mdi {
         color: $blue-dark;
 
@@ -2422,7 +2442,7 @@ input {
             margin-bottom: 9px;
             padding: 0;
             @include transition(.2s);
-            
+
             &:hover {
               text-decoration: none;
               color: $blue-dark;
