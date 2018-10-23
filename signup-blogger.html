@@ -12,15 +12,13 @@
 
 		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
-		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
-		<link media="all" rel="stylesheet" href="css/aos.css" type="text/css" />
 		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
 	</head>
-	<body>
+	<body style="background-image: url('images/main-bg.jpg')">
 		<header class="main-header">
 			<div class="header-wrapper d-flex flex-row justify-content-between align-items-center">
 				<div class="header-wrapper__left d-flex flex-row align-items-center">
@@ -64,7 +62,7 @@
 					</div>
 					<div class="profile-wrapper">
 						<div class="dropdown dropdown-profile">
-							<span class="profile-icon notification" data-toggle="dropdown">
+							<span class="profile-icon" data-toggle="dropdown">
 								<span class="mdi mdi-account-circle"></span>
 							</span>
 							<div class="dropdown-menu dropdown-menu-right">
@@ -100,88 +98,44 @@
 			</div>
 		</header>
 		<main>
-			<div class="setting-wrapper">
-				<div class="settings-section">
-					<div class="heading-title">
-						<div class="wrapper">
-							<h2>My Stuff</h2>
+			<div class="reset-pass-wrapper signup-blogger-wrapper">
+				<form action="#" class="enter-form signIn">
+					<h2>Sign Up blogger</h2>
+					<div class="inputs-wrap">
+						<div class="input-row">
+							<input type="text" id="id-input1">
+							<label for="id-input1">Name or Nickname</label>
 						</div>
-					</div>
-					<div class="wrapper">
-						<div class="categories-wrapper d-flex justify-content-between align-items-center">
-							<div class="categories-list d-flex justify-content-between align-items-end">
-								<div class="category-active-mobile">
-									<a href="#">Company <span class="mdi mdi-menu-down"></span></a>
-								</div>
-								<div class="category-active">
-
-									<span class="mdi mdi-menu-down"></span>
-								</div>
-								<div class="categories-dropdown">
-									<a href="#">My Profile</a>
-									<a href="#">Notifications</a>
-									<a href="#" class="active">Company</a>
-								</div>
+						<div class="input-row">
+							<input type="email" id="id-input2">
+							<label for="id-input2">Email</label>
+						</div>
+						<div class="input-row">
+							<input type="password" id="id-input3">
+							<label for="id-input3">Password</label>
+						</div>
+						<div class="input-row">
+							<input type="password" id="id-input4">
+							<label for="id-input4">Re-enter password</label>
+						</div>
+						<div class="remember-me-wrap">
+							<div class="checkbox">
+								<input type="checkbox" id="check1">
+								<label for="check1">
+									<span class="check-wrap"></span>
+									<i class="remember-me-text">Remember me</i>
+								</label>
 							</div>
 						</div>
-						<div class="settings-user-info d-flex flex-row justify-content-between align-items-center">
-							<span><i>Active </i>0 projects</span>
-							<span><i>Joined </i>Mar 2018</span>
+						<div class="enter-form-button">
+							<input class="btn-site" type="submit" value="Create account">
 						</div>
-
-						<div class="settings-holder">
-							<div class="add-company-wrapper">
-								<div class="add-company-title">
-									<h2 class="title">create your company to get started</h2>
-									<p>Please choose your accout type wisely as you will not be able to change it later on.</p>
-								</div>
-								<div class="row button-styles-wrap justify-content-center">
-									<div class="col-md-4">
-										<div class="text-center">
-											<a href="#" class="button-styles light-blue">
-												Become a customer <span class="mdi mdi-plus-box"></span>
-											</a>
-										</div>
-										<ul class="explore-list">
-											<li class="plus">Work's completion guaranteed according to the contract</li>
-											<li class="plus">Access to rare industy competencies</li>
-											<li class="plus">Legal safety</li>
-											<li class="plus">Experienced project leader at your disposal</li>
-											<li class="plus">Verified contractors</li>
-											<li class="plus">Certified software</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<div class="text-center">
-											<a href="#" class="button-styles light-blue">
-												Become a contractor <span class="mdi mdi-plus-box"></span>
-											</a>
-										</div>
-										<ul class="explore-list">
-											<li class="plus">Global market cooperation</li>
-											<li class="plus">Consulting</li>
-											<li class="plus">Legal support</li>
-											<li class="plus">Accounting services</li>
-											<li class="plus">Marketing Support</li>
-											<li class="plus">Extra sales channels</li>
-											<li class="plus">Guaranteed payments</li>
-											<li class="plus">Access to a personnel reserve</li>
-										</ul>
-									</div>
-									<!--<div class="col-md-3">
-										<a href="#" class="button-styles invert-light-blue">Crowdfunding</a>
-										<div class="add-company-hint">
-											<span>An opportunity for authors to raise funds for the implementation of their own ideas and projects</span>
-										</div>
-										<div class="text-center">
-											<a href="#" class="read-more-info">Explore features</a>
-										</div>
-									</div>-->
-								</div>
-							</div>
+						<div class="hint-wrapper">
+							<p>By signing up, you agree to <a href="#">our terms of use</a>, <a href="#">privacy policy</a>, and <a href="#">cookie policy</a>.
+							</p>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</main>
 		<footer class="main-footer">
@@ -247,8 +201,6 @@
 
 		<script type="text/javascript" src="js/lib/popper.min.js"></script>
 		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/lib/slick.min.js"></script>
-		<script type="text/javascript" src="js/lib/aos.js"></script>
 		<script type="text/javascript" src="js/header-fixed.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

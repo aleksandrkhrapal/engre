@@ -13,6 +13,15 @@ $grey: #99a9b8;
 $red: #f33;
 $green: #3c3;
 
+
+.color-red {
+  color: $red !important;
+}
+
+.color-blue {
+  color: $blue-dark !important;
+}
+
 //box shadow
 $bs-default: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
 $bs-hover: 0 13px 33px 0 rgba(13, 71, 161, 0.33);

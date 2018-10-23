@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $('.no-link').on('click', function() {
+        alert('Any event');
+        return false;
+    });
+
     // footer callback div
     $('.footer-callback-button').on('click', function (e) {
         e.preventDefault();

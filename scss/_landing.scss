@@ -552,7 +552,7 @@
     line-height: 18px;
     font-weight: 700;
     color: $red;
-    margin-left: 10px;
+    margin-left: 25px;
     @include transition(.2s);
 
     &:hover,
@@ -575,11 +575,15 @@
 
 .news-info {
   flex: 1;
-  padding: 35px 20px;
+  padding: 30px;
   text-align: justify;
   color: #333;
   position: relative;
   z-index: 10;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px;
+  }
 
   &.bg-img {
     &:before {

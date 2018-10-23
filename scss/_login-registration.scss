@@ -537,6 +537,10 @@
   @include center(horizontal);
   top: 35%;
 
+  &.signup-blogger-wrapper {
+    top: 20%;
+  }
+
   &.recover-pass {
     h2 {
       font-size: 43px;

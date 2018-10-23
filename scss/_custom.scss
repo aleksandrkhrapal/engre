@@ -1764,6 +1764,14 @@ input {
       }
     }
 
+    &.active {
+      &:hover {
+        mark {
+          border-color: transparent;
+        }
+      }
+    }
+
     .mdi {
       display: inline-block;
       vertical-align: middle;
@@ -1775,7 +1783,7 @@ input {
       @include transition(.2s);
     }
 
-    mark {
+    mark, i {
       display: inline-block;
       vertical-align: middle;
       background: none;
@@ -1785,6 +1793,12 @@ input {
       font-weight: 300;
       border-bottom: 1px solid transparent;
       @include transition(.2s);
+    }
+
+    i {
+      font-weight: 700;
+      font-style: normal;
+      color: $blue-dark;
     }
   }
 }
@@ -1856,6 +1870,10 @@ input {
       margin-right: 5px;
       background: none;
       padding: 0;
+
+      &.nolikes {
+        color: #99a9b8;
+      }
 
       .mdi {
         vertical-align: middle;

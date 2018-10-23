@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.color-red {
+  color: #f33 !important; }
+
+.color-blue {
+  color: #0d47a1 !important; }
+
 .reviews-modal .modal-dialog {
   max-width: 755px;
   border: none;
@@ -1684,6 +1690,8 @@
   left: 50%;
   transform: translate(-50%);
   top: 35%; }
+  .reset-pass-wrapper.signup-blogger-wrapper {
+    top: 20%; }
   .reset-pass-wrapper.recover-pass h2 {
     font-size: 43px;
     line-height: 45px; }
@@ -2126,7 +2134,7 @@
   line-height: 18px;
   font-weight: 700;
   color: #f33;
-  margin-left: 10px;
+  margin-left: 25px;
   transition: all 0.2s ease-in-out; }
   .subscribe-wrap .subscribe-button:hover, .subscribe-wrap .subscribe-button.subscribed {
     color: #fff;
@@ -2142,11 +2150,14 @@
 
 .news-info {
   flex: 1;
-  padding: 35px 20px;
+  padding: 30px;
   text-align: justify;
   color: #333;
   position: relative;
   z-index: 10; }
+  @media (max-width: 575px) {
+    .news-info {
+      padding: 20px; } }
   .news-info.bg-img:before {
     content: '';
     display: block;
@@ -5067,6 +5078,30 @@
         .is-row-block .is-row-description p {
           line-height: 24px; } }
 
+.is-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .is-list li {
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 300;
+    position: relative;
+    padding-left: 50px; }
+    @media (max-width: 575px) {
+      .is-list li {
+        padding-left: 15px;
+        line-height: 30px; } }
+    .is-list li:before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 1px;
+      background-color: #333;
+      position: absolute;
+      top: 15px;
+      left: 0; }
+
 .is-row-top {
   margin-bottom: 35px; }
   @media (max-width: 575px) {
@@ -7702,6 +7737,8 @@ input {
     .comment-info-col .comment-info-control:hover mark, .comment-info-col .comment-info-control.active mark {
       color: #0d47a1;
       border-color: #0d47a1; }
+    .comment-info-col .comment-info-control.active:hover mark {
+      border-color: transparent; }
     .comment-info-col .comment-info-control .mdi {
       display: inline-block;
       vertical-align: middle;
@@ -7711,7 +7748,7 @@ input {
       color: #222;
       margin-right: 5px;
       transition: all 0.2s ease-in-out; }
-    .comment-info-col .comment-info-control mark {
+    .comment-info-col .comment-info-control mark, .comment-info-col .comment-info-control i {
       display: inline-block;
       vertical-align: middle;
       background: none;
@@ -7721,6 +7758,10 @@ input {
       font-weight: 300;
       border-bottom: 1px solid transparent;
       transition: all 0.2s ease-in-out; }
+    .comment-info-col .comment-info-control i {
+      font-weight: 700;
+      font-style: normal;
+      color: #0d47a1; }
 
 .comments-section {
   background-color: #fff;
@@ -7771,6 +7812,8 @@ input {
     margin-right: 5px;
     background: none;
     padding: 0; }
+    .comment-row-header .col-left mark.nolikes {
+      color: #99a9b8; }
     .comment-row-header .col-left mark .mdi {
       vertical-align: middle;
       font-size: 25px;

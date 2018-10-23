@@ -149,13 +149,51 @@
 
 					<div class="comment-wrapper">
 						<div class="comment-wrapper__author-info d-flex justify-content-between align-items-center">
-							<div class="author-info-block d-flex">
+							<div class="author-info-block no-link d-flex">
 								<!--<div class="avatar-img">
 									<img src="images/avatar.png" alt="">
 								</div>-->
 								<div class="author-detail-info">
 									<span>Answered Jan 22, 2017</span>
 									<a href="#">Name of content manager</a>
+								</div>
+
+								<div class="detail-info-hover">
+									<div class="di-hover-wrapper">
+										<div class="di-hover-top row">
+											<div class="col-4">
+												<div class="di-img">
+													<img src="images/avatar.png" alt="">
+												</div>
+											</div>
+											<div class="col-8">
+												<div class="di-text">
+													<div class="is-col">
+														<span>On site 2y 10m</span>
+														<mark>Jessica Blogger</mark>
+													</div>
+													<div class="is-col">
+														<span>Company</span>
+														<a href="#">Opentech</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="di-bottom-info d-flex align-items-baseline">
+											<div class="di-bottom-col">
+												<i class="mdi mdi-star"></i>
+												<mark>+184</mark>
+											</div>
+											<div class="di-bottom-col">
+												<i class="mdi mdi-comment-text-outline"></i>
+												<mark>6</mark>
+											</div>
+											<div class="di-bottom-col">
+												<i class="mdi mdi-file-document-box"></i>
+												<mark>10</mark>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="comment-info d-flex">
@@ -166,9 +204,10 @@
 									</a>
 								</div>
 								<div class="comment-info-col">
-									<span class="comment-info-control">
+									<span class="comment-info-control active">
+										<i>+73</i>
 										<span class="mdi mdi-star"></span>
-										<mark>Interesting 73</mark>
+										<mark>Interesting</mark>
 									</span>
 								</div>
 								<div class="comment-info-col">
@@ -202,10 +241,10 @@
 								<div class="comment-row">
 									<div class="comment-row-header d-flex justify-content-between align-items-center">
 										<div class="col-left d-flex align-items-center">
-											<mark>+184 <span class="mdi mdi-star"></span></mark>
+											<mark>+184 <span class="mdi mdi-thumb-up"></span></mark>
 											<div class="likes-wrap">
 												<a href="#"><span class="mdi mdi-minus-circle-outline"></span></a>
-												<a href="#"><span class="mdi mdi-plus-circle"></span></a>
+												<a href="#"><span class="mdi mdi-plus-circle color-blue"></span></a>
 											</div>
 										</div>
 										<div class="col-right d-flex align-items-center flex-wrap">
@@ -264,10 +303,10 @@
 											<div class="comment-branch-body">
 												<div class="comment-row-header d-flex justify-content-between align-items-center">
 													<div class="col-left d-flex align-items-center">
-														<mark>+184 <span class="mdi mdi-star"></span></mark>
+														<mark>+184 <span class="mdi mdi-thumb-up"></span></mark>
 														<div class="likes-wrap">
 															<a href="#"><span class="mdi mdi-minus-circle-outline"></span></a>
-															<a href="#"><span class="mdi mdi-plus-circle"></span></a>
+															<a href="#"><span class="mdi mdi-plus-circle color-blue"></span></a>
 														</div>
 													</div>
 													<div class="col-right d-flex align-items-center flex-wrap">
@@ -326,10 +365,10 @@
 															<div class="comment-branch-body">
 																<div class="comment-row-header d-flex justify-content-between align-items-center">
 																	<div class="col-left d-flex align-items-center">
-																		<mark>+184 <span class="mdi mdi-star"></span></mark>
+																		<mark>+184 <span class="mdi mdi-thumb-up"></span></mark>
 																		<div class="likes-wrap">
 																			<a href="#"><span class="mdi mdi-minus-circle-outline"></span></a>
-																			<a href="#"><span class="mdi mdi-plus-circle"></span></a>
+																			<a href="#"><span class="mdi mdi-plus-circle color-blue"></span></a>
 																		</div>
 																	</div>
 																	<div class="col-right d-flex align-items-center flex-wrap">
@@ -383,6 +422,64 @@
 													</div>
 												</div>
 											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-row">
+									<div class="comment-row-header d-flex justify-content-between align-items-center">
+										<div class="col-left d-flex align-items-center">
+											<mark class="color-red">-184 <span class="mdi mdi-thumb-down color-red"></span></mark>
+											<div class="likes-wrap">
+												<a href="#"><span class="mdi mdi-minus-circle-outline color-red"></span></a>
+												<a href="#"><span class="mdi mdi-plus-circle"></span></a>
+											</div>
+										</div>
+										<div class="col-right d-flex align-items-center flex-wrap">
+											<div class="comment-author">
+												<div class="comment-author-img">
+													<img src="images/avatar.png" alt="">
+												</div>
+												<a href="#" class="user-link">Constan Satterfield</a>
+											</div>
+											<span>5 hours ago</span>
+										</div>
+									</div>
+									<div class="comment-row-body">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+										<div class="comment-info-col">
+											<a href="#" class="comment-info-control active" data-toggle="collapse" data-target="#comment-area">
+												<span class="mdi mdi-pencil"></span>
+												<mark>Answer</mark>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="comment-row">
+									<div class="comment-row-header d-flex justify-content-between align-items-center">
+										<div class="col-left d-flex align-items-center">
+											<mark class="nolikes">0 <span class="mdi mdi-thumb-up-outline"></span></mark>
+											<div class="likes-wrap">
+												<a href="#"><span class="mdi mdi-minus-circle-outline"></span></a>
+												<a href="#"><span class="mdi mdi-plus-circle"></span></a>
+											</div>
+										</div>
+										<div class="col-right d-flex align-items-center flex-wrap">
+											<div class="comment-author">
+												<div class="comment-author-img">
+													<img src="images/avatar.png" alt="">
+												</div>
+												<a href="#" class="user-link">Constan Satterfield</a>
+											</div>
+											<span>5 hours ago</span>
+										</div>
+									</div>
+									<div class="comment-row-body">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+										<div class="comment-info-col">
+											<a href="#" class="comment-info-control active" data-toggle="collapse" data-target="#comment-area">
+												<span class="mdi mdi-pencil"></span>
+												<mark>Answer</mark>
+											</a>
 										</div>
 									</div>
 								</div>
