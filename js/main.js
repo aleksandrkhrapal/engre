@@ -5,6 +5,11 @@ $(document).ready(function () {
         return false;
     });
 
+    $('.share-block-button').on('click', function (e) {
+        e.preventDefault();
+        $('.share-block').toggleClass('active');
+    });
+
     // footer callback div
     $('.footer-callback-button').on('click', function (e) {
         e.preventDefault();
