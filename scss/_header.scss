@@ -322,6 +322,7 @@
             height: 10px;
             border: 2px solid #fff;
             border-radius: 50%;
+            animation: 1.2s ease-in-out notifications-pulse infinite;
           }
         }
         .mdi {
@@ -465,6 +466,20 @@
     }
   }
 }
+@keyframes notifications-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .mobile-menu-mask {
   position: fixed;

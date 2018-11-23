@@ -954,7 +954,8 @@
         width: 10px;
         height: 10px;
         border: 2px solid #fff;
-        border-radius: 50%; }
+        border-radius: 50%;
+        animation: 1.2s ease-in-out notifications-pulse infinite; }
       .header-wrapper__right .profile-wrapper .profile-icon .mdi {
         color: #fff;
         font-size: 24px;
@@ -1069,6 +1070,13 @@
       .header-wrapper__right .mobile-menu-button span.line3 {
         bottom: 13px; }
 
+@keyframes notifications-pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 .mobile-menu-mask {
   position: fixed;
   top: 0;
