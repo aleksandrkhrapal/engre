@@ -1612,7 +1612,7 @@
   background: #fff;
   width: 460px;
   height: 580px;
-  border-radius: 3px;
+  border-radius: 6px;
   box-shadow: 0 13px 33px 0 rgba(13, 71, 161, 0.33); }
   @media (max-width: 575px) {
     .enter-form {
