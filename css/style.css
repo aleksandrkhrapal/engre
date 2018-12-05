@@ -2074,7 +2074,12 @@
         flex-basis: 52%;
         width: 100%; }
         .news-row .news-block.vertical-content .news-media:after {
-          display: none; }
+          top: auto;
+          right: auto;
+          bottom: 0;
+          left: 25px;
+          border-bottom-color: #fff;
+          border-right-color: transparent; }
         @media (max-width: 1199px) {
           .news-row .news-block.vertical-content .news-media {
             width: 100%; } }
@@ -2085,7 +2090,7 @@
       background-size: cover;
       background-position: 50% 50%;
       background-repeat: no-repeat;
-      border-radius: 3px 0 0 3px;
+      border-radius: 3px 3px 0 0;
       overflow: hidden;
       /*&:before {
         content: '';
@@ -2174,6 +2179,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 3px;
     background: rgba(0, 0, 0, 0.4); }
     @media (max-width: 991px) {
       .news-info.bg-img:before {
@@ -2225,6 +2231,12 @@
   font-size: 22px;
   line-height: 22px;
   transition: all 0.2s ease-in-out; }
+  .blog-article-share.news-article-share {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+  .blog-article-share.white-color {
+    color: #fff; }
   .blog-article-share:hover {
     color: #0d47a1; }
 
@@ -4590,6 +4602,11 @@
         line-height: 18px;
         font-weight: 500;
         margin-bottom: 20px; }
+      .about-slider .slide .slide-info .human-tags {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        margin: 0 0 20px 0; }
       .about-slider .slide .slide-info .date {
         display: block;
         font-size: 12px;
@@ -6360,15 +6377,25 @@
   margin-left: -30px;
   margin-right: -30px;
   padding: 0 30px 30px 30px; }
-  .project-chat-name a {
-    display: block;
+  .project-chat-name a, .project-chat-name .skill-name {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
     text-decoration: underline;
     color: #0d47a1; }
-    .project-chat-name a:hover {
+    .project-chat-name a:hover, .project-chat-name .skill-name:hover {
       text-decoration: none; }
+  .project-chat-name .skill-name {
+    text-decoration: none; }
+  .project-chat-name .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0d47a1;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 10px; }
 
 .settings-columns.category-columns .settings-col {
   height: 100px; }
@@ -6474,6 +6501,123 @@
       line-height: 22px;
       color: #b7b7b7;
       transition: all 0.3s ease-in-out; }
+
+.undo-button {
+  cursor: pointer; }
+  .undo-button:hover .undo-txt {
+    text-decoration: none; }
+  .undo-button span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333 !important; }
+  .undo-button .undo-txt {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out; }
+  .undo-button .mdi {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0; }
+
+.skills-row {
+  border: 1px solid #99a9b8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  min-height: 52px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.6s ease-in-out; }
+  .skills-row.active .confirm-button-wrap,
+  .skills-row.active .remove-button-wrap {
+    display: block; }
+  .skills-row.active .skill {
+    margin: 0 15px; }
+  .skills-row.multi-select {
+    background: #0d47a1;
+    border-color: #0d47a1;
+    width: calc(100% - 50px); }
+    .skills-row.multi-select .skill {
+      color: #fff; }
+  .skills-row .skill {
+    flex: 1;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    margin: 0; }
+  .skills-row .confirm-button-wrap,
+  .skills-row .remove-button-wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    display: none; }
+    .skills-row .confirm-button-wrap .mdi,
+    .skills-row .remove-button-wrap .mdi {
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px; }
+  .skills-row .confirm-button-wrap {
+    background: #3c3; }
+  .skills-row .remove-button-wrap {
+    background: #f33; }
+
+.core-skill {
+  padding: 5px 20px;
+  border-radius: 8px;
+  max-width: 350px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out; }
+  .core-skill:hover .core-skill-name {
+    text-decoration: underline;
+    color: #0d47a1; }
+  .core-skill.active {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-color: #99a9b8; }
+    .core-skill.active .core-skill-controls {
+      display: block; }
+    .core-skill.active:hover {
+      border-color: #0d47a1; }
+      .core-skill.active:hover .core-skill-name {
+        text-decoration: none;
+        color: initial; }
+  .core-skill .core-skill-name {
+    display: block;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333; }
+  .core-skill .core-skill-controls {
+    display: none; }
+    .core-skill .core-skill-controls .edit-button,
+    .core-skill .core-skill-controls .confirm-button {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 5px; }
+      .core-skill .core-skill-controls .edit-button .mdi,
+      .core-skill .core-skill-controls .confirm-button .mdi {
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px; }
+    .core-skill .core-skill-controls .edit-button {
+      background: #99a9b8; }
+    .core-skill .core-skill-controls .confirm-button {
+      background: #3c3; }
+
+.core-skill-modal {
+  max-width: 400px; }
+
+.skills-radio-wrap {
+  margin-bottom: 30px; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -6637,6 +6781,22 @@ select {
 .radio-button {
   display: inline-block;
   vertical-align: middle; }
+  .radio-button.dark-blue {
+    display: block;
+    margin-bottom: 20px; }
+    .radio-button.dark-blue input:checked + label .radio-circle {
+      border-color: #0d47a1; }
+      .radio-button.dark-blue input:checked + label .radio-circle:before {
+        background-color: #0d47a1; }
+    .radio-button.dark-blue input:checked + label i {
+      color: #000; }
+    .radio-button.dark-blue label .radio-circle {
+      border-color: #0d47a1; }
+      .radio-button.dark-blue label .radio-circle:before {
+        background-color: #0d47a1; }
+    .radio-button.dark-blue label i {
+      font-weight: 300;
+      color: #000; }
   .radio-button input {
     display: none; }
     .radio-button input:checked + label .radio-circle {
@@ -6660,6 +6820,8 @@ select {
       border: 2px solid #99a9b8;
       position: relative;
       transition: all 0.3s ease-in-out; }
+      .radio-button label .radio-circle.vertical-top {
+        vertical-align: top; }
       .radio-button label .radio-circle:before {
         content: '';
         display: block;
@@ -7645,7 +7807,8 @@ input {
     line-height: 18px;
     color: #0d47a1;
     font-style: normal;
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
     .author-info-block .author-detail-info a:hover,
     .author-info-block .author-detail-info i:hover {
       text-decoration: none; }

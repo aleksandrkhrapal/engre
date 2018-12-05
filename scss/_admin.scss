@@ -1333,8 +1333,9 @@
   margin-right: -30px;
   padding: 0 30px 30px 30px;
 
-  a {
-    display: block;
+  a, .skill-name {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1344,6 +1345,19 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .skill-name {
+    text-decoration: none;
+  }
+
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    color: $blue-dark;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 10px;
   }
 }
 
@@ -1494,3 +1508,176 @@
   }
 }
 
+.undo-button {
+  cursor: pointer;
+
+  &:hover {
+    .undo-txt {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333 !important;
+  }
+
+  .undo-txt {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    @include transition(.2s);
+  }
+
+  .mdi {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.skills-row {
+  border: 1px solid #99a9b8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  min-height: 52px;
+  cursor: pointer;
+  width: 100%;
+  @include transition(.6s);
+
+  &.active {
+    .confirm-button-wrap,
+    .remove-button-wrap {
+      display: block;
+    }
+
+    .skill {
+      margin: 0 15px;
+    }
+  }
+
+  &.multi-select {
+    background: $blue-dark;
+    border-color: $blue-dark;
+    width: calc(100% - 50px);
+
+    .skill {
+      color: #fff;
+    }
+  }
+
+  .skill {
+    flex: 1;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .confirm-button-wrap,
+  .remove-button-wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    
+    .mdi {
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  
+  .confirm-button-wrap {
+    background: $green;
+  }
+
+  .remove-button-wrap {
+    background: $red;
+  }
+}
+
+.core-skill {
+  padding: 5px 20px;
+  border-radius: 8px;
+  max-width: 350px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-bottom: 5px;
+  @include transition(.3s);
+
+  &:hover {
+    .core-skill-name {
+      text-decoration: underline;
+      color: $blue-dark;
+    }
+  }
+
+  &.active {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-color: #99a9b8;
+
+    .core-skill-controls {
+      display: block;
+    }
+
+    &:hover {
+      border-color: $blue-dark;
+
+      .core-skill-name {
+        text-decoration: none;
+        color: initial;
+      }
+    }
+  }
+
+  .core-skill-name {
+    display: block;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+  }
+
+  .core-skill-controls {
+    display: none;
+
+    .edit-button,
+    .confirm-button {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 5px;
+
+      .mdi {
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .edit-button {
+      background: #99a9b8;
+    }
+
+    .confirm-button {
+      background: $green;
+    }
+  }
+}
+
+.core-skill-modal {
+  max-width: 400px;
+}
+
+.skills-radio-wrap {
+  margin-bottom: 30px;
+}

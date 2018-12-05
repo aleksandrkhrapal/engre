@@ -46,7 +46,7 @@ $(document).ready(function () {
     }
 
     if($(window).width() < 767) {
-        $('.admin-chat-toggle, .close-chat').on('click', function (e) {
+        $('.admin-chat-toggle, .close-chat, .core-skill').on('click', function (e) {
             e.preventDefault();
             if ($('.chat-holder').hasClass('active')) {
                 $('.chat-holder').removeClass('active');

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html" class="active">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="admin-documents.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="admin-software.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Software</i>
+					</a>
+					<a href="admin-finances.html">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="admin-user-management.html">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="admin-moderation-messages.html">
+						<span class="mdi mdi-bell notification"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="admin-chat.html">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="admin-settings-languages.html">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>PROJECTS POSTED</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>MEMBERS WORLDWIDE</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>TOTAL SPENT</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body">
+					<div class="admin-edit-top d-flex justify-content-between flex-wrap">
+						<a href="#" class="admin-back">
+							<span class="mdi mdi-arrow-left"></span>
+							back
+						</a>
+
+						<div class="edit-controls">
+							<div class="dropdown dropdown-select dropdown-add">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="mdi upload mdi-folder-move"></span>
+									<span class="label">People</span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-right" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">People 1</a>
+												<a href="#">People 2</a>
+												<a href="#">People 3</a>
+												<a href="#">People 4</a>
+												<a href="#">People 5</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="archive">
+								<span class="mdi mdi-archive"></span> To Archive
+							</a>
+						</div>
+					</div>
+					<div class="admin-row">
+						<div class="edit-wrapper">
+							<div class="edit-top">
+								<span class="article-title">Igor Sikorsky <span class="mdi mdi-pencil"></span></span>
+							</div>
+							<div class="select-size-img">
+								<span>Upload photo</span>
+
+								<div class="upload-img d-flex align-items-center flex-wrap">
+									<div class="upload-block w80" title="490x980">
+										<input type="file">
+									</div>
+
+									<div class="checkbox">
+										<input type="checkbox" id="check1">
+										<label for="check1">
+											<span class="check-wrap"></span>
+											<i class="remember-me-text">To main</i>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row project-filters">
+								<div class="input-row">
+									<input type="date" id="id-input5" style="min-width: 220px;">
+									<label for="id-input5">Date</label>
+									<span class="mdi mdi-calendar-range"></span>
+								</div>
+
+								<div class="input-row">
+									<div class="dropdown dropdown-select">
+										<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+											<span class="label">Century</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-menu-down"></span>
+										</div>
+										<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#">Link 1</a>
+														<a href="#">Link 2</a>
+														<a href="#">Link 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="input-row">
+									<div class="dropdown dropdown-select">
+										<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+											<span class="label">Kind of activity</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-menu-down"></span>
+										</div>
+										<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#">Link 1</a>
+														<a href="#">Link 2</a>
+														<a href="#">Link 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="edit-buttons-wrap d-flex flex-wrap">
+								<span class="edit-button"><span class="mdi mdi-format-header-1"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-header-2"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-paragraph"></span></span>
+							</div>
+							<textarea placeholder="Enter text..." class="textarea-edit height120">SOLIDWORKS Product Data Management (PDM) solutions help you get your design data under control and substantially improve the way your teams manage and collaborate on product development.</textarea>
+
+
+							<div class="add-tag-wrapper">
+								<div class="add-tag-form d-flex justify-content-between align-items-center">
+									<div class="input-row">
+										<textarea id="id-input6" class="textarea-autoheight" style="height:39px;overflow-y:hidden;">public and political figure</textarea>
+									</div>
+									<a href="#" class="btn-site">Add tag</a>
+								</div>
+								<span class="selected-filter">Writer <span class="mdi mdi-close"></span></span>
+								<span class="selected-filter">Artist <span class="mdi mdi-close"></span></span>
+								<span class="selected-filter">Poet <span class="mdi mdi-close"></span></span>
+							</div>
+
+							<div class="edit-buttons d-flex justify-content-end">
+								<a href="#" class="btn-sign" style="padding: 15px 0;">Public</a>
+								<a href="#" class="btn-site">Save druft</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -247,6 +247,43 @@ select {
   display: inline-block;
   vertical-align: middle;
 
+  &.dark-blue {
+    display: block;
+    margin-bottom: 20px;
+
+    input {
+      &:checked {
+        + label {
+          .radio-circle {
+            border-color: $blue-dark;
+
+            &:before {
+              background-color: $blue-dark;
+            }
+          }
+
+          i {
+            color: #000;
+          }
+        }
+      }
+    }
+    label {
+      .radio-circle {
+        border-color: $blue-dark;
+
+        &:before {
+          background-color: $blue-dark;
+        }
+      }
+
+      i {
+        font-weight: 300;
+        color: #000;
+      }
+    }
+  }
+
   input {
     display: none;
 
@@ -283,6 +320,10 @@ select {
       border: 2px solid #99a9b8;
       position: relative;
       @include transition(0.3s);
+
+      &.vertical-top {
+        vertical-align: top;
+      }
 
       &:before {
         content: '';
@@ -1611,6 +1652,7 @@ input {
       color: $blue-dark;
       font-style: normal;
       text-decoration: underline;
+      cursor: pointer;
 
       &:hover {
         text-decoration: none;
