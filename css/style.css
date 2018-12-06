@@ -3533,10 +3533,24 @@
   margin-bottom: 15px; }
 
 .projects-list-wrap {
-  background-color: #f1f5f8; }
+  background-color: #f1f5f8;
+  border-radius: 3px;
+  min-height: 400px;
+  position: relative; }
   @media (max-width: 767px) {
     .projects-list-wrap {
       background: none; } }
+  .projects-list-wrap .empty-sections-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #99a9b8; }
 
 @media (max-width: 767px) {
   .top-controls {
