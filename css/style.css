@@ -2741,7 +2741,6 @@
   .upload-input i {
     display: block;
     width: 100%;
-    text-align: center;
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -2749,8 +2748,8 @@
     color: #0d47a1;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    left: 30px;
+    transform: translateY(-50%); }
 
 .text-hint {
   display: block;
@@ -2951,14 +2950,17 @@
   display: block;
   width: 100%;
   height: 50px;
-  border: 1px solid #0d47a1;
+  border: 1px solid #333;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
   color: #0d47a1;
-  padding: 15px 10px;
-  outline: none; }
+  padding: 15px 30px;
+  outline: none;
+  transition: all 0.2s ease-in-out; }
+  .input-link:focus {
+    border-color: #0d47a1; }
   .input-link::-webkit-input-placeholder {
     font-size: 12px;
     line-height: 14px;

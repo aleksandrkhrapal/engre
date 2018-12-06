@@ -408,13 +408,15 @@
   i {
     display: block;
     width: 100%;
-    text-align: center;
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
     font-weight: 300;
     color: $blue-dark;
-    @include center(both);
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
   }
 }
 
@@ -679,14 +681,19 @@
   display: block;
   width: 100%;
   height: 50px;
-  border: 1px solid $blue-dark;
+  border: 1px solid #333;
   border-radius: 3px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
   color: $blue-dark;
-  padding: 15px 10px;
+  padding: 15px 30px;
   outline: none;
+  @include transition(.2s);
+
+  &:focus {
+    border-color: $blue-dark;
+  }
 
   &::-webkit-input-placeholder {
     font-size: 12px;
