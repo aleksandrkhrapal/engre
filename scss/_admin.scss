@@ -1446,6 +1446,12 @@
 .select-size-img {
   margin-bottom: 50px;
 
+  .upload-wrapper {
+    .upload-input {
+      max-width: 275px;
+    }
+  }
+
   > span {
     display: block;
     margin-bottom: 10px;

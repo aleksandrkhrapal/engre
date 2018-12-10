@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html" class="active">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="admin-documents.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="admin-software.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Software</i>
+					</a>
+					<a href="admin-finances.html">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="admin-user-management.html">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="admin-moderation-messages.html">
+						<span class="mdi mdi-bell notification"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="admin-chat.html">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="admin-settings-languages.html">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>PROJECTS POSTED</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>MEMBERS WORLDWIDE</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>TOTAL SPENT</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body">
+					<div class="admin-edit-top d-flex justify-content-between flex-wrap">
+						<a href="#" class="admin-back">
+							<span class="mdi mdi-arrow-left"></span>
+							back
+						</a>
+
+						<div class="edit-controls">
+							<div class="dropdown dropdown-select dropdown-add">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="mdi upload mdi-folder-move"></span>
+									<span class="label">Category</span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-right" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Analytics</a>
+												<a href="#">Industry events</a>
+												<a href="#">Industry news</a>
+												<a href="#">World articles</a>
+												<a href="#">Site communities</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="archive">
+								<span class="mdi mdi-archive"></span> To Archive
+							</a>
+						</div>
+					</div>
+					<div class="admin-row">
+						<div class="edit-wrapper">
+							<div class="edit-top">
+								<span class="article-title">Enter name of article is here <span class="mdi mdi-pencil"></span></span>
+							</div>
+							<div class="select-size-img">
+								<span>Select photo size</span>
+
+								<div class="upload-img d-flex align-items-center flex-wrap">
+									<div class="upload-block w80" title="490x980">
+										<input type="file">
+									</div>
+									<div class="upload-block w80" title="490x980">
+										<input type="file">
+										<span class="mdi mdi-play-circle-outline"></span>
+									</div>
+								</div>
+							</div>
+							<div class="edit-buttons-wrap d-flex flex-wrap">
+								<span class="edit-button"><span class="mdi mdi-format-bold"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-italic"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-list-numbers"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-list-bulleted"></span></span>
+								<span class="edit-button"><span class="mdi mdi-file-image"></span></span>
+								<span class="edit-button"><span class="mdi mdi-link-variant"></span></span>
+								<span class="edit-button"><span class="mdi mdi-at"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-quote-close"></span></span>
+								<span class="edit-button"><span class="mdi mdi-code-braces"></span></span>
+								<span class="edit-button"><span class="mdi mdi-sigma"></span></span>
+								<span class="edit-button"><span class="mdi mdi-dots-horizontal"></span></span>
+							</div>
+							<textarea placeholder="Enter text..." class="textarea-edit height120">A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints, soared to above 2,000 micrograms per cubic metre. This is insane, Li Shuo, Greenpeace’s Beijing-based climate campaigner, tweeted after the sandstorm swept across northern China in the early hours of Thursday. Sand storm + industrial pollution = airpocalypse in the middle of spring, Li added. China’s official news agency, Xinhua, said at least nine Chinese regions - from Xinjiang and Gansu in the west to Hebei and Heilongjiang further east - would be affected by the air pollution between Thursday and Friday. Visibility in Beijing had plummeted to about 1km in the capital and was expected to deteriorate further. Before and after shots of Beijing published by Chinese state media captured the severity of the city’s latest air pollution crisis, which local authorities blamed largely on sand that winds had blown in from Mongolia and the Chinese province of Inner Mongolia. The Chinese magazine Caixin warned readers that high concentrations of particulates such as PM10 and PM2.5 had been linked to lung cancer and strokes. Li, the Greenpeace activist, said the sandstorm was reminiscent of those witnessed about two decades ago before a large-scale reforestation campaign in northern China helped reduce the number of sandstorms reaching the capital. We have had a lucky few years recently. Sandstorms have traditionally been a problem for Beijing and for the northern part of China around this season in March, April or May. But we have made some progress in terms of combating sandstorms over the past few years, Li said. The peak point was in the late 1990s, early 2000s. Then, we could have not just one but several such episodes in the spring and they would be as severe or even worse than what we have seen today. Li said Beijing’s latest airpocalypse would make it harder for China to meet its air quality targets and should serve as an alert that progress in the fight against air pollution appeared to be losing steam. After a period of advances, recent months had seen quite a significant slowdown in the rate of air quality improvement as a result of the ramping up of industrial activity around Beijing, Li claimed. Last December tens of thousands of smog refugees were forced to flee China’s pollution-stricken north after a dangerous cocktail of pollutants enveloped swaths of north and central China. Li said he hoped Beijing’s latest air pollution crisis would also remind the public that while industrial smog remained a pressing issue, desertification, which some view as one of China’s most urgent environmental challenges.</textarea>
+
+							<div class="edit-buttons-wrap d-flex flex-wrap">
+								<span class="edit-button"><span class="mdi mdi-format-bold"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-italic"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-list-numbers"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-list-bulleted"></span></span>
+								<span class="edit-button"><span class="mdi mdi-file-image"></span></span>
+								<span class="edit-button"><span class="mdi mdi-link-variant"></span></span>
+								<span class="edit-button"><span class="mdi mdi-at"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-quote-close"></span></span>
+								<span class="edit-button"><span class="mdi mdi-code-braces"></span></span>
+								<span class="edit-button"><span class="mdi mdi-sigma"></span></span>
+								<span class="edit-button"><span class="mdi mdi-dots-horizontal"></span></span>
+							</div>
+							<textarea placeholder="Enter text..." class="textarea-edit">A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints, soared to above 2,000 micrograms per cubic metre. This is insane, Li Shuo, Greenpeace’s Beijing-based climate campaigner, tweeted after the sandstorm swept across northern China in the early hours of Thursday. Sand storm + industrial pollution = airpocalypse in the middle of spring, Li added. China’s official news agency, Xinhua, said at least nine Chinese regions - from Xinjiang and Gansu in the west to Hebei and Heilongjiang further east - would be affected by the air pollution between Thursday and Friday. Visibility in Beijing had plummeted to about 1km in the capital and was expected to deteriorate further. Before and after shots of Beijing published by Chinese state media captured the severity of the city’s latest air pollution crisis, which local authorities blamed largely on sand that winds had blown in from Mongolia and the Chinese province of Inner Mongolia. The Chinese magazine Caixin warned readers that high concentrations of particulates such as PM10 and PM2.5 had been linked to lung cancer and strokes. Li, the Greenpeace activist, said the sandstorm was reminiscent of those witnessed about two decades ago before a large-scale reforestation campaign in northern China helped reduce the number of sandstorms reaching the capital. We have had a lucky few years recently. Sandstorms have traditionally been a problem for Beijing and for the northern part of China around this season in March, April or May. But we have made some progress in terms of combating sandstorms over the past few years, Li said. The peak point was in the late 1990s, early 2000s. Then, we could have not just one but several such episodes in the spring and they would be as severe or even worse than what we have seen today. Li said Beijing’s latest airpocalypse would make it harder for China to meet its air quality targets and should serve as an alert that progress in the fight against air pollution appeared to be losing steam. After a period of advances, recent months had seen quite a significant slowdown in the rate of air quality improvement as a result of the ramping up of industrial activity around Beijing, Li claimed. Last December tens of thousands of smog refugees were forced to flee China’s pollution-stricken north after a dangerous cocktail of pollutants enveloped swaths of north and central China. Li said he hoped Beijing’s latest air pollution crisis would also remind the public that while industrial smog remained a pressing issue, desertification, which some view as one of China’s most urgent environmental challenges.</textarea>
+
+							<div class="edit-buttons d-flex justify-content-end">
+								<a href="#" class="btn-sign" style="padding: 15px 0;">Public</a>
+								<a href="#" class="btn-site">Save druft</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
