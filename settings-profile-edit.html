@@ -142,8 +142,7 @@
 									<div class="col-md-4">
 										<div class="upload-wrapper">
 											<span>Your photo</span>
-											<div class="upload-input">
-												<input type="file">
+											<div class="upload-input" data-toggle="modal" data-target="#edit-profile-photo">
 												<i>Choose photo from your computer</i>
 											</div>
 											<i class="text-hint">JPEG, PNG, GIF, or BMP • 50MB file limit</i>
@@ -324,6 +323,36 @@
 		</footer>
 
 		<div class="mobile-menu-mask"></div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="edit-profile-photo" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered add-photo-profile-modal" role="document">
+				<div class="modal-content">
+					<div class="back-wrapper position-top-left" data-dismiss="modal" aria-label="Close">
+						<a href="#">
+							<span class="back-icon">
+								<span class="mdi mdi-arrow-left"></span>
+							</span>
+							<mark>Back</mark>
+						</a>
+					</div>
+					<div class="modal-add-wrap">
+						<span class="add-photo-title">Edit your photo</span>
+						<div class="add-photo-section">
+							<img src="images/add-photo-profile.png" alt="">
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-sm-8 col-12">
+								<button type="submit" class="button-styles light-blue">
+									Crop <span class="mdi mdi-crop"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Include script -->
 		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>

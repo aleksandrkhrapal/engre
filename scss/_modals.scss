@@ -349,6 +349,10 @@
   border: none;
 }
 
+.modal-add-photo {
+  max-width: 800px;
+}
+
 .modal-content {
   width: 100%;
   box-shadow: $bs-hover;
@@ -852,6 +856,23 @@
 
 .modal-add-wrap {
   padding: 90px 50px 50px 50px;
+
+  @media (max-width: $screen-xs-max) {
+    padding:  90px 20px 50px 20px;
+  }
+}
+
+.add-photo-profile-modal {
+  max-width: 400px;
+}
+
+.add-photo-section {
+  margin-bottom: 40px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
 }
 
 .delete-button {
