@@ -7686,6 +7686,10 @@
   background-position: 50% 50%;
   margin-right: 25px;
 }
+.content-cards .card-img.no-photo {
+  background-image: url("../images/no-photo.png");
+  border: 1px solid #e6e6e6;
+}
 @media (max-width: 575px) {
   .content-cards .card-img {
     display: none;

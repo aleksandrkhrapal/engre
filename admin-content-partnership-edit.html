@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body class="admin-body">
+		<div class="admin-wrapper">
+			<div class="admin-sidebar">
+				<div class="admin-sidebar__top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="#"><img src="images/admin-logo.svg" alt=""></a>
+					</div>
+					<div class="sidebar-trigger">
+						<span class="mdi mdi-chevron-left"></span>
+					</div>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<a href="admin-dashboard.html">
+						<span class="mdi mdi-view-dashboard"></span>
+						<i>Dashboard</i>
+					</a>
+					<a href="admin-project.html">
+						<span class="mdi mdi-folder"></span>
+						<i>Project</i>
+					</a>
+					<a href="admin-content.html" class="active">
+						<span class="mdi mdi-text-subject"></span>
+						<i>Content</i>
+					</a>
+					<a href="admin-documents.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Document</i>
+					</a>
+					<a href="admin-software.html">
+						<span class="mdi mdi-file-document"></span>
+						<i>Software</i>
+					</a>
+					<a href="admin-finances.html">
+						<span class="mdi mdi-cash-usd"></span>
+						<i>Finances</i>
+					</a>
+					<a href="admin-user-management.html">
+						<span class="mdi mdi-account-key"></span>
+						<i>User management</i>
+					</a>
+					<a href="admin-moderation-messages.html">
+						<span class="mdi mdi-bell notification"></span>
+						<i>Moderation <mark class="notification">12</mark></i>
+					</a>
+					<a href="admin-chat.html">
+						<span class="mdi mdi-message-text"></span>
+						<i>Chat</i>
+					</a>
+					<a href="admin-settings-languages.html">
+						<span class="mdi mdi-settings"></span>
+						<i>Settings</i>
+					</a>
+					<a href="#">
+						<span class="mdi mdi-logout-variant"></span>
+						<i>Exit</i>
+					</a>
+				</nav>
+			</div>
+			<div class="admin-container">
+				<div class="admin-container__top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>March 12, 2018</span>
+							<mark>Bringing creative projects to life</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>PROJECTS POSTED</span>
+							<mark>14.326.131</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>MEMBERS WORLDWIDE</span>
+							<mark>140.389</mark>
+						</div>
+						<div class="col-md-3 col-sm-6 top-col">
+							<span>TOTAL SPENT</span>
+							<mark>3.789</mark>
+						</div>
+					</div>
+				</div>
+
+				<div class="admin-container__body">
+					<div class="admin-edit-top d-flex justify-content-between flex-wrap">
+						<a href="#" class="admin-back">
+							<span class="mdi mdi-arrow-left"></span>
+							back
+						</a>
+
+						<div class="edit-controls">
+							<div class="dropdown dropdown-select dropdown-add">
+								<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+									<span class="mdi upload mdi-folder-move"></span>
+									<span class="label">Industry</span>
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-right" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<div class="dropdown-list-wrapper">
+										<div class="dropdown-list">
+											<div class="dropdown-list-row">
+												<a href="#">Industry 1</a>
+												<a href="#">Industry 2</a>
+												<a href="#">Industry 3</a>
+												<a href="#">Industry 4</a>
+												<a href="#">Industry 5</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="archive">
+								<span class="mdi mdi-archive"></span> To Archive
+							</a>
+						</div>
+					</div>
+					<div class="admin-row">
+						<div class="edit-wrapper">
+							<div class="edit-top">
+								<span class="article-title">Igor Sikorsky <span class="mdi mdi-pencil"></span></span>
+							</div>
+							<div class="select-size-img">
+								<span>Upload photo</span>
+
+								<div class="upload-img d-flex align-items-center flex-wrap">
+									<div class="upload-block w80" title="490x980">
+										<input type="file">
+									</div>
+								</div>
+							</div>
+							<div class="row project-filters">
+								<div class="input-row">
+									<div class="dropdown dropdown-select">
+										<div class="selected-wrap" data-toggle="dropdown" aria-expanded="false">
+											<span class="label">Investment amount</span>
+											<span class="selected-item"></span>
+											<span class="mdi mdi-menu-down"></span>
+										</div>
+										<div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<div class="dropdown-list-wrapper">
+												<div class="dropdown-list">
+													<div class="dropdown-list-row">
+														<a href="#">Link 1</a>
+														<a href="#">Link 2</a>
+														<a href="#">Link 3</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="edit-buttons-wrap d-flex flex-wrap">
+								<span class="edit-button"><span class="mdi mdi-format-header-1"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-header-2"></span></span>
+								<span class="edit-button"><span class="mdi mdi-format-paragraph"></span></span>
+							</div>
+							<textarea placeholder="Enter text..." class="textarea-edit">Looking to Cross the Border From Mexico, Into the N.C.A.A.Sifting through teaspoons of clay and sand scraped from the floors of caves, German researchers have managed to isolate ancient human DNA — without turning up a single bone. Their new technique, described in a study published on Thursday in the journal Science, promises to open new avenues of research into human prehistory and was met with excitement by geneticists and archaeologists. It’s a bit like discovering that you can extract gold dust from the air,” said Adam Siepel, a population geneticist at Cold Spring Harbor Laboratory.An absolutely amazing and exciting paper,” added David Reich, a genetics professor at Harvard who focuses on ancient DNA. Until recently, the only way to study the genes of ancient humans like the Neanderthals and their cousins, the Denisovans, was to recover DNA from fossil bones. But they are scarce and hard to find, which has greatly limited research into where early humans lived and how widely they ranged. The only Denisovan bones and teeth that scientists have, for example, come from a single cave in Siberia. Looking for these genetic signposts in sediment has become possible only in the last few years, with recent developments in technology, including rapid sequencing of DNA. Although DNA sticks to minerals and decayed plants in soil, scientists did not know whether it would ever be possible to fish out gene fragments that were tens of thousands of years old and buried deep among other genetic debris. Bits of genes from ancient humans make up just a minute fraction of the DNA floating around in the natural world. But the German scientists, led by Matthias Meyer at the Max Planck Institute for Developmental Biology in Tübingen, have spent years developing methods to find DNA even where it seemed impossibly scarce and degraded. There’s been a real revolution in technology invented by this lab,” Dr. Reich said. Matthias is kind of a wizard in pushing the envelope.” Scientists began by retrieving DNA from ancient bones: first Neanderthals, then Denisovans. To identify the Denisovans, Svante Paabo, a geneticist at the Planck Institute and a co-author of the new paper, had only a child’s pinkie bone to work with. His group surprised the world in 2010 by reporting that it had extracted DNA from the bone, finding that it belonged to a group of humans distinct from both Neanderthals and modern humans. But that sort of analysis is limited by the availability of fossil bones. In a lot of cases, you can get bones, but not enough,” said Hendrik Poinar, an evolutionary geneticist at McMaster University. If you just have one small piece of bone from one site, curators do not want you to grind it up.”</textarea>
+
+							<div class="edit-buttons d-flex justify-content-end">
+								<a href="#" class="btn-sign" style="padding: 15px 0;">Public</a>
+								<a href="#" class="btn-site">Save druft</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
