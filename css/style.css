@@ -3820,7 +3820,7 @@
 }
 
 .reviews-wrap {
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 1px 30px;
 }
 @media (max-width: 767px) {
   .reviews-wrap {
@@ -4082,7 +4082,7 @@
     padding: 0;
   }
 }
-.columns-wrap .col-left .col-left-wrap > span {
+.columns-wrap .col-left .col-left-wrap .d-flex > span, .columns-wrap .col-left .col-left-wrap > span {
   display: block;
   font-size: 18px;
   line-height: 20px;
@@ -4090,7 +4090,7 @@
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .columns-wrap .col-left .col-left-wrap > span {
+  .columns-wrap .col-left .col-left-wrap .d-flex > span, .columns-wrap .col-left .col-left-wrap > span {
     color: #fff;
   }
 }
@@ -4101,6 +4101,7 @@
   right: 0;
   height: 100%;
   z-index: 10;
+  overflow-x: hidden;
   background-color: #f1f5f8;
   box-shadow: 13px 0 33px 0 rgba(13, 71, 161, 0.09) inset;
   transition: all 0.5s ease-in-out;
@@ -4138,7 +4139,7 @@
   }
 }
 .columns-wrap .col-right .col-right-wrap-body .sort-wrapper .sort-col {
-  width: 267px;
+  width: 260px;
   margin: 0 15px;
 }
 @media (max-width: 1300px) {
@@ -4179,7 +4180,7 @@
   box-shadow: 0 8px 13px 0 rgba(13, 71, 161, 0.08);
   padding: 20px;
   position: relative;
-  width: 267px;
+  width: 260px;
   margin: 0 15px 30px 15px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -4546,6 +4547,10 @@
   margin-bottom: 15px;
 }
 
+.archive {
+  color: #99a9b8;
+}
+
 .projects-list-wrap {
   background-color: #f1f5f8;
   border-radius: 3px;
@@ -4675,6 +4680,10 @@
 .select-option .radio-button {
   margin-right: 25px;
   margin-bottom: 15px;
+}
+
+.switch-project-status {
+  margin-right: 35px;
 }
 
 .chat-wrap {

@@ -726,7 +726,7 @@
 }
 
 .reviews-wrap {
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 1px 30px;
 
   @media (max-width: $screen-sm-max) {
     padding: 0;
@@ -840,7 +840,7 @@
         display: inline-block;
         overflow: inherit;
       }
-      
+
       &.user-name {
         color: $blue-dark;
       }
@@ -1014,7 +1014,7 @@
         padding: 0;
       }
 
-      > span {
+      .d-flex > span, > span {
         display: block;
         font-size: 18px;
         line-height: 20px;
@@ -1035,6 +1035,7 @@
     right: 0;
     height: 100%;
     z-index: 10;
+    overflow-x: hidden;
     background-color: #f1f5f8;
     box-shadow: 13px 0 33px 0 rgba(13, 71, 161, 0.09) inset;
     @include transition(.5s);
@@ -1072,7 +1073,7 @@
 
       .sort-wrapper {
         .sort-col {
-          width: 267px;
+          width: 260px;
           margin: 0 15px;
 
           @media (max-width: 1300px) {
@@ -1111,7 +1112,7 @@
   box-shadow: $bs-default;
   padding: 20px;
   position: relative;
-  width: 267px;
+  width: 260px;
   margin: 0 15px 30px 15px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -1532,6 +1533,10 @@
   margin-bottom: 15px;
 }
 
+.archive {
+  color: #99a9b8;
+}
+
 .projects-list-wrap {
   background-color: #f1f5f8;
   border-radius: 3px;
@@ -1674,6 +1679,10 @@
     margin-right: 25px;
     margin-bottom: 15px;
   }
+}
+
+.switch-project-status {
+  margin-right: 35px;
 }
 
 .chat-wrap {
