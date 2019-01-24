@@ -986,6 +986,17 @@
     }
   }
 
+  &.columns-wrap-edit-documents {
+    .admin-container__body {
+      padding: 13px 20px;
+      min-height: auto;
+
+      .admin-edit-top {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   .col-left {
     width: 50%;
     position: relative;

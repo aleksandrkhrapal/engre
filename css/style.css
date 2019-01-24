@@ -4056,6 +4056,13 @@
 .columns-wrap.columns-wrap-membership .col-right .show-hide-button:before {
   display: none;
 }
+.columns-wrap.columns-wrap-edit-documents .admin-container__body {
+  padding: 13px 20px;
+  min-height: auto;
+}
+.columns-wrap.columns-wrap-edit-documents .admin-container__body .admin-edit-top {
+  margin-bottom: 10px;
+}
 .columns-wrap .col-left {
   width: 50%;
   position: relative;
@@ -7836,6 +7843,7 @@
   vertical-align: middle;
   font-size: 20px;
   line-height: 20px;
+  margin-top: -1px;
 }
 .edit-controls .dropdown {
   display: inline-block;
@@ -8658,7 +8666,7 @@ select {
   }
 }
 .btn-site:focus {
-  outline: none;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 .btn-site:hover {
   text-decoration: none;
@@ -8693,7 +8701,7 @@ select {
   background-color: #3c3;
 }
 .checkbox input {
-  display: none;
+  opacity: 0;
 }
 .checkbox input:checked + label .check-wrap {
   background-color: #0d47a1;
@@ -8782,7 +8790,7 @@ select {
   color: #000;
 }
 .radio-button input {
-  display: none;
+  opacity: 0;
 }
 .radio-button input:checked + label .radio-circle {
   border-color: #4fc5eb;
@@ -9633,7 +9641,6 @@ input {
   line-height: 20px;
   letter-spacing: 0.5px;
   color: #666;
-  outline: none;
   cursor: pointer;
   -webkit-appearance: none;
 }
