@@ -686,10 +686,12 @@
   }
 }
 
-.save-wrap {
+.save-wrap, .control-btns {
   overflow: hidden;
 
-  .save-button {
+  .save-button,
+  .delete-btn,
+  .edit-btn {
     float: right;
     cursor: pointer;
 
@@ -718,7 +720,12 @@
       font-size: 24px;
       line-height: 24px;
       color: #bec4c8;
+      margin: 0;
     }
+  }
+
+  .delete-btn {
+    margin-left: 20px;
   }
 }
 

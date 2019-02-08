@@ -632,17 +632,29 @@
   cursor: pointer;
 }
 
-.save-wrap {
+.save-wrap, .control-btns {
   overflow: hidden;
 }
-.save-wrap .save-button {
+.save-wrap .save-button,
+.save-wrap .delete-btn,
+.save-wrap .edit-btn, .control-btns .save-button,
+.control-btns .delete-btn,
+.control-btns .edit-btn {
   float: right;
   cursor: pointer;
 }
-.save-wrap .save-button:hover i {
+.save-wrap .save-button:hover i,
+.save-wrap .delete-btn:hover i,
+.save-wrap .edit-btn:hover i, .control-btns .save-button:hover i,
+.control-btns .delete-btn:hover i,
+.control-btns .edit-btn:hover i {
   border-color: transparent;
 }
-.save-wrap .save-button i {
+.save-wrap .save-button i,
+.save-wrap .delete-btn i,
+.save-wrap .edit-btn i, .control-btns .save-button i,
+.control-btns .delete-btn i,
+.control-btns .edit-btn i {
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
@@ -654,12 +666,20 @@
   margin-right: 5px;
   border-bottom: 1px solid #bec4c8;
 }
-.save-wrap .save-button .mdi {
+.save-wrap .save-button .mdi,
+.save-wrap .delete-btn .mdi,
+.save-wrap .edit-btn .mdi, .control-btns .save-button .mdi,
+.control-btns .delete-btn .mdi,
+.control-btns .edit-btn .mdi {
   display: inline-block;
   vertical-align: middle;
   font-size: 24px;
   line-height: 24px;
   color: #bec4c8;
+  margin: 0;
+}
+.save-wrap .delete-btn, .control-btns .delete-btn {
+  margin-left: 20px;
 }
 
 .task-comment-row {
