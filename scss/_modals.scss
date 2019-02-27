@@ -357,6 +357,8 @@
   width: 100%;
   box-shadow: $bs-hover;
   border: none;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .modal-close {
@@ -935,5 +937,23 @@
     font-weight: 300;
     letter-spacing: .8px;
     margin: 0;
+  }
+}
+
+.modal-dialog-start-project {
+  max-width: 690px;
+  .modal-add-wrap {
+    background-color: #f1f5f8;
+    padding: 90px 70px 50px 70px;
+
+    @media (max-width: $screen-xs-max) {
+      padding: 90px 20px 50px 20px;
+    }
+
+    .button-styles {
+      min-width: 200px;
+      width: auto;
+      margin: 40px auto 0 auto;
+    }
   }
 }

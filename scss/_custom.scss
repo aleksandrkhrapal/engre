@@ -166,6 +166,7 @@ select {
 
   input {
     opacity: 0;
+    position: absolute;
 
     &:checked {
       + label {
@@ -285,6 +286,7 @@ select {
   }
 
   input {
+    position: absolute;
     opacity: 0;
 
     &:checked {
@@ -2734,6 +2736,72 @@ input {
     &:hover {
       border-color: transparent;
       text-decoration: none;
+    }
+  }
+}
+
+.terms-wrapper {
+  text-align: justify;
+  padding-bottom: 50px;
+
+  .terms-heading {
+    margin: 0 0 10px 0;
+    color: $blue-dark;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .date {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #666;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    color: #342d2d;
+  }
+}
+
+.event-info {
+  .event-col {
+    margin-right: 60px;
+    color: $blue-dark;
+
+    &:hover {
+      .txt {
+        border-color: transparent;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .mdi {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+
+    .txt {
+      border-bottom: 1px solid $blue-dark;
+      font-size: 16px;
+      font-weight: 300;
+      @include transition(.2s);
     }
   }
 }

@@ -501,7 +501,7 @@
     }
 
     .remember-me-wrap {
-      padding: 0 0 0 10px;
+      //padding: 0 0 0 10px;
       margin-bottom: 40px;
 
       @media (max-width: $screen-xs-max) {
@@ -510,6 +510,39 @@
     }
   }
 }
+
+.invalid-link-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.invalid-link-subheading {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.back-to-signIn {
+  display: inline-block;
+  background: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: $blue-dark;
+  border-bottom: 1px solid $blue-dark;
+  cursor: pointer;
+  @include transition(.2s);
+
+  &:hover {
+    border-color: transparent;
+    text-decoration: none;
+  }
+}
+
 
 .hint-wrapper {
   p {

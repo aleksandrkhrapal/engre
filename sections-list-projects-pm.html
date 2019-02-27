@@ -233,7 +233,7 @@
 									<div class="col-right-wrap-top">
 										<div class="d-flex justify-content-between align-items-center col-right-controls">
 											<span class="show-hide-button">Project users</span>
-											<a href="#" class="add-document">Invite user <span class="mdi mdi-plus-box"></span></a>
+											<a href="#" class="add-document" data-target="#invite-user-modal" data-toggle="modal">Invite user <span class="mdi mdi-plus-box"></span></a>
 										</div>
 										<div class="menu-wrap">
 											<a href="#" class="active">Active</a>
@@ -309,7 +309,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -327,7 +327,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -345,7 +345,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -363,7 +363,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -381,7 +381,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -399,7 +399,7 @@
 												<div class="dropdown dropdown-top-right">
 													<span class="mdi mdi-dots-vertical" data-toggle="dropdown" aria-expanded="false"></span>
 													<div class="dropdown-menu dropdown-menu-right dropdown-menu-position0" x-placement="top-end" style="position: absolute; transform: translate3d(-144px, -179px, 0px); top: 0px; left: 0px; will-change: transform;">
-														<a class="dropdown-item" href="#">Delete</a>
+														<a class="dropdown-item" href="#">Inactive (ban)</a>
 														<a class="dropdown-item" href="#">Send message</a>
 													</div>
 												</div>
@@ -429,7 +429,7 @@
 			</div>
 			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
 				<div class="footer-wrapper__col">
-					<span>© 2018 Marketplace Inc. <a href="#">Terms</a></span>
+					<span>© 2019 Marketplace Inc. <a href="terms.html">Terms</a></span>
 					<div class="social-links">
 						<a href="#">
 							<span class="mdi mdi-facebook-box"></span>
@@ -470,6 +470,36 @@
 		</footer>
 
 		<div class="mobile-menu-mask"></div>
+
+		<!-- Modal start -->
+		<div class="modal fade" id="invite-user-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-start-project" role="document">
+				<div class="modal-content">
+					<div class="back-wrapper position-top-left" data-dismiss="modal" aria-label="Close">
+						<a href="#">
+							<span class="back-icon">
+								<span class="mdi mdi-arrow-left"></span>
+							</span>
+							<mark>Back</mark>
+						</a>
+					</div>
+					<div class="modal-add-wrap">
+						<span class="start-project-title">Invite members</span>
+
+						<div class="invite-user-email-wrap">
+							<div class="input-row">
+								<input type="email" id="id-email">
+								<label for="id-email">Enter the invitee's email</label>
+							</div>
+						</div>
+
+						<button type="submit" class="button-styles light-blue">
+							Invite <span class="mdi mdi-account-plus"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Include script -->
 		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>

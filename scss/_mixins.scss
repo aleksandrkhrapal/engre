@@ -21,7 +21,7 @@
 }
 
 @mixin reset-position {
-  position: inherit;
+  position: static;
   top: auto;
   left: auto;
   bottom: auto;

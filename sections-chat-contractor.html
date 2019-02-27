@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/aos.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex flex-row justify-content-between align-items-center">
+				<div class="header-wrapper__left d-flex flex-row align-items-center">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="start-project">
+						<a href="#">
+							<span class="mdi mdi-plus">
+								<svg class="circle-plus" expanded="true" height="40px" width="40px">
+									<circle class="innerCircle" cx="50%" cy="50%" r="10px"></circle>
+								</svg>
+							</span>
+							<span class="start-text">Add a project</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-wrapper__right d-flex flex-row justify-content-between align-items-center">
+					<nav class="main-nav">
+						<a href="about-us.html">About</a>
+						<a href="#">Intellectual services</a>
+						<a href="news.html">What's new?</a>
+						<a href="blog.html">Blog</a>
+						<a href="edu.html">EDU</a>
+						<a href="partnership.html">Partnership</a>
+						<a href="careers.html">Careers</a>
+					</nav>
+					<div class="select-lang-wrapper">
+						<div class="dropdown dropdown-select-lang">
+							<button type="button" class="selected-lang" data-toggle="dropdown">
+								En <span class="mdi mdi-chevron-down"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item selected" href="#">En</a>
+								<a class="dropdown-item" href="#">Fr</a>
+								<a class="dropdown-item" href="#">De</a>
+							</div>
+						</div>
+					</div>
+					<div class="profile-wrapper">
+						<div class="dropdown dropdown-profile">
+							<span class="profile-icon notification" data-toggle="dropdown">
+								<span class="mdi mdi-account-circle"></span>
+							</span>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="dropdown-profile-top d-flex flex-row justify-content-between align-items-center">
+									<span class="name">Opentech</span>
+									<a href="#" class="logout-button"><span class="mdi mdi-logout-variant"></span></a>
+								</div>
+								<div class="row">
+									<div class="col-md-7 profile-list">
+										<h2>My Stuff</h2>
+										<a href="#">Company</a>
+										<a href="#">Project</a>
+										<a href="#">Chat</a>
+										<a href="partnership.html">Partnership</a>
+										<a href="#">Contract and documents</a>
+
+									</div>
+									<div class="col-md-5 profile-list">
+										<h2>Settings</h2>
+										<a href="#">My profile</a>
+										<a href="#">Notification</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu-button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="setting-wrapper">
+				<div class="settings-section">
+					<div class="heading-title">
+						<div class="wrapper">
+							<h2>My Stuff PM</h2>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="categories-wrapper d-flex justify-content-between align-items-center">
+							<div class="categories-list d-flex justify-content-between align-items-end">
+								<div class="category-active-mobile">
+									<a href="#">Chat <span class="mdi mdi-menu-down"></span></a>
+								</div>
+								<div class="category-active">
+
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="categories-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Notifications</a>
+									<a href="#">Company</a>
+									<a href="#">Service</a>
+									<a href="#">Projects</a>
+									<a href="#" class="active">Chat</a>
+									<a href="#">Membership</a>
+								</div>
+							</div>
+						</div>
+						<div class="settings-user-info d-flex flex-row justify-content-between align-items-center">
+							<span><i>Active </i>2 projects</span>
+							<span><i>Joined </i>Mar 2018</span>
+						</div>
+
+						<div class="settings-holder settings-remove-bg-mobile overflow-hidden">
+							<div class="chat-wrap d-flex">
+								<div class="chat-list">
+									<div class="chat-header d-flex justify-content-between">
+										<span class="chat-text-bold18">Contact</span>
+										<div class="chat-search d-flex align-items-center justify-content-end">
+											<input type="search" placeholder="Search">
+											<span class="mdi mdi-magnify"></span>
+										</div>
+									</div>
+									<div class="chat-list-body">
+										<div class="chat-list-row chat-show-mobile d-flex align-items-center active">
+											<div class="img-wrap">
+												<img src="images/avatar.png" alt="">
+											</div>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Peter Quill</a>
+													<span class="date">23:12</span>
+												</div>
+												<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
+											</div>
+											<div class="dropdown">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Inactive (ban)</a>
+													<a class="dropdown-item" href="#">Delete</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="chat-list-row chat-show-mobile d-flex align-items-center">
+											<div class="img-wrap">
+												<img src="images/avatar.png" alt="">
+											</div>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Thanos</a>
+													<span class="date">13:10</span>
+												</div>
+												<p class="chat-text">Thank you</p>
+											</div>
+											<div class="dropdown">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Inactive (ban)</a>
+													<a class="dropdown-item" href="#">Delete</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="chat-list-row chat-show-mobile d-flex align-items-center">
+											<div class="img-wrap">
+												<img src="images/avatar.png" alt="">
+											</div>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Modi / PM</a>
+													<span class="date">13:10</span>
+												</div>
+												<p class="chat-text">Prime Minister Narendra Modi cannot be asked to explain ion </p>
+											</div>
+											<div class="dropdown">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Inactive (ban)</a>
+													<a class="dropdown-item" href="#">Delete</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="chat-list-row chat-show-mobile d-flex align-items-center">
+											<div class="img-wrap">
+												<img src="images/admin-logo.png" alt="">
+											</div>
+											<div class="chat-preview-info">
+												<div class="preview-top">
+													<a href="#">Engre / Admin</a>
+													<span class="date">10:08</span>
+												</div>
+												<p class="chat-text">Congratulations on getting started on the platform</p>
+											</div>
+											<div class="dropdown">
+												<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Inactive (ban)</a>
+													<a class="dropdown-item" href="#">Delete</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-holder chat-holder-sections">
+									<div class="chat-header d-flex">
+										<span class="mdi mdi-arrow-left close-chat"></span>
+										<span class="chat-text-bold18">Peter Quill <span class="chat-activity">Last seen at 14:34</span></span>
+									</div>
+									<div class="chat-wrapper">
+										<div class="system-message-wrapper">
+											<span>System message</span>
+											<p>Welcome to the chat. In a chat it is forbidden to exchange contacts before the start of the project. Any attempt will be punishable.</p>
+
+											<div class="checkbox checkbox_green">
+												<input type="checkbox" id="check1">
+												<label for="check1">
+													<span class="check-wrap"></span>
+												</label>
+											</div>
+										</div>
+										<div class="date">
+											<div class="svg-wrap">
+												<img src="images/wave.svg" alt="">
+											</div>
+											<span>Yestarday</span>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">Congrats on the new job! My <mark>Skype 5454.joy</mark></p>
+												<span class="time">23:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message warning-message">
+												<p class="chat-text"><span class="mdi mdi-robot"></span> The first warning. You violate the conditions of using chat.</p>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">Thank you</p>
+												<span class="time">13:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message your-message">
+												<p class="chat-text">Did you look at the details of the project?</p>
+												<span class="time">13:12</span>
+											</div>
+										</div>
+										<div class="d-flex justify-content-end">
+											<div class="chat-message system-message d-flex align-items-center justify-content-between">
+												<span class="chat-text-bold16">PM wants to close the project</span>
+												<div class="message-controls">
+													<span class="mdi mdi-close-box cancel"></span>
+													<span class="mdi mdi-checkbox-marked confirm"></span>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start">
+											<div class="chat-message incoming">
+												<p class="chat-text">This is not the latest version</p>
+												<span class="time">15:12</span>
+											</div>
+										</div>
+									</div>
+									<div class="chat-input-wrapper">
+										<div class="d-flex align-items-center">
+											<div class="col-smiles">
+												<span class="mdi mdi-emoticon"></span>
+											</div>
+											<div class="col-add">
+												<span class="mdi mdi-paperclip"></span>
+											</div>
+											<div class="col-start-project" data-toggle="modal" data-target="#start-modal"> <!-- You can add to class="col-start-project" one of these classes in-progress or finished -->
+												<span class="mdi mdi-flag-checkered"></span>
+											</div>
+											<div class="col-message">
+												<textarea placeholder="Message" class="chat-message-textarea"></textarea>
+											</div>
+											<div class="col-send">
+												<span class="mdi mdi-send"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<div class="callback-wrap">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="input-row">
+							<input type="tel" id="id-tel">
+							<label for="id-tel">Your phone</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<input type="submit" class="btn-site" value="Call me">
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
+				<div class="footer-wrapper__col">
+					<span>© 2019 Marketplace Inc. <a href="terms.html">Terms</a></span>
+					<div class="social-links">
+						<a href="#">
+							<span class="mdi mdi-facebook-box"></span>
+						</a>
+						<a href="#">
+							<span class="mdi mdi-linkedin-box"></span>
+						</a>
+						<a href="#">
+							<span class="mdi mdi-twitter-box"></span>
+						</a>
+					</div>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-phone"></span>
+						<mark>00 1 206-266-2992</mark>
+					</a>
+					<a href="#" class="footer-block footer-callback-button">
+						<span class="mdi mdi-phone-forward"></span>
+						<mark>Call back</mark>
+					</a>
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-email"></span>
+						<mark>Email us</mark>
+					</a>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-telegram"></span>
+						<mark>Telegram</mark>
+					</a>
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-facebook-messenger"></span>
+						<mark>Messenger</mark>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="mobile-menu-mask"></div>
+
+		<!-- Modalw reviews -->
+		<div class="modal fade reviews-modal" id="reviews-modal2" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<span class="close-modal" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close"></span></span>
+					<div class="modal-heading">
+						<div class="modal-title">
+							<span class="mdi mdi-message-draw"></span>
+							<i>Add Review</i>
+						</div>
+					</div>
+					<div class="modal-wrapper">
+						<p>The feedback you wrote will be moderated by the portal. After that you will receive a notification. You can also write a review later when you are ready to close the project.</p>
+						<div class="row align-items-center">
+							<div class="col-md-4">
+								<div class="rating-wrap rating-wrap-modal" style="margin: 0;">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond-outline.svg" alt="">
+									<img src="images/icon-diamond-outline.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="input-row" style="margin: 0;">
+									<input type="email" id="id-email" class="active" value="test@gmail.com">
+									<label for="id-email">Email</label>
+								</div>
+							</div>
+						</div>
+						<form action="#" class="add-review">
+							<label>Feedback on the project "Integrate clicks-and-mortar methodology"</label>
+							<textarea placeholder="Enter review..."></textarea>
+							<div class="row justify-content-between align-items-end">
+								<div class="col-md-5">
+									<div class="upload-wrapper" style="margin: 0;">
+										<span>Video Company</span>
+										<div class="uploaded-documents">
+											<span class="mdi mdi-youtube"></span>
+											<span class="doc-name">verylongnamevideofile.mp4</span>
+											<span class="mdi mdi-delete delete"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<input type="submit" class="btn-site" value="Submit review">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal start -->
+		<div class="modal fade" id="start-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-start-project" role="document">
+				<div class="modal-content">
+					<div class="back-wrapper position-top-left" data-dismiss="modal" aria-label="Close">
+						<a href="#">
+							<span class="back-icon">
+								<span class="mdi mdi-arrow-left"></span>
+							</span>
+							<mark>Back</mark>
+						</a>
+					</div>
+					<div class="modal-add-wrap">
+						<span class="start-project-title">Start project with:</span>
+
+						<div class="row d-flex flex-wrap start-project-row-wrap">
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+							<div class="col-doc">
+								<div class="d-flex">
+									<div class="text-wrap">
+										<mark class="start-txt">Project: <span>Repurpose viral metrics</span></mark>
+										<mark>Budget: <span>$200 000 000</span></mark>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="button-styles light-blue">
+							Start <span class="mdi mdi-flag-checkered"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+		<script type="text/javascript" src="js/header-fixed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

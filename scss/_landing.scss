@@ -560,6 +560,10 @@
     margin-left: 25px;
     @include transition(.2s);
 
+    @media (max-width: $screen-sm-max) {
+      margin-left: 0;
+    }
+
     &:hover,
     &.subscribed {
       color: #fff;
