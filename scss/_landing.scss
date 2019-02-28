@@ -671,6 +671,10 @@
   line-height: 22px;
   @include transition(.2s);
 
+  @media (max-width: $screen-sm-max) {
+    margin-right: 15px;
+  }
+
   &.news-article-share {
     position: absolute;
     bottom: 20px;

@@ -175,6 +175,11 @@
     font-weight: 300;
     margin-bottom: 10px;
 
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
     strong {
       font-weight: 700;
     }
@@ -858,6 +863,11 @@
   padding: 10px 0;
   @include transition(.3s);
 
+  @media (max-width: $screen-xs-max) {
+    min-height: 54px;
+    padding: 16px 0;
+  }
+
   .consulting-nav {
     a {
       display: inline-block;
@@ -867,6 +877,29 @@
       line-height: 20px;
       font-weight: 300;
       @include transition(.3s);
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-right: 0;
+        font-size: 14px;
+        position: relative;
+
+        &:after {
+          content: '|';
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 5px 0 9px;
+          position: relative;
+          top: -1px;
+        }
+      }
     }
   }
 }
