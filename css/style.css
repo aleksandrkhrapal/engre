@@ -332,7 +332,6 @@
   box-shadow: 0 13px 33px 0 rgba(13, 71, 161, 0.33);
   border: none;
   border-radius: 3px;
-  overflow: hidden;
 }
 
 .modal-close {
@@ -896,6 +895,14 @@
   min-width: 200px;
   width: auto;
   margin: 40px auto 0 auto;
+}
+
+.digital-key-title {
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .main-header {
