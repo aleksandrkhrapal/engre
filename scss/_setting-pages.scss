@@ -2650,3 +2650,24 @@
     margin-bottom: -70px;
   }
 }
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-right: 20px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+
+  img {
+    @include center(both);
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.company-info {
+  flex:  1;
+}

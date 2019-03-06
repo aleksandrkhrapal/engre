@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/aos.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex flex-row justify-content-between align-items-center">
+				<div class="header-wrapper__left d-flex flex-row align-items-center">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="start-project">
+						<a href="#">
+							<span class="mdi mdi-plus">
+								<svg class="circle-plus" expanded="true" height="40px" width="40px">
+									<circle class="innerCircle" cx="50%" cy="50%" r="10px"></circle>
+								</svg>
+							</span>
+							<span class="start-text">Add a project</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-wrapper__right d-flex flex-row justify-content-between align-items-center">
+					<nav class="main-nav">
+						<a href="about-us.html">About</a>
+						<a href="#">Intellectual services</a>
+						<a href="news.html">What's new?</a>
+						<a href="blog.html">Blog</a>
+						<a href="edu.html">EDU</a>
+						<a href="partnership.html">Partnership</a>
+						<a href="careers.html">Careers</a>
+					</nav>
+					<div class="select-lang-wrapper">
+						<div class="dropdown dropdown-select-lang">
+							<button type="button" class="selected-lang" data-toggle="dropdown">
+								En <span class="mdi mdi-chevron-down"></span>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item selected" href="#">En</a>
+								<a class="dropdown-item" href="#">Fr</a>
+								<a class="dropdown-item" href="#">De</a>
+							</div>
+						</div>
+					</div>
+					<div class="profile-wrapper">
+						<div class="dropdown dropdown-profile">
+							<span class="profile-icon notification" data-toggle="dropdown">
+								<span class="mdi mdi-account-circle"></span>
+							</span>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="dropdown-profile-top d-flex flex-row justify-content-between align-items-center">
+									<span class="name">Opentech</span>
+									<a href="#" class="logout-button"><span class="mdi mdi-logout-variant"></span></a>
+								</div>
+								<div class="row">
+									<div class="col-md-7 profile-list">
+										<h2>My Stuff</h2>
+										<a href="#">Company</a>
+										<a href="#">Project</a>
+										<a href="#">Chat</a>
+										<a href="partnership.html">Partnership</a>
+										<a href="#">Contract and documents</a>
+
+									</div>
+									<div class="col-md-5 profile-list">
+										<h2>Settings</h2>
+										<a href="#">My profile</a>
+										<a href="#">Notification</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu-button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="setting-wrapper">
+				<div class="settings-section">
+					<div class="heading-title">
+						<div class="wrapper">
+							<h2>My Stuff PM</h2>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="categories-wrapper d-flex justify-content-between align-items-center">
+							<div class="categories-list d-flex justify-content-between align-items-end">
+								<div class="category-active-mobile">
+									<a href="#">Review PM <span class="mdi mdi-menu-down"></span></a>
+								</div>
+								<div class="category-active">
+
+									<span class="mdi mdi-menu-down"></span>
+								</div>
+								<div class="categories-dropdown">
+									<a href="#">My Profile</a>
+									<a href="#">Notifications</a>
+									<a href="#">Projects</a>
+									<a href="#">Chat</a>
+									<a href="#">Contract & Documents</a>
+									<a href="#" class="active">Review PM</a>
+								</div>
+							</div>
+						</div>
+						<div class="settings-user-info d-flex flex-row justify-content-between align-items-center">
+							<span><i>Active </i>8 projects</span>
+							<span><i>Joined </i>Mar 2018</span>
+						</div>
+
+						<div class="settings-holder settings-remove-bg-mobile">
+							<div class="reviews-wrap">
+								<div class="row flex-wrap">
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/is-logo5.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">Opentech</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/no-photo-sm.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">IBM</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/wd.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">The Walt Disney Company</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/no-photo-sm.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">MasterCard</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/ferrari.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">Ferrari</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-block-wrap">
+											<div class="status grey"></div>
+											<div class="row align-items-center">
+												<div class="col-md-10">
+													<div class="d-flex align-items-center">
+														<div class="company-logo">
+															<img src="images/no-photo-sm.png" alt="">
+														</div>
+														<span class="company-info">Company: <br><mark class="project-name">Johnson &amp; Johnson</mark></span>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="review-controls d-flex justify-content-end align-items-center">
+														<span class="mdi mdi-flag-checkered inprocess" data-toggle="tooltip" data-placement="top" title="Finished"></span>
+														<div class="dropdown dropdown-top-right">
+															<span class="mdi mdi-dots-vertical" data-toggle="dropdown"></span>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal">View review</a>
+																<a class="dropdown-item" href="#" data-toggle="modal" data-target="#reviews-modal2">Add review</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<div class="callback-wrap">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="input-row">
+							<input type="tel" id="id-tel">
+							<label for="id-tel">Your phone</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<input type="submit" class="btn-site" value="Call me">
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper d-flex flex-row justify-content-between flex-wrap">
+				<div class="footer-wrapper__col">
+					<span>© 2019 Marketplace Inc. <a href="terms.html">Terms</a></span>
+					<div class="social-links">
+						<a href="#">
+							<span class="mdi mdi-facebook-box"></span>
+						</a>
+						<a href="#">
+							<span class="mdi mdi-linkedin-box"></span>
+						</a>
+						<a href="#">
+							<span class="mdi mdi-twitter-box"></span>
+						</a>
+					</div>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-phone"></span>
+						<mark>00 1 206-266-2992</mark>
+					</a>
+					<a href="#" class="footer-block footer-callback-button">
+						<span class="mdi mdi-phone-forward"></span>
+						<mark>Call back</mark>
+					</a>
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-email"></span>
+						<mark>Email us</mark>
+					</a>
+				</div>
+				<div class="footer-wrapper__col">
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-telegram"></span>
+						<mark>Telegram</mark>
+					</a>
+					<a href="#" class="footer-block" target="_blank">
+						<span class="mdi mdi-facebook-messenger"></span>
+						<mark>Messenger</mark>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="mobile-menu-mask"></div>
+
+		<!-- Modalw reviews -->
+		<div class="modal fade reviews-modal" id="reviews-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<span class="close-modal" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close"></span></span>
+					<div class="modal-heading">
+						<div class="modal-title">
+							<span class="mdi mdi-message-text"></span>
+							<i>Reviews of the company “Unity”</i>
+						</div>
+					</div>
+					<div class="modal-wrapper">
+						<div class="row reviews-top">
+							<div class="col-md-6 col-sm-7">
+								<div class="is-row-info d-flex align-items-center">
+									<div class="is-row-img">
+										<img src="images/is-logo1.png" alt="">
+									</div>
+									<div class="is-row-details">
+										<a href="#" class="details-page-link">Unity</a>
+										<span class="location">Madrid, Spain</span>
+										<span class="reviews"><a href="#">http://Inity.com</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-5">
+								<div class="rating-wrap rating-wrap-modal">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+								</div>
+								<div class="row">
+									<div class="col-3">
+										<div class="is-col">
+											<span>Rating</span>
+											<mark class="fz-bigger">5.0</mark>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="is-col">
+											<span>Reviews</span>
+											<mark class="fz-bigger">26</mark>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="svg-wrap">
+							<img src="images/wave.svg" alt="">
+						</div>
+						<div class="review-block">
+							<div class="row review-block-top align-items-center">
+								<div class="col-sm-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo5.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link">Opentech</a>
+											<span class="location">Madrid, Spain</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="rating-wrap">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Date of posting</span>
+												<mark>05.03.2018</mark>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark>$200 000 000</mark>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review-content-wrap">
+								<div class="review-content-top d-flex">
+									<span class="mdi mdi-format-quote-close"></span>
+									<div class="review-content-info">
+										<i>Feedback on the project</i>
+										<a href="#">Integrate clicks-and-mortar methodology</a>
+									</div>
+								</div>
+								<p class="review-text">Mauna Loa, the biggest volcano on Earth — and one of the most active — covers half the Island of Hawaii. Just 35 miles to the northeast, Mauna Kea, known to native Hawaiians as Mauna a Wakea, rises nearly 14,000 feet above sea level. To them it represents a spiritual connection between our planet and the heavens above. </p>
+							</div>
+						</div>
+						<div class="review-block">
+							<div class="row review-block-top align-items-center">
+								<div class="col-sm-6">
+									<div class="is-row-info d-flex align-items-center">
+										<div class="is-row-img">
+											<img src="images/is-logo8.png" alt="">
+										</div>
+										<div class="is-row-details">
+											<a href="#" class="details-page-link">Monsterbeats</a>
+											<span class="location">Tokyo, Japan</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="rating-wrap">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+										<img src="images/icon-diamond.svg" alt="">
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Date of posting</span>
+												<mark>05.03.2018</mark>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="is-col">
+												<span>Budget</span>
+												<mark>$200 000 000</mark>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review-content-wrap">
+								<div class="review-content-top d-flex">
+									<span class="mdi mdi-format-quote-close"></span>
+									<div class="review-content-info">
+										<i>Feedback on the project</i>
+										<a href="#">Visualize impactful mindshare</a>
+									</div>
+								</div>
+								<p class="review-text">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup. However, Windows has changed, and the threat landscape has changed. I am no longer sure that a third-party AV program is essential, and some of them may be detrimental. Vivaldi and Apple’s Safari, while Windows 10 has its own built-in SafeScreen filter.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade reviews-modal" id="reviews-modal2" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<span class="close-modal" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close"></span></span>
+					<div class="modal-heading">
+						<div class="modal-title">
+							<span class="mdi mdi-message-draw"></span>
+							<i>Add Review</i>
+						</div>
+					</div>
+					<div class="modal-wrapper">
+						<div class="row reviews-top">
+							<div class="col-md-6 col-sm-7">
+								<div class="is-row-info d-flex align-items-center">
+									<div class="is-row-img">
+										<img src="images/is-logo1.png" alt="">
+									</div>
+									<div class="is-row-details">
+										<a href="#" class="details-page-link">Unity</a>
+										<span class="location">Madrid, Spain</span>
+										<span class="reviews"><a href="#">http://Inity.com</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-5">
+								<div class="rating-wrap rating-wrap-modal">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond.svg" alt="">
+									<img src="images/icon-diamond-outline.svg" alt="">
+									<img src="images/icon-diamond-outline.svg" alt="">
+								</div>
+								<div class="row">
+									<div class="col-3">
+										<div class="is-col">
+											<span>Rating</span>
+											<mark class="fz-bigger">5.0</mark>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="is-col">
+											<span>Reviews</span>
+											<mark class="fz-bigger">26</mark>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="svg-wrap">
+							<img src="images/wave.svg" alt="">
+						</div>
+						<div class="rating-wrap rating-wrap-modal text-center">
+							<img src="images/icon-diamond.svg" alt="">
+							<img src="images/icon-diamond.svg" alt="">
+							<img src="images/icon-diamond.svg" alt="">
+							<img src="images/icon-diamond-outline.svg" alt="">
+							<img src="images/icon-diamond-outline.svg" alt="">
+						</div>
+						<form action="#" class="add-review">
+							<label>Feedback on the project "Integrate clicks-and-mortar methodology"</label>
+							<textarea placeholder="Enter review..."></textarea>
+							<div class="text-center">
+								<input type="submit" class="btn-site" value="Submit review">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include script -->
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="js/lib/aos.js"></script>
+		<script type="text/javascript" src="js/header-fixed.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
