@@ -2578,6 +2578,18 @@ input {
       height: 40px;
       border-bottom: 1px solid #ccc;
 
+      &.show-add-icon {
+        .mdi {
+          &.icon-right {
+            right: 40px;
+          }
+
+          &.icon-add {
+            display: block;
+          }
+        }
+      }
+
       .mdi {
         color: #666;
         font-size: 20px;
@@ -2592,6 +2604,12 @@ input {
         &.icon-right {
           right: 20px;
         }
+
+        &.icon-add {
+          display: none;
+          right: 10px;
+          color: $blue-dark;
+        }
       }
 
       input {
@@ -2603,7 +2621,7 @@ input {
     }
 
     .dropdown-list-wrapper {
-      max-height: 450px;
+      max-height: 200px;
       overflow: auto;
 
       .dropdown-list {
